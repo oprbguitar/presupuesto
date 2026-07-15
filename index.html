@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presupuesto Perú — Visor de Ejecución Presupuestal</title>
+<meta name="description" content="Visor ciudadano de ejecución presupuestal del Perú: PIA, PIM, devengado, girado y avance por entidad pública (2022–2026). Datos oficiales del MEF.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='33' height='100' fill='%23D91023'/><rect x='33' width='34' height='100' fill='white'/><rect x='67' width='33' height='100' fill='%23D91023'/></svg>">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <div class="brand">
+      <span class="flag" aria-hidden="true"></span>
+      <div>
+        <h1>Presupuesto Perú</h1>
+        <p class="tagline">Visor ciudadano de ejecución presupuestal · Fuente: MEF — Consulta Amigable</p>
+      </div>
+    </div>
+    <nav class="topnav">
+      <button class="navbtn active" data-view="explorar">Explorar</button>
+      <button class="navbtn" data-view="ranking">Ranking de ejecución</button>
+      <button class="navbtn" data-view="fuentes">Fuentes y rendición</button>
+      <button class="navbtn help-btn" id="btnAyuda" title="¿Cómo leer estas cifras?">?</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ VISTA EXPLORAR ============ -->
+  <section id="view-explorar" class="view">
+
+    <div class="controls card">
+      <div class="ctrl">
+        <label for="selYear">Año fiscal <button class="qmark" data-help="anio" aria-label="Ayuda sobre año fiscal">?</button></label>
+        <div id="yearChips" class="chips" role="tablist"></div>
+      </div>
+      <div class="ctrl grow">
+        <label for="selTipo">Tipo de entidad</label>
+        <select id="selTipo">
+          <option value="sector">Gobierno Nacional — Sectores (ministerios, Poder Judicial, Ministerio Público…)</option>
+          <option value="regional">Gobiernos Regionales</option>
+          <option value="muni">Municipalidades — Provincia de Lima</option>
+          <option value="depto">Gobiernos Locales por departamento</option>
+        </select>
+      </div>
+      <div class="ctrl grow">
+        <label for="selEntidad">Entidad <button class="qmark" data-help="entidad" aria-label="Ayuda sobre entidad">?</button></label>
+        <select id="selEntidad"></select>
+      </div>
+      <div class="ctrl grow">
+        <label for="buscar">Búsqueda rápida</label>
+        <input type="search" id="buscar" placeholder="Ej.: salud, poder judicial, miraflores…" autocomplete="off">
+        <div id="buscarResultados" class="search-pop" hidden></div>
+      </div>
+    </div>
+
+    <!-- Resumen nacional -->
+    <div id="panelNacional" class="card resumen">
+      <h2>Resumen general del Perú — <span class="yr"></span></h2>
+      <div id="nacionalCards" class="kpi-grid"></div>
+      <div class="split">
+        <div>
+          <h3>Por nivel de gobierno <button class="qmark" data-help="nivel">?</button></h3>
+          <div id="nivelesTabla"></div>
+        </div>
+        <div>
+          <h3>Evolución del presupuesto nacional</h3>
+          <div id="chartNacional" class="chartbox"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detalle de entidad -->
+    <div id="panelEntidad" hidden>
+      <div class="card ent-head">
+        <div>
+          <p class="ent-tipo" id="entTipo"></p>
+          <h2 id="entNombre"></h2>
+          <p class="ent-sub">Año <span class="yr"></span> · Montos en soles (S/)</p>
+        </div>
+        <div class="ent-links" id="entLinks"></div>
+      </div>
+
+      <div id="entCards" class="kpi-grid"></div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Comparativo entre años <button class="qmark" data-help="comparativo">?</button></h3>
+          <div id="chartComparativo" class="chartbox"></div>
+          <div id="tablaComparativa"></div>
+        </div>
+        <div class="card">
+          <h3>Semáforo de ejecución <span class="yr"></span> <button class="qmark" data-help="avance">?</button></h3>
+          <div id="gaugeBox"></div>
+          <div id="diagnostico" class="diag"></div>
+        </div>
+      </div>
+
+      <div class="card" id="boxGenericas">
+        <h3>¿En qué líneas gasta? — Genéricas de gasto <span class="yr"></span> <button class="qmark" data-help="generica">?</button></h3>
+        <div id="tablaGenericas"></div>
+      </div>
+
+      <div class="card" id="boxPliegos">
+        <h3>Pliegos que componen este sector <span class="yr"></span> <button class="qmark" data-help="pliego">?</button></h3>
+        <div id="tablaPliegos"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISTA RANKING ============ -->
+  <section id="view-ranking" class="view" hidden>
+    <div class="card">
+      <h2>Ranking de ejecución presupuestal — <span class="yr"></span></h2>
+      <p class="note">Ordenado por avance de ejecución (devengado ÷ PIM). Un avance bajo al cierre del año indica presupuesto que no llegó a ejecutarse. <button class="qmark" data-help="avance">?</button></p>
+      <div class="chips" id="rankTipoChips">
+        <button class="chip active" data-rt="sector">Gobierno Nacional</button>
+        <button class="chip" data-rt="regional">G. Regionales</button>
+        <button class="chip" data-rt="muni">Municipalidades de Lima</button>
+      </div>
+      <div id="rankingLista"></div>
+    </div>
+  </section>
+
+  <!-- ============ VISTA FUENTES ============ -->
+  <section id="view-fuentes" class="view" hidden>
+    <div class="card">
+      <h2>Fuentes oficiales y rendición de cuentas</h2>
+      <p class="note">Todos los datos de este visor provienen de la <strong>Consulta Amigable del MEF</strong>. Estos enlaces te llevan a las fuentes originales para verificar o profundizar.</p>
+      <div id="fuentesLista" class="fuentes-grid"></div>
+    </div>
+    <div class="card">
+      <h2>Rendición de cuentas de titulares (Contraloría)</h2>
+      <p class="note">Cada titular de entidad (ministro, gobernador, alcalde, presidente de corte, fiscal de la nación) debe rendir cuentas de su gestión ante la Contraloría General de la República. Busca aquí el informe firmado de cualquier entidad:</p>
+      <div class="fuentes-grid">
+        <a class="fuente" href="https://apps1.contraloria.gob.pe/RCTG/Areas/Ciudadano/Seguimiento/frm_CCProcesos.aspx" target="_blank" rel="noopener">
+          <strong>Consulta ciudadana de rendición de cuentas</strong>
+          <span>Sistema vigente: filtra por entidad, departamento, nivel de gobierno y tipo de informe.</span>
+        </a>
+        <a class="fuente" href="https://apps1.contraloria.gob.pe/RRCC/ConsultaIRC/Index" target="_blank" rel="noopener">
+          <strong>Consulta histórica de informes</strong>
+          <span>Informes anuales y finales antiguos, por sector, región y titular.</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>Presupuesto Perú</strong> — visor ciudadano sin fines de lucro. Datos: Ministerio de Economía y Finanzas (Consulta Amigable de Ejecución del Gasto), extraídos el <span id="fechaDatos"></span>. Las cifras son referenciales; la fuente oficial siempre prevalece.</p>
+    <p class="mini">PIA = presupuesto inicial · PIM = presupuesto vigente tras modificaciones · Devengado = gasto ejecutado reconocido · Avance % = devengado ÷ PIM. El saldo no ejecutado (PIM − devengado) no acredita por sí solo una devolución al Tesoro Público.</p>
+  </div>
+</footer>
+
+<!-- ============ MODAL DE AYUDA ============ -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true">
+    <button class="modal-x" id="modalClose" aria-label="Cerrar">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="data/mef.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
