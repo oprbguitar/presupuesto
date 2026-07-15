@@ -6,7 +6,7 @@
 <title>Presupuesto Perú — Visor de Ejecución Presupuestal</title>
 <meta name="description" content="Visor ciudadano de ejecución presupuestal del Perú: PIA, PIM, devengado, girado y avance por entidad pública (2022–2026). Datos oficiales del MEF.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='33' height='100' fill='%23D91023'/><rect x='33' width='34' height='100' fill='white'/><rect x='67' width='33' height='100' fill='%23D91023'/></svg>">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body>
 
@@ -61,6 +61,7 @@
     <!-- Resumen nacional -->
     <div id="panelNacional" class="card resumen">
       <h2>Resumen general del Perú — <span class="yr"></span></h2>
+      <p class="fuente-sello">✔ Datos oficiales y verificables: MEF — Consulta Amigable de Ejecución del Gasto · extraídos el <span class="fx"></span> · <a href="https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx" target="_blank" rel="noopener">verificar en la fuente ↗</a></p>
       <div id="nacionalCards" class="kpi-grid"></div>
       <div class="split">
         <div>
@@ -81,6 +82,7 @@
           <p class="ent-tipo" id="entTipo"></p>
           <h2 id="entNombre"></h2>
           <p class="ent-sub">Año <span class="yr"></span> · Montos en soles (S/)</p>
+          <p class="fuente-sello">✔ Datos oficiales y verificables: MEF — Consulta Amigable de Ejecución del Gasto · extraídos el <span class="fx"></span></p>
         </div>
         <div class="ent-links" id="entLinks"></div>
       </div>
@@ -100,13 +102,26 @@
         </div>
       </div>
 
+      <div class="card control-card" id="boxControl">
+        <h3>🔔 Alertas y control — Contraloría General de la República <button class="qmark" data-help="control">?</button></h3>
+        <div id="alertaEjec"></div>
+        <div id="informesContra"></div>
+        <div class="ent-links" id="controlLinks"></div>
+      </div>
+
       <div class="card" id="boxGenericas">
         <h3>¿En qué líneas gasta? — Genéricas de gasto <span class="yr"></span> <button class="qmark" data-help="generica">?</button></h3>
         <div id="tablaGenericas"></div>
       </div>
 
+      <div class="card" id="boxFunciones">
+        <h3>¿Para qué gasta? — Funciones <span class="yr"></span> <button class="qmark" data-help="funcion">?</button></h3>
+        <div id="tablaFunciones"></div>
+      </div>
+
       <div class="card" id="boxPliegos">
-        <h3>Pliegos que componen este sector <span class="yr"></span> <button class="qmark" data-help="pliego">?</button></h3>
+        <h3>Entidades (pliegos) que componen este sector <span class="yr"></span> <button class="qmark" data-help="pliego">?</button></h3>
+        <p class="note">Haz clic en cualquier pliego para abrir su detalle completo.</p>
         <div id="tablaPliegos"></div>
       </div>
     </div>
@@ -117,6 +132,7 @@
     <div class="card">
       <h2>Ranking de ejecución presupuestal — <span class="yr"></span></h2>
       <p class="note">Ordenado por avance de ejecución (devengado ÷ PIM). Un avance bajo al cierre del año indica presupuesto que no llegó a ejecutarse. <button class="qmark" data-help="avance">?</button></p>
+      <div class="chips" id="rankYearChips" style="margin-bottom:8px"></div>
       <div class="chips" id="rankTipoChips">
         <button class="chip active" data-rt="sector">Gobierno Nacional</button>
         <button class="chip" data-rt="regional">G. Regionales</button>
@@ -166,7 +182,9 @@
   </div>
 </div>
 
-<script src="data/mef.js"></script>
-<script src="js/app.js"></script>
+<script src="data/mef.js?v=3"></script>
+<script src="data/contra.js?v=3"></script>
+<script src="data/sub.js?v=3"></script>
+<script src="js/app.js?v=3"></script>
 </body>
 </html>

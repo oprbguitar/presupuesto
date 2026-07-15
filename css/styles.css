@@ -142,10 +142,46 @@ table.t tr.clickable{cursor:pointer}
 /* ---------- gauge ---------- */
 #gaugeBox{display:flex;justify-content:center}
 
+/* ---------- fuente / sello ---------- */
+.fuente-sello{font-size:.74rem;color:#2e7d32;background:#f0f9f0;border:1px solid #cde8cd;border-radius:8px;padding:5px 10px;margin:6px 0;display:inline-block}
+.fuente-sello a{color:#2e7d32;font-weight:700}
+
+/* ---------- caja de control / Contraloría ---------- */
+.control-card{border-top:4px solid var(--amarillo)}
+.alerta{padding:12px 14px;border-radius:10px;font-size:.9rem;margin:8px 0}
+.alerta.roja{background:#fdecea;border:1.5px solid var(--rojo);color:#8a0f1c}
+.alerta.ambar{background:#fff8e1;border:1.5px solid var(--amarillo);color:#6d4c00}
+.alerta.verde{background:#eef7ef;border:1.5px solid #9fd3a5;color:#1a5e26}
+.alerta.gris{background:#f4f4f4;border:1.5px solid #ccc;color:#444}
+.informe{border-left:4px solid var(--rojo);background:#fff;border-top:1px solid #f0f0f0;padding:8px 12px;margin:8px 0;border-radius:0 8px 8px 0;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.inf-meta{font-size:.72rem;color:var(--gris);font-weight:700;text-transform:uppercase;letter-spacing:.3px}
+.inf-fecha{color:var(--rojo-osc)}
+.inf-desc{font-size:.86rem;margin:3px 0}
+.inf-pdf{font-size:.78rem;font-weight:700;color:var(--rojo-osc);text-decoration:none}
+.inf-pdf:hover{text-decoration:underline}
+
+/* ---------- filas expandibles (sub-genéricas) ---------- */
+tr.gen-row.expandable{cursor:pointer}
+tr.gen-row.expandable:hover td{background:#fff3e0}
+.chev{color:var(--rojo);font-weight:800;display:inline-block;width:12px}
+tr.sub-row td{background:#fafafa;font-size:.78rem;color:#444;border-bottom:1px dashed #e8e8e8}
+tr.sub-row td:first-child{font-weight:400;padding-left:22px}
+
 @media (max-width:640px){
   .brand h1{font-size:1.05rem}
+  .tagline{display:none}
   .kpi .k-val{font-size:1rem}
+  .kpi-grid{grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:7px}
   .controls{gap:10px}
+  .ctrl{min-width:100%}
   .rank-name{flex-basis:130px}
-  .rank-barwrap{flex-basis:120px}
+  .rank-barwrap{flex-basis:110px}
+  .rank-pos{width:22px}
+  table.t{font-size:.76rem}
+  table.t td:first-child{min-width:120px}
+  .card{padding:13px}
+  h2{font-size:1.02rem}
+  .navbtn{padding:5px 10px;font-size:.78rem}
+  .ent-links a{font-size:.72rem;padding:4px 9px}
+  .modal-card{padding:18px 16px}
 }
