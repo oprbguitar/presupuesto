@@ -1,7 +1,123 @@
-/* Ampliación: catálogo integral de entidades de la Ley N.° 32732 */
-.ley-inst-card{border-top:4px solid var(--ley-blue);margin-top:16px}.ley-inst-kpis{display:grid;grid-template-columns:repeat(6,minmax(145px,1fr));gap:9px;margin:14px 0}.ley-inst-kpi{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px;border-left:4px solid #111}.ley-inst-kpi span{display:block;font-size:.66rem;text-transform:uppercase;letter-spacing:.4px;font-weight:800;color:#64748b}.ley-inst-kpi strong{display:block;font-size:1.05rem;margin:3px 0}.ley-inst-kpi small{display:block;font-size:.68rem;color:#64748b}.ley-inst-kpi.blue{border-left-color:var(--ley-blue)}.ley-inst-kpi.green{border-left-color:var(--ley-green)}.ley-inst-kpi.amber{border-left-color:var(--ley-amber)}.ley-inst-kpi.red{border-left-color:var(--ley-red)}.ley-inst-kpi.gold{border-left-color:var(--amarillo)}
-.ley-inst-note{font-size:.8rem;color:#334155;background:#f8fafc;border:1px solid #cbd5e1;border-left:4px solid var(--ley-blue);border-radius:8px;padding:9px 11px;margin:10px 0 12px}.ley-inst-filters{display:grid;grid-template-columns:minmax(220px,1.5fr) repeat(3,minmax(160px,1fr));gap:8px;align-items:center;margin:10px 0}.ley-inst-filters input,.ley-inst-filters select,.ley-measure-search{width:100%;padding:8px 9px;border:1px solid #cbd5e1;border-radius:8px;font-size:.78rem;background:#fff}.ley-check{grid-column:1/-1;display:flex;align-items:center;gap:7px;font-size:.76rem;color:#475569}.ley-check input{width:auto}
-.ley-inst-table th{font-size:.67rem}.ley-inst-table td{vertical-align:top;font-size:.74rem}.ley-inst-table td:first-child{min-width:240px}.ley-inst-table td:first-child b{display:block;font-size:.78rem}.ley-inst-table small{display:block;color:#64748b;font-size:.67rem;margin-top:3px}.ley-level{display:inline-block;font-size:.66rem;font-weight:800;background:#e2e8f0;color:#334155;border-radius:12px;padding:2px 7px}.ley-ref{display:inline-block;background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;border-radius:5px;padding:2px 5px;font-size:.63rem;font-weight:700;margin:1px}.ley-inst-dev{width:118px;padding:5px 6px;border:1px solid #94a3b8;border-radius:6px;text-align:right;font-size:.72rem}.ley-inst-row.done td{background:var(--ley-green-bg)}.ley-inst-row.partial td{background:var(--ley-amber-bg)}.ley-inst-row.pending td{background:var(--ley-red-bg)}.ley-inst-row.nodata td{background:#fff}.ley-inst-pager{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px;font-size:.75rem;color:#475569}.ley-inst-pager>div{display:flex;align-items:center;gap:8px}.ley-inst-pager .ley-btn:disabled{opacity:.45;cursor:not-allowed}.ley-measures-card{border-top:4px solid var(--amarillo)}.ley-measure-search{max-width:340px}.ley-measures-table td{vertical-align:top;font-size:.73rem}.ley-measures-table td:first-child{min-width:250px}.ley-measures-table td:first-child b{display:block;font-size:.77rem;margin:3px 0}.ley-measures-table small{display:block;color:#64748b;font-size:.66rem;margin-top:3px}.ley-purpose{display:block;min-width:280px}
-@media(max-width:1180px){.ley-inst-kpis{grid-template-columns:repeat(3,1fr)}.ley-inst-filters{grid-template-columns:1fr 1fr}}
-@media(max-width:700px){.ley-inst-kpis{grid-template-columns:1fr 1fr}.ley-inst-filters{grid-template-columns:1fr}.ley-check{grid-column:auto}.ley-inst-pager{align-items:stretch;flex-direction:column}.ley-inst-pager>div{justify-content:space-between}.ley-measure-search{max-width:none}.ley-inst-table td:first-child{min-width:210px}}
-@media(max-width:430px){.ley-inst-kpis{grid-template-columns:1fr}}
+/* Ley N.° 32732 — Rediseño: distribución del presupuesto adicional por tipo de entidad */
+.ley-dist-card{border-top:4px solid var(--amarillo);margin-top:16px}
+.ley-dist-card .ley-kicker{color:var(--rojo)}
+.ley-dist-card h3{font-size:1.15rem;margin:4px 0}
+
+/* Barra de tipo de entidad */
+.ley-typebar{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:14px 0}
+.ley-type{text-align:left;background:#fff;border:1.5px solid #e2e8f0;border-radius:11px;padding:11px 12px;cursor:pointer;transition:.12s;display:flex;flex-direction:column;gap:2px}
+.ley-type:hover{border-color:var(--amarillo)}
+.ley-type.active{border-color:var(--amarillo);background:#fffdf3;box-shadow:0 0 0 2px rgba(255,196,0,.25)}
+.ley-type-label{font-size:.74rem;font-weight:800;color:#334155;text-transform:uppercase;letter-spacing:.3px}
+.ley-type strong{font-size:1.12rem;color:var(--negro)}
+.ley-type small{font-size:.68rem;color:#64748b}
+
+/* KPIs */
+.ley-dist-kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:12px 0}
+.ley-dist-kpi{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:11px;border-left:4px solid #111}
+.ley-dist-kpi span{display:block;font-size:.66rem;text-transform:uppercase;letter-spacing:.4px;font-weight:800;color:#64748b}
+.ley-dist-kpi strong{display:block;font-size:1.12rem;margin:3px 0;color:var(--negro)}
+.ley-dist-kpi small{display:block;font-size:.67rem;color:#64748b}
+.ley-dist-kpi.blue{border-left-color:var(--ley-blue)}
+.ley-dist-kpi.red{border-left-color:var(--ley-red)}
+.ley-dist-kpi.amarillo{border-left-color:var(--amarillo)}
+.ley-dist-kpi.gris{border-left-color:#94a3b8}
+.ley-dist-kpi.gold{border-left-color:#ca8a04}
+
+/* Leyenda */
+.ley-dist-legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:.74rem;color:#475569;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 11px;margin:6px 0 12px}
+.ley-dist-legend span{display:flex;align-items:center;gap:6px}
+.ley-dist-legend .sw{width:14px;height:14px;border-radius:4px;display:inline-block}
+.ley-dist-legend .sw.amarillo{background:var(--amarillo)}
+.ley-dist-legend .sw.gris{background:#e2e8f0;border:1px solid #cbd5e1}
+.ley-dist-legend-note{flex:1;min-width:260px;font-size:.7rem;color:#64748b}
+
+/* Filtros */
+.ley-dist-filters{display:grid;grid-template-columns:minmax(200px,1.4fr) repeat(4,minmax(150px,1fr));gap:8px;margin:8px 0 14px}
+.ley-dist-filters input,.ley-dist-filters select{width:100%;padding:8px 9px;border:1px solid #cbd5e1;border-radius:8px;font-size:.78rem;background:#fff}
+
+/* Lista de entidades — tarjetas */
+.ley-dist-list{display:flex;flex-direction:column;gap:10px}
+.ley-empty{text-align:center;color:#64748b;padding:26px;font-size:.85rem}
+.ley-ent{border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;background:#fff;border-left:5px solid #cbd5e1}
+.ley-ent.done{border-left-color:var(--ley-green)}
+.ley-ent.partial{border-left-color:var(--amarillo)}
+.ley-ent.pending{border-left-color:var(--ley-red)}
+.ley-ent.nodata{border-left-color:#cbd5e1}
+.ley-ent-main{display:grid;grid-template-columns:2fr 1.3fr 1fr;gap:14px;padding:13px 15px;align-items:start}
+
+.ley-ent-id b{display:block;font-size:.9rem;color:var(--negro);margin:4px 0 2px;line-height:1.25}
+.ley-ent-id small{display:block;font-size:.7rem;color:#64748b}
+.ley-lvl{display:inline-block;font-size:.63rem;font-weight:800;border-radius:12px;padding:2px 8px;text-transform:uppercase;letter-spacing:.3px}
+.ley-lvl.n{background:#eff6ff;color:#1d4ed8}
+.ley-lvl.r{background:#ecfdf3;color:#15803d}
+.ley-lvl.l{background:#fff7ed;color:#b45309}
+.ley-ent-refs{margin-top:5px}
+.ley-ref{display:inline-block;background:#f1f5f9;color:#475569;border:1px solid #e2e8f0;border-radius:5px;padding:1px 6px;font-size:.62rem;font-weight:700;margin:1px 2px 1px 0}
+
+.ley-ent-spec{display:flex;gap:9px;align-items:flex-start}
+.ley-spec-code{flex:none;background:var(--negro);color:#fff;border-radius:7px;padding:4px 8px;font-size:.74rem;font-weight:800}
+.ley-ent-spec b{display:block;font-size:.76rem;color:#334155;line-height:1.25}
+.ley-ent-spec small{display:block;font-size:.67rem;color:#64748b;margin-top:2px}
+
+.ley-ent-plazo{text-align:left}
+.ley-plazo-badge{display:inline-block;background:#fffbeb;color:#92400e;border:1px solid #fde68a;border-radius:12px;padding:3px 9px;font-size:.68rem;font-weight:800}
+.ley-ent-plazo small{display:block;font-size:.67rem;color:#64748b;margin-top:3px}
+.ley-days{font-weight:700;color:#475569}
+.ley-days.over{color:var(--ley-red)}
+
+/* Bloque de ejecución */
+.ley-ent-exec{background:#fafbfc;border-top:1px solid #eef2f6;padding:12px 15px}
+.ley-ent-amounts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:9px}
+.ley-ent-amounts .amt span{display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.3px;font-weight:800;color:#64748b}
+.ley-ent-amounts .amt strong{display:block;font-size:.98rem;margin-top:2px}
+.ley-ent-amounts .amt.demand strong{color:var(--negro)}
+.ley-ent-amounts .amt.exec strong{color:#92400e}
+.ley-ent-amounts .amt.rest strong{color:#475569}
+
+.ley-ent-bar{position:relative;height:22px;background:#eef1f5;border-radius:7px;overflow:hidden;border:1px solid #e2e8f0}
+.ley-ent-bar .fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#ffca28,#ffc400);border-radius:7px 0 0 7px}
+.ley-ent-pctlabel{position:absolute;left:9px;top:0;line-height:22px;font-size:.7rem;font-weight:800;color:#3a2f00;text-shadow:0 1px 0 rgba(255,255,255,.4)}
+
+.ley-ent-foot{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:9px}
+.ley-ent-status{border-radius:14px;padding:3px 10px;font-size:.66rem;font-weight:800}
+.ley-ent-status.done{background:#dcfce7;color:var(--ley-green)}
+.ley-ent-status.partial{background:#fef3c7;color:#92400e}
+.ley-ent-status.pending{background:#fee2e2;color:var(--ley-red)}
+.ley-ent-status.nodata{background:#f1f5f9;color:#64748b}
+.ley-ent-note{font-size:.68rem;color:#64748b;flex:1;min-width:180px}
+.ley-ent-edit{font-size:.66rem;color:#64748b;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.ley-ent-dev{width:96px;padding:4px 6px;border:1px solid #cbd5e1;border-radius:6px;text-align:right;font-size:.7rem}
+.ley-ent-det{margin-top:8px;font-size:.72rem;color:#a16207}
+.ley-ent-det small{color:#94a3b8}
+
+/* Pager */
+.ley-dist-pager{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px;font-size:.75rem;color:#475569}
+.ley-dist-pager>div{display:flex;align-items:center;gap:8px}
+.ley-dist-pager .ley-btn:disabled{opacity:.45;cursor:not-allowed}
+
+/* Medidas del articulado */
+.ley-measures-card{border-top:4px solid var(--amarillo)}
+.ley-measure-search{max-width:340px;width:100%;padding:8px 9px;border:1px solid #cbd5e1;border-radius:8px;font-size:.78rem;background:#fff}
+.ley-measures-table td{vertical-align:top;font-size:.73rem}
+.ley-measures-table td:first-child{min-width:250px}
+.ley-measures-table td:first-child b{display:block;font-size:.77rem;margin:3px 0}
+.ley-measures-table small{display:block;color:#64748b;font-size:.66rem;margin-top:3px}
+.ley-purpose{display:block;min-width:280px}
+
+/* Responsive */
+@media(max-width:1100px){
+  .ley-typebar{grid-template-columns:repeat(2,1fr)}
+  .ley-dist-kpis{grid-template-columns:repeat(3,1fr)}
+  .ley-dist-filters{grid-template-columns:1fr 1fr}
+  .ley-ent-main{grid-template-columns:1fr;gap:10px}
+}
+@media(max-width:640px){
+  .ley-dist-kpis{grid-template-columns:1fr 1fr}
+  .ley-dist-filters{grid-template-columns:1fr}
+  .ley-ent-amounts{grid-template-columns:1fr}
+  .ley-dist-pager{flex-direction:column;align-items:stretch}
+  .ley-dist-pager>div{justify-content:space-between}
+  .ley-measure-search{max-width:none}
+}
+@media(max-width:430px){.ley-typebar{grid-template-columns:1fr}}
