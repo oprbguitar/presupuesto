@@ -102,11 +102,7 @@
         '<div id="leyKpis" class="ley-kpis"></div>' +
         '<div class="ley-grid2">' +
           '<article class="card"><div class="ley-cardhead"><div><h3>Línea de tiempo de implementación</h3><p class="note">Desde la publicación hasta el cierre fiscal.</p></div><span id="leyAsOf" class="ley-chip"></span></div><div id="leyTimeline" class="ley-timeline"></div></article>' +
-          '<article class="card"><h3>Efectividad del gasto</h3><p class="note">Comparación entre monto autorizado, devengado registrado y referencia lineal al cierre de 2026.</p><div id="leyProgress"></div><div id="leyContext" class="ley-context"></div></article>' +
-        '</div>' +
-        '<div class="ley-grid2">' +
-          '<article class="card"><h3>Resumen por genérica de gasto</h3><div id="leyGeneric"></div></article>' +
-          '<article class="card"><h3>Criterios de lectura</h3><div class="ley-criteria"><p><b>Proyectado/autorizado:</b> monto individualizado por la Ley N.° 32732.</p><p><b>Ejecutado:</b> devengado atribuible a estas asignaciones, cargado en <code>data/ley32732.js</code> o mediante CSV.</p><p><b>Pendiente:</b> autorizado menos devengado. Cuando no hay dato, se muestra como saldo legal por monitorear, no como prueba de inejecución.</p><p><b>Contexto del pliego:</b> el PIM y devengado global del Ministerio Público no se atribuyen automáticamente a esta ley.</p></div></article>' +
+          '<article class="card"><h3>Criterios de lectura</h3><div class="ley-criteria"><p><b>Proyectado/autorizado:</b> monto individualizado por la Ley N.° 32732.</p><p><b>Ejecutado:</b> devengado atribuible a estas asignaciones según la ejecución publicada por el MEF.</p><p><b>Pendiente:</b> autorizado menos devengado. Cuando no hay dato, se muestra como saldo legal por monitorear, no como prueba de inejecución.</p><p><b>Contexto del pliego:</b> el PIM y devengado global de una entidad no se atribuyen automáticamente a esta ley.</p></div></article>' +
         '</div>';
       main.appendChild(s);
       bindControls();
@@ -278,7 +274,7 @@
     }
 
     function renderAll() {
-      renderKpis(); renderTimeline(); renderProgress(); renderGeneric();
+      renderKpis(); renderTimeline();
     }
 
     injectNav();
