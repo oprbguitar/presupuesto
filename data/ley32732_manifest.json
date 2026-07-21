@@ -1,0 +1,15 @@
+{
+  "ley": "Ley N.° 32732",
+  "actualizado": "2026-07-21",
+  "cobertura": "Entidades individualizadas en el articulado y anexos de la ley",
+  "conteo_total": 1673,
+  "ministerio_publico": 1,
+  "entidades_adicionales_al_ministerio_publico": 1672,
+  "desglose_adicional": {
+    "gobierno_nacional": 167,
+    "gobiernos_regionales_y_regimen_especial_de_lima": 26,
+    "gobiernos_locales": 1479
+  },
+  "medidas_institucionales_del_articulado": 41,
+  "regla_de_lectura": "Los recursos determinados se muestran separados de los créditos suplementarios y un devengado vacío significa dato no cargado, no ejecución cero."
+}
