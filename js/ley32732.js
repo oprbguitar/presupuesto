@@ -96,7 +96,7 @@
           '<div><span class="ley-kicker">Seguimiento normativo y presupuestario · Año Fiscal 2026</span>' +
           '<h2>Ley N.° 32732 — Ministerio Público</h2>' +
           '<p>Créditos suplementarios, reprogramación autorizada y avance de ejecución atribuible a la ley. El <strong>devengado</strong> se usa como medida de ejecución.</p></div>' +
-          '<div class="ley-actions"><button class="ley-btn" id="leyEdit">Editar ejecución</button><button class="ley-btn" id="leyTemplate">Plantilla CSV</button><label class="ley-btn file">Importar CSV<input id="leyImport" type="file" accept=".csv,text/csv"></label><a class="ley-btn primary" href="' + esc(D.officialUrl) + '" target="_blank" rel="noopener">Ley oficial ↗</a></div>' +
+          '<div class="ley-actions"><a class="ley-btn primary" href="' + esc(D.officialUrl) + '" target="_blank" rel="noopener">Ley oficial ↗</a></div>' +
         '</div>' +
         '<div class="ley-alert"><strong>Precisión:</strong> ' + esc(D.notes.reprogramming) + '</div>' +
         '<div id="leyKpis" class="ley-kpis"></div>' +
@@ -104,7 +104,6 @@
           '<article class="card"><div class="ley-cardhead"><div><h3>Línea de tiempo de implementación</h3><p class="note">Desde la publicación hasta el cierre fiscal.</p></div><span id="leyAsOf" class="ley-chip"></span></div><div id="leyTimeline" class="ley-timeline"></div></article>' +
           '<article class="card"><h3>Efectividad del gasto</h3><p class="note">Comparación entre monto autorizado, devengado registrado y referencia lineal al cierre de 2026.</p><div id="leyProgress"></div><div id="leyContext" class="ley-context"></div></article>' +
         '</div>' +
-        '<div class="card"><div class="ley-cardhead"><div><h3>Específicas y actividades contempladas</h3><p class="note">Anexos I y IX. Verde: ejecutado; ámbar: ejecución parcial; rojo: pendiente; gris: sin dato verificado.</p></div><div class="ley-filters"><input id="leySearch" type="search" placeholder="Buscar unidad o actividad…"><select id="leyStatus"><option value="">Todos los estados</option><option value="done">Ejecutado</option><option value="partial">Parcial</option><option value="pending">Pendiente</option><option value="nodata">Sin dato</option></select></div></div><div id="leyTable"></div></div>' +
         '<div class="ley-grid2">' +
           '<article class="card"><h3>Resumen por genérica de gasto</h3><div id="leyGeneric"></div></article>' +
           '<article class="card"><h3>Criterios de lectura</h3><div class="ley-criteria"><p><b>Proyectado/autorizado:</b> monto individualizado por la Ley N.° 32732.</p><p><b>Ejecutado:</b> devengado atribuible a estas asignaciones, cargado en <code>data/ley32732.js</code> o mediante CSV.</p><p><b>Pendiente:</b> autorizado menos devengado. Cuando no hay dato, se muestra como saldo legal por monitorear, no como prueba de inejecución.</p><p><b>Contexto del pliego:</b> el PIM y devengado global del Ministerio Público no se atribuyen automáticamente a esta ley.</p></div></article>' +
@@ -124,25 +123,8 @@
     }
 
     function bindControls() {
-      $("#leyEdit").addEventListener("click", function () {
-        editMode = !editMode;
-        this.textContent = editMode ? "Guardar cambios" : "Editar ejecución";
-        if (!editMode) {
-          $$("#leyTable input[data-id]").forEach(function (inp) {
-            var id = inp.dataset.id, key = inp.dataset.key;
-            overrides[id] = overrides[id] || {};
-            var v = inp.value.trim();
-            overrides[id][key] = v === "" ? null : num(v);
-          });
-          overrides._updated = new Date().toISOString().slice(0, 10);
-          saveOverrides();
-        }
-        renderAll();
-      });
-      $("#leySearch").addEventListener("input", function () { filter = this.value.toLowerCase(); renderTable(); });
-      $("#leyStatus").addEventListener("change", renderTable);
-      $("#leyTemplate").addEventListener("click", downloadTemplate);
-      $("#leyImport").addEventListener("change", importCsv);
+      /* Los controles de edición y CSV de la tabla del Ministerio Público se retiraron
+         junto con la sección "Específicas y actividades contempladas". */
     }
 
     function statusOf(row) {
@@ -296,7 +278,7 @@
     }
 
     function renderAll() {
-      renderKpis(); renderTimeline(); renderProgress(); renderTable(); renderGeneric();
+      renderKpis(); renderTimeline(); renderProgress(); renderGeneric();
     }
 
     injectNav();
