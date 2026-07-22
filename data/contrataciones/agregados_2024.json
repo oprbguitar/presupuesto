@@ -1,0 +1,348 @@
+{
+ "anio": 2024,
+ "parcial": false,
+ "actualizado": "2026-07-21",
+ "estado_datos": "demostracion",
+ "fuente": {
+  "nombre": "Datos de demostración (estructura compatible OECE/SEACE + MEF)",
+  "url": "https://www.datosabiertos.gob.pe/",
+  "cobertura": "Muestra ilustrativa — pendiente de validación con fuentes oficiales",
+  "metodologia": "Agregados calculados con los mismos criterios que el pipeline de producción."
+ },
+ "indicadores": {
+  "pia": 20100000000,
+  "pim": 23800000000,
+  "dev": 20600000000,
+  "gir": 19700000000,
+  "pac_programado": 13282412370.77,
+  "convocado": 645020801.0,
+  "adjudicado": 380748664.58,
+  "contratado": 172732852.66,
+  "n_procedimientos": 160,
+  "n_oc": 48,
+  "n_os": 38,
+  "n_proveedores": 8,
+  "cd_num": 28,
+  "cd_monto": 93013285.28,
+  "desiertos": 9,
+  "anulados": 10
+ },
+ "distribucion_objeto": [
+  {
+   "objeto": "Servicios",
+   "monto": 220049934.3,
+   "n": 56
+  },
+  {
+   "objeto": "Bienes",
+   "monto": 214250463.07,
+   "n": 62
+  },
+  {
+   "objeto": "Obras",
+   "monto": 121493132.63,
+   "n": 35
+  },
+  {
+   "objeto": "Consultoría de obras",
+   "monto": 22944882.79,
+   "n": 7
+  }
+ ],
+ "top_categorias": [
+  {
+   "categoria": "Servicios TI",
+   "monto": 91252498.52,
+   "n": 22
+  },
+  {
+   "categoria": "Medicamentos",
+   "monto": 71378560.41,
+   "n": 18
+  },
+  {
+   "categoria": "Mobiliario",
+   "monto": 71152753.16,
+   "n": 19
+  },
+  {
+   "categoria": "Servicios de consultoría",
+   "monto": 66206381.38,
+   "n": 19
+  },
+  {
+   "categoria": "Mantenimiento vial",
+   "monto": 54295178.63,
+   "n": 15
+  },
+  {
+   "categoria": "Material educativo",
+   "monto": 52145997.48,
+   "n": 16
+  },
+  {
+   "categoria": "Combustibles",
+   "monto": 46953143.42,
+   "n": 12
+  },
+  {
+   "categoria": "Equipamiento médico",
+   "monto": 44228114.41,
+   "n": 14
+  },
+  {
+   "categoria": "Obras de saneamiento",
+   "monto": 40709575.02,
+   "n": 12
+  },
+  {
+   "categoria": "Alimentos",
+   "monto": 40416210.36,
+   "n": 13
+  }
+ ],
+ "top_proveedores": [
+  {
+   "proveedor": "Equipos Médicos Global S.A.C.",
+   "monto": 73301268.72,
+   "n": 17
+  },
+  {
+   "proveedor": "Constructora Andina S.A.C.",
+   "monto": 63578677.92,
+   "n": 14
+  },
+  {
+   "proveedor": "Comercial Alimentos Norte S.R.L.",
+   "monto": 57950611.74,
+   "n": 17
+  },
+  {
+   "proveedor": "Tecnología y Sistemas del Sur S.A.C.",
+   "monto": 51985631.3,
+   "n": 18
+  },
+  {
+   "proveedor": "Suministros Educativos del Perú S.A.C.",
+   "monto": 47167863.96,
+   "n": 17
+  },
+  {
+   "proveedor": "Distribuidora Farmacéutica del Perú S.A.",
+   "monto": 37159908.39,
+   "n": 10
+  },
+  {
+   "proveedor": "Servicios Integrales Vial E.I.R.L.",
+   "monto": 28867536.21,
+   "n": 12
+  },
+  {
+   "proveedor": "Consultora de Ingeniería Pacífico S.A.C.",
+   "monto": 20737166.34,
+   "n": 8
+  }
+ ],
+ "por_tipo_procedimiento": [
+  {
+   "tipo": "Adjudicación Simplificada",
+   "monto": 127811074.02,
+   "n": 33
+  },
+  {
+   "tipo": "Subasta Inversa Electrónica",
+   "monto": 105621628.4,
+   "n": 29
+  },
+  {
+   "tipo": "Licitación Pública",
+   "monto": 105234592.38,
+   "n": 29
+  },
+  {
+   "tipo": "Contratación Directa",
+   "monto": 93013285.28,
+   "n": 28
+  },
+  {
+   "tipo": "Concurso Público",
+   "monto": 57435850.48,
+   "n": 15
+  },
+  {
+   "tipo": "Selección de Consultores",
+   "monto": 46913433.21,
+   "n": 14
+  },
+  {
+   "tipo": "Comparación de Precios",
+   "monto": 42708549.02,
+   "n": 12
+  }
+ ],
+ "comparacion_montos": {
+  "convocado": 645020801.0,
+  "adjudicado": 380748664.58,
+  "contratado": 172732852.66
+ },
+ "embudo": [
+  {
+   "etapa": "PIM",
+   "monto": 23800000000
+  },
+  {
+   "etapa": "PAC programado",
+   "monto": 13282412370.77
+  },
+  {
+   "etapa": "Convocado",
+   "monto": 645020801.0
+  },
+  {
+   "etapa": "Adjudicado",
+   "monto": 380748664.58
+  },
+  {
+   "etapa": "Contratado",
+   "monto": 172732852.66
+  },
+  {
+   "etapa": "Devengado",
+   "monto": 20600000000
+  }
+ ],
+ "por_departamento": [
+  {
+   "departamento": "Lima",
+   "ubigeo": "15",
+   "monto": 354516049.62,
+   "n": 99
+  },
+  {
+   "departamento": "Piura",
+   "ubigeo": "20",
+   "monto": 70830293.89,
+   "n": 19
+  },
+  {
+   "departamento": "Cusco",
+   "ubigeo": "08",
+   "monto": 53624272.58,
+   "n": 16
+  },
+  {
+   "departamento": "Arequipa",
+   "ubigeo": "04",
+   "monto": 50076863.97,
+   "n": 13
+  },
+  {
+   "departamento": "La Libertad",
+   "ubigeo": "13",
+   "monto": 49690932.73,
+   "n": 13
+  }
+ ],
+ "por_entidad": [
+  {
+   "id": "E-0005",
+   "entidad": "Gobierno Regional de Cusco",
+   "nivel": "Regional",
+   "sector": "Regional",
+   "convocado": 63658256.31,
+   "adjudicado": 50760451.53,
+   "contratado": 10876391.24,
+   "n": 16
+  },
+  {
+   "id": "E-0010",
+   "entidad": "Gobierno Regional de Piura",
+   "nivel": "Regional",
+   "sector": "Regional",
+   "convocado": 78640161.32,
+   "adjudicado": 48069115.89,
+   "contratado": 15409290.62,
+   "n": 19
+  },
+  {
+   "id": "E-0003",
+   "entidad": "Ministerio de Transportes y Comunicaciones",
+   "nivel": "Nacional",
+   "sector": "Transportes",
+   "convocado": 69342922.56,
+   "adjudicado": 45304800.31,
+   "contratado": 37540084.6,
+   "n": 16
+  },
+  {
+   "id": "E-0004",
+   "entidad": "Seguro Social de Salud - EsSalud",
+   "nivel": "Nacional",
+   "sector": "Salud",
+   "convocado": 67230258.75,
+   "adjudicado": 42329092.52,
+   "contratado": 11522588.9,
+   "n": 17
+  },
+  {
+   "id": "E-0001",
+   "entidad": "Ministerio de Salud",
+   "nivel": "Nacional",
+   "sector": "Salud",
+   "convocado": 71372068.25,
+   "adjudicado": 38989174.12,
+   "contratado": 12044594.67,
+   "n": 17
+  },
+  {
+   "id": "E-0007",
+   "entidad": "Municipalidad Metropolitana de Lima",
+   "nivel": "Local",
+   "sector": "Local",
+   "convocado": 66145738.75,
+   "adjudicado": 35007625.85,
+   "contratado": 14648514.86,
+   "n": 16
+  },
+  {
+   "id": "E-0008",
+   "entidad": "Municipalidad Provincial de Arequipa",
+   "nivel": "Local",
+   "sector": "Local",
+   "convocado": 55428222.33,
+   "adjudicado": 33895138.2,
+   "contratado": 11215453.89,
+   "n": 13
+  },
+  {
+   "id": "E-0009",
+   "entidad": "Programa Nacional de Infraestructura Educativa (PRONIED)",
+   "nivel": "Nacional",
+   "sector": "Educación",
+   "convocado": 51303003.7,
+   "adjudicado": 33033750.42,
+   "contratado": 23653240.81,
+   "n": 15
+  },
+  {
+   "id": "E-0002",
+   "entidad": "Ministerio de Educación",
+   "nivel": "Nacional",
+   "sector": "Educación",
+   "convocado": 68074601.04,
+   "adjudicado": 29927604.94,
+   "contratado": 16174951.81,
+   "n": 18
+  },
+  {
+   "id": "E-0006",
+   "entidad": "Gobierno Regional de La Libertad",
+   "nivel": "Regional",
+   "sector": "Regional",
+   "convocado": 53825567.99,
+   "adjudicado": 23431910.8,
+   "contratado": 19647741.26,
+   "n": 13
+  }
+ ]
+}

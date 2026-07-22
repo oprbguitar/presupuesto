@@ -1,0 +1,7 @@
+# Descargas crudas y estado local del pipeline (no se publican).
+_raw/
+_estado/
+config.json
+pipeline.log
+__pycache__/
+*.pyc

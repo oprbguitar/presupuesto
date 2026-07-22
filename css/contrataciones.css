@@ -1,0 +1,131 @@
+/* Contrataciones públicas — módulo desacoplado para Presupuesto Perú.
+   Reutiliza el sistema visual del portal (variables de css/styles.css).
+   Todas las clases usan el prefijo cx- para no colisionar con el resto. */
+
+.cx-view{display:block}
+
+/* hero / encabezado del módulo */
+.cx-hero{border-top:4px solid var(--rojo);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.cx-kicker{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--rojo)}
+.cx-hero h2{margin:4px 0 6px}
+.cx-hero p{font-size:.88rem;color:#333;max-width:640px}
+.cx-beta{display:inline-block;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;
+  background:var(--amarillo);color:var(--negro);border-radius:12px;padding:2px 9px;margin-left:8px;vertical-align:middle}
+
+/* aviso permanente */
+.cx-aviso{font-size:.8rem;background:#fff8e1;border:1.5px solid var(--amarillo);color:#6d4c00;
+  border-radius:10px;padding:9px 12px;margin-bottom:14px}
+.cx-aviso b{color:#5a3d00}
+
+/* sub-navegación de vistas del módulo */
+.cx-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.cx-tab{border:1.5px solid #ccc;background:#fff;border-radius:18px;padding:6px 13px;cursor:pointer;
+  font-size:.85rem;font-weight:600;transition:.12s;color:#333}
+.cx-tab:hover{border-color:var(--rojo);color:var(--rojo)}
+.cx-tab.active{background:var(--negro);color:#fff;border-color:var(--negro)}
+
+/* filtros */
+.cx-filtros{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+.cx-f{display:flex;flex-direction:column;gap:4px;min-width:150px;flex:1 1 160px}
+.cx-f label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#333}
+.cx-f select,.cx-f input{padding:8px 9px;border:1.5px solid #ccc;border-radius:8px;font-size:.88rem;background:#fff;width:100%}
+.cx-f select:focus,.cx-f input:focus{outline:2px solid var(--rojo);border-color:var(--rojo)}
+.cx-filtros-actions{display:flex;gap:8px;align-items:center;margin-top:10px;flex-wrap:wrap}
+.cx-btn{border:1.5px solid var(--negro);background:#fff;color:var(--negro);border-radius:18px;
+  padding:6px 14px;font-size:.82rem;font-weight:700;cursor:pointer;transition:.12s;text-decoration:none;display:inline-block}
+.cx-btn:hover{background:var(--negro);color:var(--amarillo)}
+.cx-btn.primary{background:var(--rojo);border-color:var(--rojo);color:#fff}
+.cx-btn.primary:hover{background:var(--rojo-osc);color:#fff}
+.cx-chips{display:flex;gap:6px;flex-wrap:wrap}
+
+/* KPIs */
+.cx-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:6px 0 4px}
+.cx-kpi{border:1px solid #e8e8e8;border-left:4px solid var(--rojo);border-radius:10px;padding:10px 12px;background:#fff;position:relative}
+.cx-kpi.amar{border-left-color:var(--amarillo)}
+.cx-kpi.neg{border-left-color:var(--negro)}
+.cx-kpi.verde{border-left-color:var(--verde)}
+.cx-kpi.azul{border-left-color:#1f6feb}
+.cx-kpi .cx-k-lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.4px;color:var(--gris);font-weight:700;display:flex;align-items:center;gap:4px}
+.cx-kpi .cx-k-val{font-size:1.12rem;font-weight:800;margin-top:2px;white-space:nowrap}
+.cx-kpi .cx-k-sub{font-size:.7rem;color:var(--gris);margin-top:1px}
+
+/* grid de gráficos */
+.cx-grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+@media (max-width:860px){.cx-grid2{grid-template-columns:1fr}}
+.cx-chartbox{width:100%;min-height:180px}
+.cx-chartbox svg{width:100%;height:auto;display:block}
+
+/* barras horizontales (tops) */
+.cx-hbar{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f2f2f2;font-size:.82rem}
+.cx-hbar .cx-hb-name{flex:1 1 40%;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cx-hbar .cx-hb-track{flex:1 1 40%;height:9px;background:var(--gris-cl);border-radius:5px;overflow:hidden}
+.cx-hbar .cx-hb-track>i{display:block;height:100%;background:var(--rojo)}
+.cx-hbar .cx-hb-val{flex:none;width:96px;text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+
+/* tabla detallada */
+.cx-tbl-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+.cx-tbl-tools input{padding:7px 9px;border:1.5px solid #ccc;border-radius:8px;font-size:.85rem;min-width:220px;flex:1 1 220px}
+.cx-count{font-size:.8rem;color:var(--gris)}
+table.cx-t{width:100%;border-collapse:collapse;font-size:.8rem}
+table.cx-t th{background:var(--negro);color:#fff;text-align:right;padding:7px 8px;font-weight:600;white-space:nowrap;cursor:pointer;position:sticky;top:0}
+table.cx-t th:first-child,table.cx-t th.l{text-align:left}
+table.cx-t th .cx-sort{opacity:.5;font-size:.7rem;margin-left:2px}
+table.cx-t td{padding:6px 8px;border-bottom:1px solid #efefef;text-align:right;white-space:nowrap}
+table.cx-t td.l{text-align:left;white-space:normal;min-width:150px}
+table.cx-t tr:hover td{background:#fff8f8}
+.cx-pill{display:inline-block;font-size:.68rem;font-weight:700;border-radius:10px;padding:1px 7px;white-space:nowrap}
+.cx-pill.adj{background:#eef7ef;color:#1a5e26}
+.cx-pill.conv{background:#eef3fb;color:#1f4e8c}
+.cx-pill.des{background:#fdecea;color:#8a0f1c}
+.cx-pill.nul{background:#f4f4f4;color:#555}
+.cx-pill.cd{background:#fff8e1;color:#6d4c00}
+.cx-pag{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:10px;flex-wrap:wrap}
+.cx-pag button{border:1.5px solid #ccc;background:#fff;border-radius:8px;padding:5px 11px;cursor:pointer;font-size:.82rem;font-weight:700}
+.cx-pag button:disabled{opacity:.4;cursor:default}
+
+/* alertas */
+.cx-alert{display:flex;gap:12px;align-items:flex-start;padding:11px 13px;border-radius:10px;margin:8px 0;font-size:.85rem;border:1.5px solid}
+.cx-alert .cx-a-ico{font-size:1.1rem;flex:none;line-height:1.2}
+.cx-alert .cx-a-body b{display:block;margin-bottom:2px}
+.cx-alert .cx-a-count{font-weight:800;font-variant-numeric:tabular-nums}
+.cx-alert.rojo{background:#fdecea;border-color:var(--rojo);color:#8a0f1c}
+.cx-alert.ambar{background:#fff8e1;border-color:var(--amarillo);color:#6d4c00}
+.cx-alert.gris{background:#f6f6f6;border-color:#d5d5d5;color:#444}
+.cx-alert.azul{background:#eef3fb;border-color:#9dbce8;color:#1f4e8c}
+.cx-alert-nota{font-size:.78rem;color:var(--gris);font-style:italic;margin-top:6px}
+
+/* trazabilidad / ficha de fuente */
+.cx-ficha{font-size:.78rem;color:#2e7d32;background:#f0f9f0;border:1px solid #cde8cd;border-radius:8px;padding:7px 11px;margin:6px 0}
+.cx-ficha b{color:#1a5e26}
+.cx-ficha a{color:#2e7d32;font-weight:700}
+.cx-meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:8px}
+.cx-meta{border:1px solid #e5e5e5;border-left:4px solid var(--rojo);border-radius:8px;padding:9px 11px;font-size:.82rem;background:#fff}
+.cx-meta b{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.4px;color:var(--gris);margin-bottom:2px}
+.cx-limitaciones li{font-size:.84rem;color:#444;margin:5px 0 5px 18px}
+
+/* embudo */
+.cx-funnel{display:flex;flex-direction:column;gap:6px}
+.cx-funnel-row{display:flex;align-items:center;gap:10px;font-size:.83rem}
+.cx-funnel-row .cx-fn-lbl{flex:none;width:130px;font-weight:700}
+.cx-funnel-row .cx-fn-bar{flex:1;height:22px;background:var(--gris-cl);border-radius:6px;overflow:hidden}
+.cx-funnel-row .cx-fn-bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--rojo),var(--rojo-osc));
+  color:#fff;font-size:.72rem;font-weight:700;display:flex;align-items:center;padding-left:8px;white-space:nowrap}
+.cx-funnel-row .cx-fn-val{flex:none;width:110px;text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+
+/* mapa por departamento (barras, sin dependencias geográficas) */
+.cx-map-note{font-size:.8rem;color:var(--gris);margin-bottom:8px}
+
+/* loader / estados */
+.cx-load{text-align:center;color:var(--gris);padding:26px;font-size:.9rem}
+.cx-empty{color:var(--gris);font-size:.86rem;padding:10px 0}
+
+@media (max-width:640px){
+  .cx-kpis{grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:7px}
+  .cx-kpi .cx-k-val{font-size:.98rem}
+  .cx-f{min-width:100%;flex-basis:100%}
+  table.cx-t{font-size:.72rem}
+  .cx-funnel-row .cx-fn-lbl{width:88px}
+  .cx-funnel-row .cx-fn-val{width:80px}
+  /* En móvil: primero indicadores, luego lo demás (los bloques ya vienen en ese orden) */
+  .cx-hero h2{font-size:1.05rem}
+}

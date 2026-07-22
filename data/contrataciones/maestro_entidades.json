@@ -1,0 +1,127 @@
+{
+ "actualizado": "2026-07-21",
+ "estado_datos": "demostracion",
+ "nota": "No se asume correspondencia uno a uno entre pliego, unidad ejecutora y entidad contratante.",
+ "entidades": [
+  {
+   "id": "E-0001",
+   "nombre": "Ministerio de Salud",
+   "ruc": "20131373237",
+   "cod_oece": "000123",
+   "cod_pliego_mef": "011",
+   "cod_ue_mef": "001",
+   "sector": "Salud",
+   "nivel": "Nacional",
+   "ubigeo": "150101",
+   "departamento": "Lima"
+  },
+  {
+   "id": "E-0002",
+   "nombre": "Ministerio de Educación",
+   "ruc": "20131370998",
+   "cod_oece": "000145",
+   "cod_pliego_mef": "010",
+   "cod_ue_mef": "001",
+   "sector": "Educación",
+   "nivel": "Nacional",
+   "ubigeo": "150101",
+   "departamento": "Lima"
+  },
+  {
+   "id": "E-0003",
+   "nombre": "Ministerio de Transportes y Comunicaciones",
+   "ruc": "20131379944",
+   "cod_oece": "000201",
+   "cod_pliego_mef": "036",
+   "cod_ue_mef": "001",
+   "sector": "Transportes",
+   "nivel": "Nacional",
+   "ubigeo": "150101",
+   "departamento": "Lima"
+  },
+  {
+   "id": "E-0004",
+   "nombre": "Seguro Social de Salud - EsSalud",
+   "ruc": "20131257750",
+   "cod_oece": "000322",
+   "cod_pliego_mef": "135",
+   "cod_ue_mef": "001",
+   "sector": "Salud",
+   "nivel": "Nacional",
+   "ubigeo": "150101",
+   "departamento": "Lima"
+  },
+  {
+   "id": "E-0005",
+   "nombre": "Gobierno Regional de Cusco",
+   "ruc": "20527207261",
+   "cod_oece": "000410",
+   "cod_pliego_mef": "442",
+   "cod_ue_mef": "001",
+   "sector": "Regional",
+   "nivel": "Regional",
+   "ubigeo": "080101",
+   "departamento": "Cusco"
+  },
+  {
+   "id": "E-0006",
+   "nombre": "Gobierno Regional de La Libertad",
+   "ruc": "20440337911",
+   "cod_oece": "000455",
+   "cod_pliego_mef": "451",
+   "cod_ue_mef": "001",
+   "sector": "Regional",
+   "nivel": "Regional",
+   "ubigeo": "130101",
+   "departamento": "La Libertad"
+  },
+  {
+   "id": "E-0007",
+   "nombre": "Municipalidad Metropolitana de Lima",
+   "ruc": "20131380951",
+   "cod_oece": "000501",
+   "cod_pliego_mef": "150101",
+   "cod_ue_mef": "001",
+   "sector": "Local",
+   "nivel": "Local",
+   "ubigeo": "150101",
+   "departamento": "Lima"
+  },
+  {
+   "id": "E-0008",
+   "nombre": "Municipalidad Provincial de Arequipa",
+   "ruc": "20154577562",
+   "cod_oece": "000560",
+   "cod_pliego_mef": "040101",
+   "cod_ue_mef": "001",
+   "sector": "Local",
+   "nivel": "Local",
+   "ubigeo": "040101",
+   "departamento": "Arequipa"
+  },
+  {
+   "id": "E-0009",
+   "nombre": "Programa Nacional de Infraestructura Educativa (PRONIED)",
+   "ruc": "20514347221",
+   "cod_oece": "000188",
+   "cod_pliego_mef": "010",
+   "cod_ue_mef": "108",
+   "sector": "Educación",
+   "nivel": "Nacional",
+   "ubigeo": "150101",
+   "departamento": "Lima"
+  },
+  {
+   "id": "E-0010",
+   "nombre": "Gobierno Regional de Piura",
+   "ruc": "20484004421",
+   "cod_oece": "000470",
+   "cod_pliego_mef": "457",
+   "cod_ue_mef": "001",
+   "sector": "Regional",
+   "nivel": "Regional",
+   "ubigeo": "200101",
+   "departamento": "Piura"
+  }
+ ]
+}

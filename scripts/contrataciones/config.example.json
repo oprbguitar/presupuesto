@@ -1,0 +1,19 @@
+{
+  "_comentario": "Copie este archivo a config.json y complete los endpoints oficiales vigentes. config.json está ignorado por git.",
+  "timeout": 300,
+  "anios": [2023, 2024, 2025, 2026],
+  "anio_parcial": 2026,
+  "oece": {
+    "ocds_url_por_anio": "",
+    "_ayuda": "Plantilla del paquete OCDS por año, p. ej. 'https://.../ocds/releases/{anio}.json'. Confirmar en https://contratacionesabiertas.oece.gob.pe/ o https://www.datosabiertos.gob.pe/."
+  },
+  "mef": {
+    "_ayuda": "La Consulta Amigable se exporta manualmente a CSV (pliego,ue,pia,pim,devengado,girado) y se coloca en _raw/mef_ejecucion_{anio}.csv."
+  },
+  "perucompras": {
+    "_ayuda": "Exportar órdenes a _raw/perucompras_ordenes_{anio}.csv (tipo_orden,entidad,ruc_proveedor,proveedor,descripcion,monto,fecha,ubigeo)."
+  },
+  "sanciones": {
+    "_ayuda": "Registro de inhabilitados a _raw/sanciones.csv (ruc,detalle,vigente)."
+  }
+}

@@ -1,0 +1,99 @@
+{
+ "modulo": "contrataciones-publicas",
+ "version": 1,
+ "estado_datos": "demostracion",
+ "actualizado": "2026-07-21",
+ "cobertura": "Muestra de demostración con 10 entidades y ~500 procedimientos ilustrativos (2023-2026).",
+ "anios": [
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "anio_parcial": 2026,
+ "archivos": {
+  "agregados": "agregados_{anio}.json",
+  "procedimientos": "procedimientos_{anio}.json",
+  "maestro_entidades": "maestro_entidades.json",
+  "proveedores": "proveedores.json"
+ },
+ "evolucion": [
+  {
+   "anio": 2023,
+   "pim": 21200000000,
+   "convocado": 481025892.06,
+   "adjudicado": 265372756.56,
+   "contratado": 139057867.16,
+   "dev": 18900000000,
+   "parcial": false
+  },
+  {
+   "anio": 2024,
+   "pim": 23800000000,
+   "convocado": 645020801.0,
+   "adjudicado": 380748664.58,
+   "contratado": 172732852.66,
+   "dev": 20600000000,
+   "parcial": false
+  },
+  {
+   "anio": 2025,
+   "pim": 25100000000,
+   "convocado": 630385652.56,
+   "adjudicado": 275060798.82,
+   "contratado": 167835404.95,
+   "dev": 21800000000,
+   "parcial": false
+  },
+  {
+   "anio": 2026,
+   "pim": 24900000000,
+   "convocado": 272450846.32,
+   "adjudicado": 151021876.21,
+   "contratado": 84523882.06,
+   "dev": 9600000000,
+   "parcial": true
+  }
+ ],
+ "fuentes": [
+  {
+   "nombre": "OECE / SEACE - Datos Abiertos (OCDS)",
+   "url": "https://contratacionesabiertas.oece.gob.pe/",
+   "descripcion": "Procedimientos de selección, adjudicaciones y contratos en estándar OCDS."
+  },
+  {
+   "nombre": "MEF - Consulta Amigable",
+   "url": "https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx",
+   "descripcion": "PIA, PIM, devengado y girado por pliego y unidad ejecutora."
+  },
+  {
+   "nombre": "Perú Compras - Órdenes de compra y servicio",
+   "url": "https://www.gob.pe/perucompras",
+   "descripcion": "Catálogos electrónicos y órdenes derivadas de Acuerdos Marco."
+  },
+  {
+   "nombre": "Contraloría - Sanciones e inhabilitaciones",
+   "url": "https://www.gob.pe/contraloria",
+   "descripcion": "Registro de proveedores sancionados e inhabilitados."
+  },
+  {
+   "nombre": "Datos Abiertos del Estado Peruano",
+   "url": "https://www.datosabiertos.gob.pe/",
+   "descripcion": "Portal central de conjuntos de datos abiertos."
+  }
+ ],
+ "limitaciones": [
+  "El monto adjudicado no equivale al monto devengado ni girado.",
+  "No se asume correspondencia uno a uno entre pliego MEF, unidad ejecutora y entidad contratante OECE.",
+  "Para el año en curso (2026) las cifras corresponden al acumulado disponible a la última fecha de actualización.",
+  "Las alertas son señales estadísticas y no constituyen prueba de irregularidad ni determinación de responsabilidad.",
+  "Los datos de esta versión son de DEMOSTRACIÓN y no reemplazan a las fuentes oficiales."
+ ],
+ "log_actualizacion": [
+  {
+   "fecha": "2026-07-21",
+   "evento": "Generación de datos de demostración del módulo.",
+   "estado": "ok"
+  }
+ ]
+}

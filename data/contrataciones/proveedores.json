@@ -1,0 +1,54 @@
+{
+ "actualizado": "2026-07-21",
+ "estado_datos": "demostracion",
+ "proveedores": [
+  {
+   "ruc": "20100055237",
+   "nombre": "Distribuidora Farmacéutica del Perú S.A.",
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20501234567",
+   "nombre": "Constructora Andina S.A.C.",
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20512345678",
+   "nombre": "Servicios Integrales Vial E.I.R.L.",
+   "sancionado": true,
+   "sancion_detalle": "Inhabilitación temporal (registro OECE)"
+  },
+  {
+   "ruc": "20487654321",
+   "nombre": "Tecnología y Sistemas del Sur S.A.C.",
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20609876543",
+   "nombre": "Consultora de Ingeniería Pacífico S.A.C.",
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20456789012",
+   "nombre": "Comercial Alimentos Norte S.R.L.",
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20567890123",
+   "nombre": "Equipos Médicos Global S.A.C.",
+   "sancionado": true,
+   "sancion_detalle": "Sanción vigente por incumplimiento contractual"
+  },
+  {
+   "ruc": "20678901234",
+   "nombre": "Suministros Educativos del Perú S.A.C.",
+   "sancionado": false,
+   "sancion_detalle": ""
+  }
+ ]
+}
