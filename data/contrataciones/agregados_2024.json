@@ -316,7 +316,133 @@
    "monto": null
   }
  ],
- "por_departamento": [],
+ "por_departamento": [
+  {
+   "departamento": "Ica",
+   "monto": 97959052.92,
+   "n": 5178
+  },
+  {
+   "departamento": "Lima",
+   "monto": 90599382.54,
+   "n": 2942
+  },
+  {
+   "departamento": "La Libertad",
+   "monto": 86453362.19,
+   "n": 2055
+  },
+  {
+   "departamento": "Cusco",
+   "monto": 64241102.48,
+   "n": 3553
+  },
+  {
+   "departamento": "Moquegua",
+   "monto": 44691709.7,
+   "n": 1125
+  },
+  {
+   "departamento": "Arequipa",
+   "monto": 40670386.76,
+   "n": 2186
+  },
+  {
+   "departamento": "Puno",
+   "monto": 40397970.46,
+   "n": 1718
+  },
+  {
+   "departamento": "Ayacucho",
+   "monto": 29652409.24,
+   "n": 1683
+  },
+  {
+   "departamento": "Apurimac",
+   "monto": 26104560.08,
+   "n": 1921
+  },
+  {
+   "departamento": "Piura",
+   "monto": 25696738.52,
+   "n": 1661
+  },
+  {
+   "departamento": "Lambayeque",
+   "monto": 25635268.33,
+   "n": 1354
+  },
+  {
+   "departamento": "Loreto",
+   "monto": 23036099.69,
+   "n": 468
+  },
+  {
+   "departamento": "Ancash",
+   "monto": 22815142.32,
+   "n": 1491
+  },
+  {
+   "departamento": "Huanuco",
+   "monto": 20083590.01,
+   "n": 1099
+  },
+  {
+   "departamento": "Callao",
+   "monto": 19806614.23,
+   "n": 993
+  },
+  {
+   "departamento": "Madre De Dios",
+   "monto": 17865828.1,
+   "n": 1454
+  },
+  {
+   "departamento": "San Martin",
+   "monto": 15858369.67,
+   "n": 1541
+  },
+  {
+   "departamento": "Tacna",
+   "monto": 15558005.77,
+   "n": 1723
+  },
+  {
+   "departamento": "Junin",
+   "monto": 13971321.89,
+   "n": 1154
+  },
+  {
+   "departamento": "Cajamarca",
+   "monto": 13965219.83,
+   "n": 1260
+  },
+  {
+   "departamento": "Ucayali",
+   "monto": 11135990.83,
+   "n": 1228
+  },
+  {
+   "departamento": "Huancavelica",
+   "monto": 10955641.6,
+   "n": 824
+  },
+  {
+   "departamento": "Amazonas",
+   "monto": 7989167.58,
+   "n": 780
+  },
+  {
+   "departamento": "Tumbes",
+   "monto": 5296474.84,
+   "n": 508
+  },
+  {
+   "departamento": "Pasco",
+   "monto": 4566063.21,
+   "n": 339
+  }
+ ],
  "por_entidad": [
   {
    "id": "E-0058",

@@ -18,6 +18,16 @@ Este documento acompaña permanentemente al módulo. Debe leerse antes de interp
   maestra (`maestro_entidades.json`) enlaza identificadores, pero los cruces pueden ser
   aproximados cuando las fuentes no coinciden.
 
+## Atribución geográfica (mapa por departamento)
+
+- La fuente de Perú Compras **no** incluye un campo de departamento/ubigeo. El departamento del
+  mapa se **infiere del nombre/ámbito de la entidad contratante** (p. ej. «Gobierno Regional de
+  Cusco» → Cusco). Es la **sede/ámbito aproximado de la entidad**, no necesariamente el lugar de
+  ejecución del gasto.
+- Muchas entidades **nacionales** no tienen ámbito geográfico en su nombre y **no se atribuyen** a
+  ningún departamento (no se fuerzan a Lima). Por eso el total del mapa es menor que el total del año.
+- La geometría de los departamentos proviene de un GeoJSON público de la comunidad, simplificado.
+
 ## Cobertura temporal
 
 - **2026** (y cualquier año en curso) se muestra como **acumulado disponible** hasta la fecha de

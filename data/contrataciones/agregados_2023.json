@@ -316,7 +316,133 @@
    "monto": null
   }
  ],
- "por_departamento": [],
+ "por_departamento": [
+  {
+   "departamento": "Ica",
+   "monto": 123483605.02,
+   "n": 5190
+  },
+  {
+   "departamento": "Lima",
+   "monto": 93060471.08,
+   "n": 3444
+  },
+  {
+   "departamento": "Cusco",
+   "monto": 84500995.27,
+   "n": 3530
+  },
+  {
+   "departamento": "Callao",
+   "monto": 39359605.86,
+   "n": 1439
+  },
+  {
+   "departamento": "Piura",
+   "monto": 37502096.31,
+   "n": 2495
+  },
+  {
+   "departamento": "Arequipa",
+   "monto": 35403734.32,
+   "n": 2368
+  },
+  {
+   "departamento": "Ancash",
+   "monto": 33218463.83,
+   "n": 1915
+  },
+  {
+   "departamento": "Puno",
+   "monto": 32613091.41,
+   "n": 1943
+  },
+  {
+   "departamento": "Apurimac",
+   "monto": 28821540.53,
+   "n": 2059
+  },
+  {
+   "departamento": "Ayacucho",
+   "monto": 28256081.21,
+   "n": 2138
+  },
+  {
+   "departamento": "Cajamarca",
+   "monto": 27363288.54,
+   "n": 1382
+  },
+  {
+   "departamento": "La Libertad",
+   "monto": 25998204.05,
+   "n": 2150
+  },
+  {
+   "departamento": "Lambayeque",
+   "monto": 20073332.43,
+   "n": 1682
+  },
+  {
+   "departamento": "Loreto",
+   "monto": 18544071.9,
+   "n": 642
+  },
+  {
+   "departamento": "San Martin",
+   "monto": 17931042.56,
+   "n": 1956
+  },
+  {
+   "departamento": "Junin",
+   "monto": 17112558.71,
+   "n": 1609
+  },
+  {
+   "departamento": "Ucayali",
+   "monto": 16032046.22,
+   "n": 1369
+  },
+  {
+   "departamento": "Huanuco",
+   "monto": 14895824.02,
+   "n": 1418
+  },
+  {
+   "departamento": "Moquegua",
+   "monto": 12686545.1,
+   "n": 1326
+  },
+  {
+   "departamento": "Amazonas",
+   "monto": 10894949.31,
+   "n": 969
+  },
+  {
+   "departamento": "Huancavelica",
+   "monto": 10590102.41,
+   "n": 1119
+  },
+  {
+   "departamento": "Tacna",
+   "monto": 10166474.65,
+   "n": 1602
+  },
+  {
+   "departamento": "Madre De Dios",
+   "monto": 9960728.25,
+   "n": 1069
+  },
+  {
+   "departamento": "Pasco",
+   "monto": 4921568.05,
+   "n": 389
+  },
+  {
+   "departamento": "Tumbes",
+   "monto": 4469694.83,
+   "n": 597
+  }
+ ],
  "por_entidad": [
   {
    "id": "E-0058",

@@ -12,6 +12,7 @@
   var manifest = null;   // manifest.json
   var maestro = null;    // maestro_entidades.json
   var provCat = null;    // proveedores.json
+  var geoDeps = null;    // peru_departamentos.json (paths SVG)
   var state = { year: null, tab: "resumen", filtros: {}, rows: [], agg: null };
 
   /* ---------------- utilidades ---------------- */
@@ -123,9 +124,12 @@
   function boot() {
     if (booted) return;
     booted = true;
-    Promise.all([fetchJSON("manifest.json"), fetchJSON("maestro_entidades.json").catch(function () { return null; }), fetchJSON("proveedores.json").catch(function () { return null; })])
+    Promise.all([fetchJSON("manifest.json"),
+                 fetchJSON("maestro_entidades.json").catch(function () { return null; }),
+                 fetchJSON("proveedores.json").catch(function () { return null; }),
+                 fetchJSON("peru_departamentos.json").catch(function () { return null; })])
       .then(function (res) {
-        manifest = res[0]; maestro = res[1]; provCat = res[2];
+        manifest = res[0]; maestro = res[1]; provCat = res[2]; geoDeps = res[3];
         state.year = String(manifest.anio_parcial || (manifest.anios || [])[manifest.anios.length - 1] || 2024);
         renderShell();
         loadYear(state.year).then(function () { renderTab(); });
@@ -355,6 +359,52 @@
     box.innerHTML = '<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><div style="flex:1 1 200px">' + g + '</div><div style="flex:1 1 140px">' + legend + '</div></div>';
   }
 
+  // Mapa coroplético del Perú por departamento (SVG, sin dependencias).
+  function choropleth(box, porDepto) {
+    if (!geoDeps || !geoDeps.departamentos) {
+      hbars(box, porDepto.map(function (d) { return { k: d.departamento, monto: d.monto }; }).slice(0, 12), money, function () { return C.teal; });
+      return;
+    }
+    function normDep(s) {
+      s = (s || "").toUpperCase();
+      try { s = s.normalize("NFD").replace(/[̀-ͯ]/g, ""); } catch (e) {}
+      return s.trim();
+    }
+    var byDep = {};
+    porDepto.forEach(function (d) { byDep[normDep(d.departamento)] = d; });
+    var max = porDepto.reduce(function (a, d) { return Math.max(a, d.monto || 0); }, 0) || 1;
+    // Escala de color secuencial (blanco cálido -> rojo del portal)
+    function color(v) {
+      if (!v) return "#eeeeee";
+      var t = Math.pow(v / max, 0.5); // raíz para resaltar los medios
+      var r = Math.round(255 + t * (217 - 255)), g = Math.round(240 + t * (16 - 240)), b = Math.round(230 + t * (35 - 230));
+      return "rgb(" + r + "," + g + "," + b + ")";
+    }
+    var deps = geoDeps.departamentos;
+    var paths = "", labels = "";
+    Object.keys(deps).forEach(function (name) {
+      var d = deps[name], rec = byDep[normDep(name)], v = rec ? rec.monto : 0;
+      var tip = name.charAt(0) + name.slice(1).toLowerCase() + ": " + (rec ? money(v) + " · " + rec.n + " órdenes" : "sin datos atribuidos");
+      paths += '<path d="' + d.d + '" fill="' + color(v) + '" stroke="#fff" stroke-width="0.6"><title>' + esc(tip) + '</title></path>';
+      if (v > max * 0.14) labels += '<text x="' + d.cx + '" y="' + d.cy + '" text-anchor="middle" font-size="7.5" font-weight="700" fill="#333" pointer-events="none">' + esc(name.slice(0, 4)) + '</text>';
+    });
+    // leyenda
+    var steps = [0.15, 0.4, 0.7, 1].map(function (t) {
+      return '<span style="display:inline-flex;align-items:center;gap:4px;font-size:.72rem"><span style="width:14px;height:10px;background:' + color(max * t) + ';border:1px solid #ddd"></span>' + moneyM(max * t) + '</span>';
+    }).join(" ");
+    var top = porDepto.slice(0, 6).map(function (d, i) {
+      return '<div class="cx-hbar"><span class="cx-hb-name">' + (i + 1) + '. ' + esc(d.departamento) + '</span>' +
+        '<span class="cx-hb-track"><i style="width:' + Math.max(3, d.monto / max * 100) + '%;background:' + C.rojo + '"></i></span>' +
+        '<span class="cx-hb-val">' + money(d.monto) + '</span></div>';
+    }).join("");
+    box.innerHTML =
+      '<div style="display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start">' +
+        '<div style="flex:1 1 210px;max-width:280px"><svg viewBox="' + geoDeps.viewBox + '" role="img" style="width:100%;height:auto">' + paths + labels + '</svg>' +
+          '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">' + steps + '</div></div>' +
+        '<div style="flex:1 1 220px"><div style="font-size:.78rem;color:var(--gris);font-weight:700;margin-bottom:4px">Top departamentos</div>' + top + '</div>' +
+      '</div>';
+  }
+
   function hbars(box, items, fmt, colorf) {
     fmt = fmt || money;
     if (!items.length) { box.innerHTML = '<p class="cx-empty">Sin datos.</p>'; return; }
@@ -484,7 +534,7 @@
       '</div>' +
       '<div class="cx-grid2">' +
         '<div class="card"><h3>Distribución por tipo de procedimiento</h3><div id="cxTipo"></div></div>' +
-        '<div class="card"><h3>Mapa por departamento</h3><div class="cx-map-note">Distribución del monto por departamento (barras; se mostrará mapa cuando exista suficiente información geográfica).</div><div id="cxDepto"></div></div>' +
+        '<div class="card"><h3>Mapa por departamento</h3><div class="cx-map-note">Monto por departamento de la <b>entidad contratante</b> (sede/ámbito aproximado). Pase el cursor por cada región.</div><div id="cxDepto"></div></div>' +
       '</div>';
 
     // evolución (desde manifest.evolucion)
@@ -506,7 +556,9 @@
     hbars($("#cxTipo"), porTipo.map(function (x) { return { k: x.k, monto: x.monto }; }), money, function (it) {
       return it.k === "Contratación Directa" ? C.amar : C.neg;
     });
-    hbars($("#cxDepto"), (hasRowFilters() ? comp.grpDepto : (state.agg.por_departamento || []).map(function (d) { return { k: d.departamento, monto: d.monto }; })).slice(0, 10), money, function () { return C.teal; });
+    var depData = hasRowFilters() ? comp.grpDepto.map(function (d) { return { departamento: d.k, monto: d.monto, n: d.n }; })
+                                  : (state.agg.por_departamento || []);
+    choropleth($("#cxDepto"), depData);
     bindHelp();
   }
 

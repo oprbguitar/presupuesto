@@ -88,6 +88,38 @@ def nivel_de(nombre):
         return "Local"
     return "Nacional"
 
+# --- Atribución geográfica (departamento) por nombre/ámbito de la entidad ---
+import unicodedata
+def _norm(s):
+    s = unicodedata.normalize("NFD", (s or "").upper())
+    return "".join(c for c in s if unicodedata.category(c) != "Mn")
+
+DEPARTAMENTOS = ["AMAZONAS", "ANCASH", "APURIMAC", "AREQUIPA", "AYACUCHO", "CAJAMARCA",
+                 "CALLAO", "CUSCO", "HUANCAVELICA", "HUANUCO", "ICA", "JUNIN", "LA LIBERTAD",
+                 "LAMBAYEQUE", "LIMA", "LORETO", "MADRE DE DIOS", "MOQUEGUA", "PASCO",
+                 "PIURA", "PUNO", "SAN MARTIN", "TACNA", "TUMBES", "UCAYALI"]
+# Sinónimos frecuentes (capital / provincia notable / variantes) -> departamento
+SINONIMOS = {
+    "CUZCO": "CUSCO", "TRUJILLO": "LA LIBERTAD", "CHICLAYO": "LAMBAYEQUE",
+    "IQUITOS": "LORETO", "MAYNAS": "LORETO", "HUARAZ": "ANCASH", "CHIMBOTE": "ANCASH",
+    "SANTA": "ANCASH", "HUANCAYO": "JUNIN", "PUCALLPA": "UCAYALI", "CORONEL PORTILLO": "UCAYALI",
+    "TARAPOTO": "SAN MARTIN", "MOYOBAMBA": "SAN MARTIN", "ABANCAY": "APURIMAC",
+    "CHACHAPOYAS": "AMAZONAS", "PUERTO MALDONADO": "MADRE DE DIOS", "TAMBOPATA": "MADRE DE DIOS",
+    "CERRO DE PASCO": "PASCO", "HUAMANGA": "AYACUCHO", "MARISCAL NIETO": "MOQUEGUA",
+    "CALLAO CALLAO": "CALLAO", "METROPOLITANA DE LIMA": "LIMA",
+}
+
+def departamento_de(nombre):
+    n = _norm(nombre)
+    # coincidencia directa con nombre de departamento
+    for d in sorted(DEPARTAMENTOS, key=len, reverse=True):
+        if d in n:
+            return d
+    for k, d in SINONIMOS.items():
+        if k in n:
+            return d
+    return None  # no determinado (p. ej. muchas entidades nacionales sin ámbito geográfico)
+
 def col(row, *claves):
     for k in claves:
         for kk in row:
@@ -106,6 +138,7 @@ class Agg:
         self.ents = {}     # ruc -> {nombre, nivel, monto, n}
         self.cats = {}
         self.tipos = {}
+        self.deps = {}     # DEPARTAMENTO -> [monto, n]
         self.obj = {"Bienes": [0.0, 0], "Servicios": [0.0, 0]}
         self.heap = []     # (monto, contador, fila)
         self._c = 0
@@ -151,13 +184,16 @@ def procesar_mes(url, objeto, agg, anio):
             e["bienes" if objeto == "Bienes" else "servicios"] += m
         agg.cats[cat] = agg.cats.get(cat, [0.0, 0]); agg.cats[cat][0] += m; agg.cats[cat][1] += 1
         agg.tipos[tipo] = agg.tipos.get(tipo, [0.0, 0]); agg.tipos[tipo][0] += m; agg.tipos[tipo][1] += 1
+        dep = departamento_de(ent)
+        if dep:
+            agg.deps[dep] = agg.deps.get(dep, [0.0, 0]); agg.deps[dep][0] += m; agg.deps[dep][1] += 1
 
         agg._c += 1
         fila = {
             "codigo": orden or ("PC-%s-%d" % (anio, agg._c)),
             "ruc_ent": ruc_ent, "entidad": ent, "objeto": objeto, "categoria": cat,
             "tipo": tipo, "estado": estado_desc or "Aceptada", "proveedor": prov, "ruc": ruc_prov,
-            "monto": monto, "fecha": fecha, "url": link if link.startswith("http") else "",
+            "monto": monto, "fecha": fecha, "departamento": dep or "", "url": link if link.startswith("http") else "",
         }
         item = (m, agg._c, fila)
         if len(agg.heap) < TOP_FILAS:
@@ -208,7 +244,8 @@ def construir(anio, agg, parcial, ent_ids):
         "embudo": [{"etapa": "PIM", "monto": None}, {"etapa": "PAC programado", "monto": None},
                    {"etapa": "Convocado", "monto": total}, {"etapa": "Adjudicado", "monto": total},
                    {"etapa": "Contratado", "monto": total}, {"etapa": "Devengado", "monto": None}],
-        "por_departamento": [],
+        "por_departamento": sorted(({"departamento": k.title(), "monto": round(v[0], 2), "n": v[1]}
+                                     for k, v in agg.deps.items()), key=lambda x: -x["monto"]),
         "por_entidad": por_ent,
     }
     guardar_json("agregados_%s.json" % anio, agregados)
@@ -225,7 +262,8 @@ def construir(anio, agg, parcial, ent_ids):
             "f_convocatoria": fecha_iso(f["fecha"]), "f_adjudicacion": fecha_iso(f["fecha"]),
             "postores": 1, "regimen": "Catálogo Electrónico (Perú Compras)",
             "nivel": nivel_de(f["entidad"]), "sector": "",
-            "departamento": "", "ubigeo": "", "cierre_anio": (fecha_iso(f["fecha"]) or "")[5:7] == "12",
+            "departamento": (f["departamento"] or "").title(), "ubigeo": "",
+            "cierre_anio": (fecha_iso(f["fecha"]) or "")[5:7] == "12",
             "url": f["url"] or "https://www.gob.pe/perucompras",
         })
     guardar_json("procedimientos_%s.json" % anio, {
@@ -277,9 +315,10 @@ def main(anios, parcial):
     ents = []
     for ruc in sorted(ent_global):
         nombre = ent_global[ruc]
+        dep = departamento_de(nombre)
         ents.append({"id": ent_ids[ruc], "nombre": nombre, "ruc": ruc, "cod_oece": None,
                      "cod_pliego_mef": None, "cod_ue_mef": None, "sector": "",
-                     "nivel": nivel_de(nombre), "ubigeo": "", "departamento": ""})
+                     "nivel": nivel_de(nombre), "ubigeo": "", "departamento": (dep or "").title()})
     guardar_json("maestro_entidades.json", {
         "actualizado": hoy(), "estado_datos": "validado",
         "nota": "Entidades observadas en las órdenes de Perú Compras. No se asume correspondencia 1:1 con pliego/UE del MEF.",
@@ -298,7 +337,10 @@ def main(anios, parcial):
                      "Subconjunto real de la contratación pública; no incluye licitaciones/adjudicaciones SEACE.",
         "anios": anios, "anio_parcial": parcial,
         "archivos": {"agregados": "agregados_{anio}.json", "procedimientos": "procedimientos_{anio}.json",
-                     "maestro_entidades": "maestro_entidades.json", "proveedores": "proveedores.json"},
+                     "maestro_entidades": "maestro_entidades.json", "proveedores": "proveedores.json",
+                     "geo_departamentos": "peru_departamentos.json"},
+        "geo_nota": "Departamento atribuido por el nombre/ámbito de la entidad contratante (sede aproximada). "
+                    "Las entidades nacionales sin ámbito geográfico no se atribuyen a ningún departamento.",
         "evolucion": evol,
         "fuentes": [
             {"nombre": "Perú Compras — Órdenes por Catálogos Electrónicos (bienes y servicios)",

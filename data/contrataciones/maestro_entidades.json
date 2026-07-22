@@ -73,7 +73,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-0007",
@@ -109,7 +109,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-0010",
@@ -145,7 +145,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0013",
@@ -229,7 +229,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-0020",
@@ -241,7 +241,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-0021",
@@ -265,7 +265,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-0023",
@@ -349,7 +349,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-0030",
@@ -385,7 +385,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-0033",
@@ -397,7 +397,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-0034",
@@ -421,7 +421,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-0036",
@@ -505,7 +505,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-0043",
@@ -541,7 +541,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-0046",
@@ -553,7 +553,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-0047",
@@ -577,7 +577,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-0049",
@@ -589,7 +589,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-0050",
@@ -1009,7 +1009,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0085",
@@ -1045,7 +1045,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-0088",
@@ -1189,7 +1189,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0100",
@@ -1261,7 +1261,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-0106",
@@ -1537,7 +1537,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0129",
@@ -1585,7 +1585,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0133",
@@ -1597,7 +1597,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0134",
@@ -1633,7 +1633,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-0137",
@@ -1705,7 +1705,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-0143",
@@ -1729,7 +1729,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-0145",
@@ -1741,7 +1741,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0146",
@@ -1765,7 +1765,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0148",
@@ -1789,7 +1789,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0150",
@@ -1801,7 +1801,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-0151",
@@ -1825,7 +1825,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0153",
@@ -1861,7 +1861,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0156",
@@ -1885,7 +1885,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-0158",
@@ -1897,7 +1897,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-0159",
@@ -1909,7 +1909,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0160",
@@ -1933,7 +1933,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-0162",
@@ -1969,7 +1969,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-0165",
@@ -2017,7 +2017,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0169",
@@ -2077,7 +2077,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-0174",
@@ -2149,7 +2149,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-0180",
@@ -2245,7 +2245,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-0188",
@@ -2257,7 +2257,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-0189",
@@ -2413,7 +2413,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0202",
@@ -2461,7 +2461,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0206",
@@ -2473,7 +2473,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-0207",
@@ -2497,7 +2497,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-0209",
@@ -2581,7 +2581,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-0216",
@@ -2593,7 +2593,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-0217",
@@ -2641,7 +2641,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-0221",
@@ -2653,7 +2653,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-0222",
@@ -2725,7 +2725,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0228",
@@ -3001,7 +3001,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-0251",
@@ -3061,7 +3061,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0256",
@@ -3253,7 +3253,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-0272",
@@ -3265,7 +3265,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-0273",
@@ -3433,7 +3433,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0287",
@@ -3541,7 +3541,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-0296",
@@ -3553,7 +3553,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-0297",
@@ -3577,7 +3577,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-0299",
@@ -3673,7 +3673,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-0307",
@@ -3721,7 +3721,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-0311",
@@ -3781,7 +3781,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0316",
@@ -4033,7 +4033,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-0337",
@@ -4045,7 +4045,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-0338",
@@ -4069,7 +4069,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-0340",
@@ -4093,7 +4093,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-0342",
@@ -4105,7 +4105,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-0343",
@@ -4117,7 +4117,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-0344",
@@ -4177,7 +4177,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-0349",
@@ -4225,7 +4225,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-0353",
@@ -4237,7 +4237,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-0354",
@@ -4369,7 +4369,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0365",
@@ -4393,7 +4393,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0367",
@@ -4489,7 +4489,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-0375",
@@ -4525,7 +4525,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-0378",
@@ -4633,7 +4633,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0387",
@@ -4825,7 +4825,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0403",
@@ -4993,7 +4993,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0417",
@@ -5029,7 +5029,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-0420",
@@ -5077,7 +5077,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-0424",
@@ -5221,7 +5221,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0436",
@@ -5245,7 +5245,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-0438",
@@ -5257,7 +5257,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0439",
@@ -5317,7 +5317,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-0444",
@@ -5353,7 +5353,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Madre De Dios"
   },
   {
    "id": "E-0447",
@@ -5365,7 +5365,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Madre De Dios"
   },
   {
    "id": "E-0448",
@@ -5401,7 +5401,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0451",
@@ -5437,7 +5437,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0454",
@@ -5473,7 +5473,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0457",
@@ -5653,7 +5653,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0472",
@@ -5737,7 +5737,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0479",
@@ -5773,7 +5773,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-0482",
@@ -5785,7 +5785,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-0483",
@@ -5821,7 +5821,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-0486",
@@ -5857,7 +5857,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-0489",
@@ -6061,7 +6061,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0506",
@@ -6097,7 +6097,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-0509",
@@ -6289,7 +6289,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-0525",
@@ -6409,7 +6409,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-0535",
@@ -6481,7 +6481,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-0541",
@@ -6493,7 +6493,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-0542",
@@ -6505,7 +6505,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-0543",
@@ -6529,7 +6529,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-0545",
@@ -6613,7 +6613,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-0552",
@@ -6625,7 +6625,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-0553",
@@ -6637,7 +6637,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huancavelica"
   },
   {
    "id": "E-0554",
@@ -6841,7 +6841,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0571",
@@ -6937,7 +6937,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Madre De Dios"
   },
   {
    "id": "E-0579",
@@ -6961,7 +6961,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Madre De Dios"
   },
   {
    "id": "E-0581",
@@ -7117,7 +7117,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-0594",
@@ -7177,7 +7177,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-0599",
@@ -7189,7 +7189,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-0600",
@@ -7237,7 +7237,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0604",
@@ -7273,7 +7273,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-0607",
@@ -7309,7 +7309,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-0610",
@@ -7321,7 +7321,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0611",
@@ -7393,7 +7393,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huancavelica"
   },
   {
    "id": "E-0617",
@@ -7417,7 +7417,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-0619",
@@ -7501,7 +7501,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-0626",
@@ -7573,7 +7573,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0632",
@@ -7597,7 +7597,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0634",
@@ -7657,7 +7657,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0639",
@@ -7717,7 +7717,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0644",
@@ -7729,7 +7729,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-0645",
@@ -7753,7 +7753,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-0647",
@@ -7789,7 +7789,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-0650",
@@ -7801,7 +7801,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-0651",
@@ -7837,7 +7837,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-0654",
@@ -7849,7 +7849,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-0655",
@@ -7873,7 +7873,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0657",
@@ -7885,7 +7885,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-0658",
@@ -8005,7 +8005,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0668",
@@ -8353,7 +8353,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-0697",
@@ -8449,7 +8449,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-0705",
@@ -8509,7 +8509,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-0710",
@@ -8521,7 +8521,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-0711",
@@ -8569,7 +8569,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-0715",
@@ -8617,7 +8617,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Pasco"
   },
   {
    "id": "E-0719",
@@ -8665,7 +8665,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-0723",
@@ -8737,7 +8737,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-0729",
@@ -8773,7 +8773,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-0732",
@@ -8809,7 +8809,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0735",
@@ -8905,7 +8905,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-0743",
@@ -8917,7 +8917,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-0744",
@@ -8977,7 +8977,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0749",
@@ -9061,7 +9061,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0756",
@@ -9193,7 +9193,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-0767",
@@ -9241,7 +9241,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-0771",
@@ -9277,7 +9277,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0774",
@@ -9397,7 +9397,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-0784",
@@ -9493,7 +9493,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0792",
@@ -9505,7 +9505,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0793",
@@ -9613,7 +9613,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-0802",
@@ -9697,7 +9697,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-0809",
@@ -9793,7 +9793,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-0817",
@@ -9937,7 +9937,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0829",
@@ -10081,7 +10081,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-0841",
@@ -10201,7 +10201,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-0851",
@@ -10405,7 +10405,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0868",
@@ -10501,7 +10501,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0876",
@@ -11017,7 +11017,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-0919",
@@ -11137,7 +11137,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-0929",
@@ -11161,7 +11161,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-0931",
@@ -11245,7 +11245,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0938",
@@ -11461,7 +11461,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Pasco"
   },
   {
    "id": "E-0956",
@@ -11689,7 +11689,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-0975",
@@ -11929,7 +11929,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-0995",
@@ -12049,7 +12049,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1005",
@@ -12085,7 +12085,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-1008",
@@ -12349,7 +12349,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1030",
@@ -12361,7 +12361,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Madre De Dios"
   },
   {
    "id": "E-1031",
@@ -12385,7 +12385,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1033",
@@ -12661,7 +12661,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1056",
@@ -12685,7 +12685,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1058",
@@ -12877,7 +12877,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1074",
@@ -13033,7 +13033,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-1087",
@@ -13093,7 +13093,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1092",
@@ -13501,7 +13501,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-1126",
@@ -13633,7 +13633,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1137",
@@ -13645,7 +13645,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1138",
@@ -13657,7 +13657,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1139",
@@ -13825,7 +13825,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-1153",
@@ -13861,7 +13861,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1156",
@@ -13873,7 +13873,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1157",
@@ -14545,7 +14545,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-1213",
@@ -14617,7 +14617,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1219",
@@ -14941,7 +14941,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1246",
@@ -14953,7 +14953,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-1247",
@@ -15049,7 +15049,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1255",
@@ -15097,7 +15097,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1259",
@@ -15193,7 +15193,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1267",
@@ -15349,7 +15349,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1280",
@@ -15397,7 +15397,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1284",
@@ -15505,7 +15505,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1293",
@@ -15517,7 +15517,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1294",
@@ -15589,7 +15589,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1300",
@@ -15709,7 +15709,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1310",
@@ -15745,7 +15745,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1313",
@@ -16033,7 +16033,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1337",
@@ -16177,7 +16177,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1349",
@@ -16249,7 +16249,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-1355",
@@ -16273,7 +16273,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1357",
@@ -16357,7 +16357,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1364",
@@ -16369,7 +16369,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1365",
@@ -16393,7 +16393,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1367",
@@ -16513,7 +16513,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-1377",
@@ -16585,7 +16585,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1383",
@@ -16633,7 +16633,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1387",
@@ -16657,7 +16657,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-1389",
@@ -16729,7 +16729,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-1395",
@@ -16753,7 +16753,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1397",
@@ -16897,7 +16897,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Pasco"
   },
   {
    "id": "E-1409",
@@ -17089,7 +17089,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1425",
@@ -17149,7 +17149,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-1430",
@@ -17161,7 +17161,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-1431",
@@ -17221,7 +17221,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1436",
@@ -17293,7 +17293,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-1442",
@@ -17305,7 +17305,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-1443",
@@ -17425,7 +17425,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Pasco"
   },
   {
    "id": "E-1453",
@@ -17437,7 +17437,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-1454",
@@ -17449,7 +17449,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-1455",
@@ -17473,7 +17473,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-1457",
@@ -17521,7 +17521,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1461",
@@ -17569,7 +17569,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-1465",
@@ -17665,7 +17665,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Madre De Dios"
   },
   {
    "id": "E-1473",
@@ -17677,7 +17677,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Madre De Dios"
   },
   {
    "id": "E-1474",
@@ -17689,7 +17689,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1475",
@@ -17701,7 +17701,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-1476",
@@ -17833,7 +17833,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1487",
@@ -17929,7 +17929,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1495",
@@ -17965,7 +17965,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1498",
@@ -18001,7 +18001,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1501",
@@ -18025,7 +18025,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1503",
@@ -18037,7 +18037,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1504",
@@ -18049,7 +18049,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1505",
@@ -18061,7 +18061,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1506",
@@ -18085,7 +18085,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-1508",
@@ -18097,7 +18097,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1509",
@@ -18145,7 +18145,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-1513",
@@ -18169,7 +18169,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1515",
@@ -18181,7 +18181,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-1516",
@@ -18205,7 +18205,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1518",
@@ -18265,7 +18265,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1523",
@@ -18289,7 +18289,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1525",
@@ -18325,7 +18325,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1528",
@@ -18349,7 +18349,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-1530",
@@ -18361,7 +18361,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-1531",
@@ -18385,7 +18385,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-1533",
@@ -18457,7 +18457,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-1539",
@@ -18517,7 +18517,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1544",
@@ -18577,7 +18577,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1549",
@@ -18661,7 +18661,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1556",
@@ -18685,7 +18685,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-1558",
@@ -18697,7 +18697,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-1559",
@@ -18709,7 +18709,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-1560",
@@ -18721,7 +18721,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-1561",
@@ -18745,7 +18745,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-1563",
@@ -18757,7 +18757,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1564",
@@ -18841,7 +18841,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1571",
@@ -18877,7 +18877,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1574",
@@ -18901,7 +18901,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1576",
@@ -18913,7 +18913,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huancavelica"
   },
   {
    "id": "E-1577",
@@ -18925,7 +18925,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huancavelica"
   },
   {
    "id": "E-1578",
@@ -18949,7 +18949,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1580",
@@ -18961,7 +18961,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-1581",
@@ -18985,7 +18985,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-1583",
@@ -19009,7 +19009,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-1585",
@@ -19021,7 +19021,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-1586",
@@ -19045,7 +19045,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-1588",
@@ -19081,7 +19081,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1591",
@@ -19093,7 +19093,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1592",
@@ -19105,7 +19105,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1593",
@@ -19141,7 +19141,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-1596",
@@ -19225,7 +19225,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1603",
@@ -19261,7 +19261,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1606",
@@ -19285,7 +19285,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-1608",
@@ -19321,7 +19321,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1611",
@@ -19333,7 +19333,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-1612",
@@ -19381,7 +19381,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huancavelica"
   },
   {
    "id": "E-1616",
@@ -19405,7 +19405,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huancavelica"
   },
   {
    "id": "E-1618",
@@ -19477,7 +19477,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1624",
@@ -19525,7 +19525,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1628",
@@ -19537,7 +19537,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-1629",
@@ -19597,7 +19597,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-1634",
@@ -19609,7 +19609,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1635",
@@ -19633,7 +19633,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-1637",
@@ -19645,7 +19645,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-1638",
@@ -19657,7 +19657,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1639",
@@ -19669,7 +19669,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-1640",
@@ -19681,7 +19681,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-1641",
@@ -19717,7 +19717,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1644",
@@ -19753,7 +19753,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1647",
@@ -19765,7 +19765,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1648",
@@ -19801,7 +19801,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1651",
@@ -19813,7 +19813,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1652",
@@ -19825,7 +19825,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1653",
@@ -19873,7 +19873,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1657",
@@ -19885,7 +19885,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-1658",
@@ -19897,7 +19897,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-1659",
@@ -19909,7 +19909,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-1660",
@@ -19921,7 +19921,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-1661",
@@ -19957,7 +19957,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-1664",
@@ -19969,7 +19969,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1665",
@@ -19981,7 +19981,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-1666",
@@ -19993,7 +19993,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-1667",
@@ -20029,7 +20029,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1670",
@@ -20041,7 +20041,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1671",
@@ -20089,7 +20089,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-1675",
@@ -20113,7 +20113,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1677",
@@ -20125,7 +20125,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-1678",
@@ -20149,7 +20149,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1680",
@@ -20185,7 +20185,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1683",
@@ -20197,7 +20197,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1684",
@@ -20209,7 +20209,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1685",
@@ -20233,7 +20233,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1687",
@@ -20245,7 +20245,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1688",
@@ -20281,7 +20281,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1691",
@@ -20293,7 +20293,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1692",
@@ -20305,7 +20305,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1693",
@@ -20365,7 +20365,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-1698",
@@ -20377,7 +20377,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-1699",
@@ -20437,7 +20437,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-1704",
@@ -20461,7 +20461,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huancavelica"
   },
   {
    "id": "E-1706",
@@ -20473,7 +20473,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-1707",
@@ -20497,7 +20497,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-1709",
@@ -20533,7 +20533,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-1712",
@@ -20545,7 +20545,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huancavelica"
   },
   {
    "id": "E-1713",
@@ -20701,7 +20701,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1726",
@@ -20713,7 +20713,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1727",
@@ -20725,7 +20725,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1728",
@@ -20761,7 +20761,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-1731",
@@ -20773,7 +20773,7 @@
    "sector": "",
    "nivel": "Local",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1732",
@@ -20821,7 +20821,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-1736",
@@ -20833,7 +20833,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Pasco"
   },
   {
    "id": "E-1737",
@@ -20905,7 +20905,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-1743",
@@ -20917,7 +20917,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-1744",
@@ -20941,7 +20941,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1746",
@@ -20965,7 +20965,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1748",
@@ -20989,7 +20989,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1750",
@@ -21013,7 +21013,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1752",
@@ -21049,7 +21049,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1755",
@@ -21061,7 +21061,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1756",
@@ -21073,7 +21073,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1757",
@@ -21121,7 +21121,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1761",
@@ -21157,7 +21157,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1764",
@@ -21205,7 +21205,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-1768",
@@ -21241,7 +21241,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-1771",
@@ -21301,7 +21301,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-1776",
@@ -21313,7 +21313,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1777",
@@ -21349,7 +21349,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1780",
@@ -21385,7 +21385,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1783",
@@ -21397,7 +21397,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-1784",
@@ -21505,7 +21505,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-1793",
@@ -21517,7 +21517,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-1794",
@@ -21529,7 +21529,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-1795",
@@ -21541,7 +21541,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1796",
@@ -21661,7 +21661,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-1806",
@@ -21685,7 +21685,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1808",
@@ -21697,7 +21697,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1809",
@@ -21913,7 +21913,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1827",
@@ -21925,7 +21925,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1828",
@@ -21937,7 +21937,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1829",
@@ -21961,7 +21961,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-1831",
@@ -21973,7 +21973,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-1832",
@@ -22009,7 +22009,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-1835",
@@ -22105,7 +22105,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1843",
@@ -22129,7 +22129,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-1845",
@@ -22141,7 +22141,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1846",
@@ -22201,7 +22201,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-1851",
@@ -22213,7 +22213,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Madre De Dios"
   },
   {
    "id": "E-1852",
@@ -22225,7 +22225,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1853",
@@ -22249,7 +22249,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1855",
@@ -22261,7 +22261,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-1856",
@@ -22273,7 +22273,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Madre De Dios"
   },
   {
    "id": "E-1857",
@@ -22297,7 +22297,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1859",
@@ -22309,7 +22309,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1860",
@@ -22333,7 +22333,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1862",
@@ -22357,7 +22357,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1864",
@@ -22465,7 +22465,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-1873",
@@ -22513,7 +22513,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-1877",
@@ -22549,7 +22549,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-1880",
@@ -22561,7 +22561,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1881",
@@ -22573,7 +22573,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1882",
@@ -22585,7 +22585,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1883",
@@ -22597,7 +22597,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1884",
@@ -22609,7 +22609,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1885",
@@ -22693,7 +22693,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-1892",
@@ -22741,7 +22741,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1896",
@@ -22753,7 +22753,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1897",
@@ -22777,7 +22777,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Moquegua"
   },
   {
    "id": "E-1899",
@@ -22789,7 +22789,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-1900",
@@ -22837,7 +22837,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1904",
@@ -22885,7 +22885,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1908",
@@ -22945,7 +22945,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1913",
@@ -22957,7 +22957,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-1914",
@@ -22969,7 +22969,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-1915",
@@ -22993,7 +22993,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1917",
@@ -23017,7 +23017,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1919",
@@ -23041,7 +23041,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-1921",
@@ -23101,7 +23101,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1926",
@@ -23137,7 +23137,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-1929",
@@ -23197,7 +23197,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Pasco"
   },
   {
    "id": "E-1934",
@@ -23209,7 +23209,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-1935",
@@ -23257,7 +23257,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1939",
@@ -23341,7 +23341,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1946",
@@ -23389,7 +23389,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-1950",
@@ -23401,7 +23401,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-1951",
@@ -23425,7 +23425,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1953",
@@ -23497,7 +23497,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1959",
@@ -23569,7 +23569,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1965",
@@ -23581,7 +23581,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-1966",
@@ -23749,7 +23749,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cusco"
   },
   {
    "id": "E-1980",
@@ -23833,7 +23833,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-1987",
@@ -23869,7 +23869,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Pasco"
   },
   {
    "id": "E-1990",
@@ -23881,7 +23881,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-1991",
@@ -23929,7 +23929,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-1995",
@@ -24001,7 +24001,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-2001",
@@ -24049,7 +24049,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-2005",
@@ -24061,7 +24061,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-2006",
@@ -24133,7 +24133,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huanuco"
   },
   {
    "id": "E-2012",
@@ -24193,7 +24193,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2017",
@@ -24217,7 +24217,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-2019",
@@ -24229,7 +24229,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-2020",
@@ -24241,7 +24241,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-2021",
@@ -24253,7 +24253,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-2022",
@@ -24421,7 +24421,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-2036",
@@ -24433,7 +24433,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-2037",
@@ -24457,7 +24457,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2039",
@@ -24481,7 +24481,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-2041",
@@ -24589,7 +24589,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-2050",
@@ -24637,7 +24637,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-2054",
@@ -24661,7 +24661,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2056",
@@ -24721,7 +24721,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Huancavelica"
   },
   {
    "id": "E-2061",
@@ -24745,7 +24745,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Piura"
   },
   {
    "id": "E-2063",
@@ -24793,7 +24793,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Arequipa"
   },
   {
    "id": "E-2067",
@@ -24841,7 +24841,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-2071",
@@ -24997,7 +24997,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2084",
@@ -25045,7 +25045,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-2088",
@@ -25165,7 +25165,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-2098",
@@ -25201,7 +25201,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-2101",
@@ -25261,7 +25261,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tacna"
   },
   {
    "id": "E-2106",
@@ -25273,7 +25273,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ancash"
   },
   {
    "id": "E-2107",
@@ -25333,7 +25333,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-2112",
@@ -25345,7 +25345,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-2113",
@@ -25357,7 +25357,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-2114",
@@ -25369,7 +25369,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-2115",
@@ -25417,7 +25417,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "San Martin"
   },
   {
    "id": "E-2119",
@@ -25429,7 +25429,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-2120",
@@ -25441,7 +25441,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-2121",
@@ -25453,7 +25453,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Loreto"
   },
   {
    "id": "E-2122",
@@ -25465,7 +25465,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ucayali"
   },
   {
    "id": "E-2123",
@@ -25477,7 +25477,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ayacucho"
   },
   {
    "id": "E-2124",
@@ -25489,7 +25489,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-2125",
@@ -25501,7 +25501,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Apurimac"
   },
   {
    "id": "E-2126",
@@ -25513,7 +25513,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-2127",
@@ -25525,7 +25525,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lambayeque"
   },
   {
    "id": "E-2128",
@@ -25573,7 +25573,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Junin"
   },
   {
    "id": "E-2132",
@@ -25609,7 +25609,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Tumbes"
   },
   {
    "id": "E-2135",
@@ -25633,7 +25633,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-2137",
@@ -25669,7 +25669,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2140",
@@ -25693,7 +25693,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Callao"
   },
   {
    "id": "E-2142",
@@ -25777,7 +25777,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2149",
@@ -25789,7 +25789,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2150",
@@ -25801,7 +25801,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2151",
@@ -25933,7 +25933,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2162",
@@ -25957,7 +25957,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2164",
@@ -25993,7 +25993,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Amazonas"
   },
   {
    "id": "E-2167",
@@ -26005,7 +26005,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-2168",
@@ -26029,7 +26029,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-2170",
@@ -26041,7 +26041,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Cajamarca"
   },
   {
    "id": "E-2171",
@@ -26065,7 +26065,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2173",
@@ -26077,7 +26077,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Lima"
   },
   {
    "id": "E-2174",
@@ -26089,7 +26089,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "La Libertad"
   },
   {
    "id": "E-2175",
@@ -26125,7 +26125,7 @@
    "sector": "",
    "nivel": "Regional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Puno"
   },
   {
    "id": "E-2178",
@@ -26149,7 +26149,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2180",
@@ -26245,7 +26245,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2188",
@@ -26281,7 +26281,7 @@
    "sector": "",
    "nivel": "Nacional",
    "ubigeo": "",
-   "departamento": ""
+   "departamento": "Ica"
   },
   {
    "id": "E-2191",

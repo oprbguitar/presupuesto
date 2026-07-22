@@ -15,8 +15,10 @@
   "agregados": "agregados_{anio}.json",
   "procedimientos": "procedimientos_{anio}.json",
   "maestro_entidades": "maestro_entidades.json",
-  "proveedores": "proveedores.json"
+  "proveedores": "proveedores.json",
+  "geo_departamentos": "peru_departamentos.json"
  },
+ "geo_nota": "Departamento atribuido por el nombre/ámbito de la entidad contratante (sede aproximada). Las entidades nacionales sin ámbito geográfico no se atribuyen a ningún departamento.",
  "evolucion": [
   {
    "anio": 2023,
