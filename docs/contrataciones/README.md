@@ -77,11 +77,20 @@ desierto · nulo · brecha convocado–adjudicado · contratación al cierre del
 Cada vista muestra fuente, año, cobertura, fecha de actualización, enlace de verificación y
 metodología. Ver también [ESQUEMA.md](ESQUEMA.md) y [LIMITACIONES.md](LIMITACIONES.md).
 
-## Estado actual
+## Estado actual — datos reales
 
-Se publica con datos de **demostración** (`estado_datos: "demostracion"`) para validar la interfaz.
-La lógica de presupuesto no se modifica hasta que los datos reales estén validados. Al conectar las
-fuentes oficiales mediante el pipeline, el estado pasa a `validado`.
+El módulo se sirve con **datos reales** (`estado_datos: "validado"`) extraídos de la fuente oficial
+**Perú Compras — Órdenes por Catálogos Electrónicos** (bienes y servicios), publicada en el portal
+[Datos Abiertos del Estado](https://www.datosabiertos.gob.pe/) por el OECE. Los genera
+`scripts/contrataciones/perucompras_real.py` (descarga los CSV mensuales, agrega en streaming y
+produce los JSON del módulo).
+
+**Cobertura:** Catálogos Electrónicos / Acuerdos Marco (un subconjunto real y bien definido). No
+incluye licitaciones/adjudicaciones SEACE ni obras, que el OECE publica solo vía Pentaho BI
+(`bi.seace.gob.pe`), sin CSV directo — integración prevista como siguiente fase. Los indicadores de
+presupuesto (PIA/PIM/devengado/girado) se muestran como «—» hasta integrar el MEF.
+
+La lógica de ejecución presupuestal del portal **no se modifica**.
 
 ## Desarrollo local
 

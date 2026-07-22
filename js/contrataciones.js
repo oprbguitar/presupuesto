@@ -141,6 +141,9 @@
       .then(function (r) {
         state.agg = r[0];
         state.rows = (r[1] && r[1].rows) || [];
+        state.rowsTope = (r[1] && r[1].rows_tope) || 0;
+        state.rowsTotal = (r[1] && r[1].rows_total) || state.rows.length;
+        state.rowsCapped = state.rowsTope && state.rowsTotal > state.rows.length;
         return true;
       });
   }
@@ -156,7 +159,7 @@
     var ver = $("#cxVerificar"); ver.href = f0.url || "#";
 
     $("#cxAviso").innerHTML = manifest.estado_datos === "validado" ?
-      '<b>Trazabilidad:</b> datos oficiales procesados fuera de línea y validados. Actualizado el ' + esc(isoDate(manifest.actualizado)) + '. ' +
+      '<b>Datos oficiales.</b> ' + esc(manifest.cobertura || "") + ' Actualizado el ' + esc(isoDate(manifest.actualizado)) + '. ' +
       'Las alertas son señales estadísticas y no constituyen prueba de irregularidad ni determinación de responsabilidad.' :
       '<b>Versión de demostración.</b> Las cifras de esta vista son ilustrativas y sirven para validar la interfaz ' +
       'antes de conectar las fuentes oficiales (OECE/SEACE, MEF, Perú Compras). No reemplazan a las fuentes oficiales. ' +
@@ -389,6 +392,12 @@
     return String(state.year) === String(manifest.anio_parcial) ?
       '<p class="cx-map-note">⏳ ' + esc(state.year) + ': cifras del <b>acumulado disponible</b> hasta la última fecha de actualización (' + esc(isoDate(manifest.actualizado)) + ').</p>' : '';
   }
+  // Nota para vistas calculadas desde las filas cuando estas son una muestra (top-N).
+  function sampleNote() {
+    return state.rowsCapped ?
+      '<div class="cx-aviso"><b>Detalle = muestra.</b> Esta vista se calcula sobre las <b>' + numf(state.rows.length) +
+      '</b> órdenes de mayor monto (de ' + numf(state.rowsTotal) + ' del año). Los indicadores del Resumen y el ranking por entidad usan el <b>universo completo</b>.</div>' : '';
+  }
 
   /* ---------------- KPIs ---------------- */
   function kpi(lbl, val, sub, cls) {
@@ -517,69 +526,112 @@
 
   function renderEntidad(box, rows) {
     var comp = computeAgg(rows);
-    var ent = {};
-    rows.forEach(function (r) {
-      var g = ent[r.entidad_id] || (ent[r.entidad_id] = { nombre: r.entidad, nivel: r.nivel, sector: r.sector, convocado: 0, adjudicado: 0, contratado: 0, n: 0 });
-      g.convocado += r.convocado || 0; g.adjudicado += r.adjudicado || 0; g.contratado += r.contratado || 0; g.n++;
-    });
-    var list = Object.keys(ent).map(function (k) { var e = ent[k]; e.id = k; return e; }).sort(function (a, b) { return b.adjudicado - a.adjudicado; });
+    // Ranking sobre el UNIVERSO COMPLETO (agregado precalculado). Si hay filtros de fila
+    // activos, se recalcula sobre las filas filtradas (muestra) y se avisa.
+    var usarAgg = !hasRowFilters() && state.agg.por_entidad && state.agg.por_entidad.length;
+    var list;
+    if (usarAgg) {
+      list = state.agg.por_entidad.map(function (e) {
+        return { nombre: e.entidad, nivel: e.nivel, sector: e.sector, ruc: e.ruc,
+          bienes: e.bienes, servicios: e.servicios, adjudicado: e.adjudicado, n: e.n };
+      });
+    } else {
+      var ent = {};
+      rows.forEach(function (r) {
+        var g = ent[r.entidad_id] || (ent[r.entidad_id] = { nombre: r.entidad, nivel: r.nivel, sector: r.sector, ruc: r.ruc, bienes: 0, servicios: 0, adjudicado: 0, n: 0 });
+        var m = r.adjudicado != null ? r.adjudicado : (r.convocado || 0);
+        if (r.objeto === "Servicios") g.servicios += m; else g.bienes += m;
+        g.adjudicado += m; g.n++;
+      });
+      list = Object.keys(ent).map(function (k) { return ent[k]; }).sort(function (a, b) { return b.adjudicado - a.adjudicado; });
+    }
+    var totMonto = list.reduce(function (a, e) { return a + (e.adjudicado || 0); }, 0) || 1;
+    var tope = 300, shown = list.slice(0, tope);
+    var csv = "Puesto;Entidad;RUC;Nivel;Bienes;Servicios;Total;Ordenes;Anio\n" +
+      list.map(function (e, i) { return [i + 1, '"' + (e.nombre || "").replace(/"/g, '""') + '"', e.ruc || "", e.nivel || "", Math.round(e.bienes || 0), Math.round(e.servicios || 0), Math.round(e.adjudicado || 0), e.n || 0, state.year].join(";"); }).join("\n");
     box.innerHTML =
       '<div class="card">' + kpisHTML(comp, state.agg.indicadores, "Total del año") + fichaFuente(state.agg) + '</div>' +
-      '<div class="card"><h3>Contrataciones por entidad <span class="cx-count">(' + list.length + ' entidades)</span></h3>' +
+      '<div class="card"><h3>Ranking de entidades por mayor gasto — ' + esc(state.year) + ' <span class="cx-count">(' + list.length + ' entidades)</span></h3>' +
+      '<p class="cx-map-note">Ordenado por monto total. «Tipo de gasto» = bienes / servicios. ' + (usarAgg ? 'Universo completo del año.' : 'Muestra filtrada.') + '</p>' +
+      '<div class="cx-tbl-tools"><button class="cx-btn" id="cxEntCSV" type="button">Exportar ranking CSV</button>' +
+      (list.length > tope ? '<span class="cx-count">Mostrando las ' + tope + ' de ' + list.length + '</span>' : '') + '</div>' +
       '<div class="tbl-wrap"><table class="cx-t"><thead><tr>' +
-      '<th class="l">Entidad</th><th class="l">Nivel</th><th class="l">Sector</th><th>N.°</th><th>Convocado</th><th>Adjudicado</th><th>Contratado</th></tr></thead><tbody>' +
-      list.map(function (e) {
-        return '<tr><td class="l"><b>' + esc(e.nombre) + '</b></td><td class="l">' + esc(e.nivel) + '</td><td class="l">' + esc(e.sector) + '</td>' +
-          '<td>' + numf(e.n) + '</td><td>' + money(e.convocado) + '</td><td>' + money(e.adjudicado) + '</td><td>' + money(e.contratado) + '</td></tr>';
+      '<th>#</th><th class="l">Entidad</th><th class="l">Nivel</th><th>Bienes</th><th>Servicios</th><th>Total</th><th>% del total</th><th>Órdenes</th></tr></thead><tbody>' +
+      shown.map(function (e, i) {
+        return '<tr><td>' + (i + 1) + '</td><td class="l"><b>' + esc(e.nombre) + '</b><br><small style="color:var(--gris)">RUC ' + esc(e.ruc || "—") + '</small></td>' +
+          '<td class="l">' + esc(e.nivel) + '</td><td>' + money(e.bienes) + '</td><td>' + money(e.servicios) + '</td>' +
+          '<td><b>' + money(e.adjudicado) + '</b></td><td>' + pct(e.adjudicado / totMonto * 100) + '</td><td>' + numf(e.n) + '</td></tr>';
       }).join("") + '</tbody></table></div>' +
-      '<p class="cx-map-note">Recuerde: la entidad contratante (OECE) no siempre coincide uno a uno con el pliego o la unidad ejecutora (MEF).</p></div>';
+      '<p class="cx-map-note">La entidad contratante (OECE) no siempre coincide uno a uno con el pliego o la unidad ejecutora (MEF).</p></div>';
+    var btn = $("#cxEntCSV");
+    if (btn) btn.addEventListener("click", function () {
+      var blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8;" });
+      var a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+      a.download = "ranking_entidades_" + state.year + ".csv"; document.body.appendChild(a); a.click();
+      document.body.removeChild(a); setTimeout(function () { URL.revokeObjectURL(a.href); }, 1500);
+    });
   }
 
   function renderBienes(box, rows) {
     var bs = rows.filter(function (r) { return r.objeto === "Bienes" || r.objeto === "Servicios"; });
     var comp = computeAgg(bs);
-    box.innerHTML =
+    // Sin filtros usamos los agregados del universo completo; con filtros, la muestra.
+    var full = !hasRowFilters();
+    var ind = state.agg.indicadores;
+    var distFull = state.agg.distribucion_objeto || [];
+    var montoFull = distFull.reduce(function (a, o) { return a + (o.monto || 0); }, 0);
+    box.innerHTML = (full ? '' : sampleNote()) +
       '<div class="card"><h3>Bienes y servicios — ' + esc(state.year) + '</h3>' +
         '<div class="cx-kpis">' +
-          kpi("Monto convocado", moneyM(comp.convocado), bs.length + " procedimientos", "rojo") +
-          kpi("Monto adjudicado", moneyM(comp.adjudicado), "≠ devengado", "amar") +
-          kpi("Órdenes de compra", numf(comp.n_oc), "Bienes", "azul") +
-          kpi("Órdenes de servicio", numf(comp.n_os), "Servicios", "azul") +
-          kpi("Proveedores", numf(comp.n_proveedores), null, "neg") +
+          kpi("Monto total", moneyM(full ? montoFull : comp.convocado), (full ? ind.n_procedimientos : bs.length) + " órdenes", "rojo") +
+          kpi("Órdenes de compra", numf(full ? ind.n_oc : comp.n_oc), "Bienes", "azul") +
+          kpi("Órdenes de servicio", numf(full ? ind.n_os : comp.n_os), "Servicios", "azul") +
+          kpi("Proveedores", numf(full ? ind.n_proveedores : comp.n_proveedores), null, "neg") +
         '</div>' + fichaFuente(state.agg) + '</div>' +
       '<div class="cx-grid2">' +
         '<div class="card"><h3>Bienes vs. servicios</h3><div class="cx-chartbox" id="cxBS"></div></div>' +
-        '<div class="card"><h3>Top de categorías (bienes y servicios)</h3><div id="cxBSCat"></div></div>' +
+        '<div class="card"><h3>Top de categorías (acuerdo marco)</h3><div id="cxBSCat"></div></div>' +
       '</div>' +
       tablaDetallada(bs);
-    var grpO = computeAgg(bs).grpObjeto;
-    donut($("#cxBS"), grpO.map(function (o) { return { label: o.k, value: o.monto, color: OBJ_COLOR[o.k] || C.gris }; }));
-    hbars($("#cxBSCat"), computeAgg(bs).grpCategoria.slice(0, 10), money);
+    var distUse = full ? distFull.map(function (o) { return { k: o.objeto, monto: o.monto }; }) : computeAgg(bs).grpObjeto;
+    donut($("#cxBS"), distUse.map(function (o) { return { label: o.k, value: o.monto, color: OBJ_COLOR[o.k] || C.gris }; }));
+    var catUse = full ? (state.agg.top_categorias || []).map(function (x) { return { k: x.categoria, monto: x.monto }; }) : computeAgg(bs).grpCategoria.slice(0, 10);
+    hbars($("#cxBSCat"), catUse.slice(0, 10), money);
     bindTabla(bs, "bienes_servicios");
   }
 
   function renderProveedores(box, rows) {
-    var prov = {};
-    rows.forEach(function (r) {
-      if (!r.ruc) return;
-      var g = prov[r.ruc] || (prov[r.ruc] = { nombre: r.proveedor, ruc: r.ruc, monto: 0, n: 0, sancionado: !!r.sancionado, unPostor: 0 });
-      g.monto += (r.adjudicado != null ? r.adjudicado : (r.contratado || 0)); g.n++;
-      if (r.postores === 1) g.unPostor++;
-    });
-    var list = Object.keys(prov).map(function (k) { return prov[k]; }).sort(function (a, b) { return b.monto - a.monto; });
-    var totAdj = list.reduce(function (a, p) { return a + p.monto; }, 0) || 1;
+    // Sin filtros: ranking completo del agregado. Con filtros: desde la muestra.
+    var full = !hasRowFilters() && state.agg.top_proveedores && state.agg.top_proveedores.length;
+    var list;
+    if (full) {
+      list = state.agg.top_proveedores.map(function (p) {
+        return { nombre: p.proveedor, ruc: p.ruc, monto: p.monto, n: p.n, sancionado: false, unPostor: 0 };
+      });
+    } else {
+      var prov = {};
+      rows.forEach(function (r) {
+        if (!r.ruc) return;
+        var g = prov[r.ruc] || (prov[r.ruc] = { nombre: r.proveedor, ruc: r.ruc, monto: 0, n: 0, sancionado: !!r.sancionado, unPostor: 0 });
+        g.monto += (r.adjudicado != null ? r.adjudicado : (r.contratado || 0)); g.n++;
+        if (r.postores === 1) g.unPostor++;
+      });
+      list = Object.keys(prov).map(function (k) { return prov[k]; }).sort(function (a, b) { return b.monto - a.monto; });
+    }
+    var nProv = full ? state.agg.indicadores.n_proveedores : list.length;
+    var totAdj = (full ? state.agg.indicadores.adjudicado : list.reduce(function (a, p) { return a + p.monto; }, 0)) || 1;
     var top3 = list.slice(0, 3).reduce(function (a, p) { return a + p.monto; }, 0);
-    box.innerHTML =
-      '<div class="card"><h3>Proveedores — ' + esc(state.year) + '</h3>' +
+    box.innerHTML = (full ? '' : sampleNote()) +
+      '<div class="card"><h3>Proveedores — ' + esc(state.year) + (full ? '' : ' (muestra)') + '</h3>' +
         '<div class="cx-kpis">' +
-          kpi("Proveedores con adjudicación", numf(list.length), null, "neg") +
+          kpi("Proveedores con adjudicación", numf(nProv), null, "neg") +
           kpi("Monto adjudicado a proveedores", moneyM(totAdj), null, "amar") +
-          kpi("Concentración top 3", pct(top3 / totAdj * 100), "del monto adjudicado", "rojo") +
+          kpi("Concentración top 3", pct(top3 / totAdj * 100), full ? "top 3 sobre el total del año" : "sobre la muestra", "rojo") +
           kpi("Proveedores sancionados", numf(list.filter(function (p) { return p.sancionado; }).length), "según registro", "rojo") +
         '</div>' + fichaFuente(state.agg) + '</div>' +
-      '<div class="cx-grid2"><div class="card"><h3>Top de proveedores por monto adjudicado</h3><div id="cxProvBar"></div></div>' +
+      '<div class="cx-grid2"><div class="card"><h3>Top de proveedores por monto</h3><div id="cxProvBar"></div></div>' +
         '<div class="card"><h3>Concentración de mercado</h3><div class="cx-chartbox" id="cxProvDonut"></div></div></div>' +
-      '<div class="card"><h3>Detalle de proveedores <span class="cx-count">(' + list.length + ')</span></h3>' +
+      '<div class="card"><h3>' + (full ? 'Top proveedores' : 'Detalle de proveedores') + ' <span class="cx-count">(' + list.length + (full ? ' mostrados' : '') + ')</span></h3>' +
         '<div class="tbl-wrap"><table class="cx-t"><thead><tr><th class="l">Proveedor</th><th class="l">RUC</th><th>Adjudicaciones</th><th>Monto</th><th>% del total</th><th>Un solo postor</th><th class="l">Estado</th></tr></thead><tbody>' +
         list.map(function (p) {
           return '<tr><td class="l"><b>' + esc(p.nombre) + '</b></td><td class="l">' + esc(p.ruc) + '</td>' +
@@ -597,7 +649,7 @@
     var cd = rows.filter(function (r) { return r.tipo === "Contratación Directa" || r.regimen === "Contratación Directa (art. 27)"; });
     var monto = cd.reduce(function (a, r) { return a + (r.adjudicado != null ? r.adjudicado : (r.convocado || 0)); }, 0);
     var totMonto = rows.reduce(function (a, r) { return a + (r.adjudicado != null ? r.adjudicado : (r.convocado || 0)); }, 0) || 1;
-    box.innerHTML =
+    box.innerHTML = sampleNote() +
       '<div class="card"><h3>Contrataciones directas — ' + esc(state.year) + '</h3>' +
         '<div class="cx-aviso"><b>Nota:</b> la contratación directa es un procedimiento legal previsto en la Ley N.° 30225. Su uso, por sí solo, no implica irregularidad; es una señal a monitorear.</div>' +
         '<div class="cx-kpis">' +
@@ -613,7 +665,18 @@
   function renderObras(box, rows) {
     var oc = rows.filter(function (r) { return r.objeto === "Obras" || r.objeto === "Consultoría de obras"; });
     var comp = computeAgg(oc);
-    box.innerHTML =
+    var distFull = state.agg.distribucion_objeto || [];
+    var hayObras = distFull.some(function (o) { return (o.objeto === "Obras" || o.objeto === "Consultoría de obras") && o.monto; });
+    if (!oc.length && !hayObras) {
+      box.innerHTML = sampleNote() +
+        '<div class="card"><h3>Obras y consultorías — ' + esc(state.year) + '</h3>' +
+        '<div class="cx-aviso"><b>Sin obras en la cobertura actual.</b> La fuente vigente (Catálogos Electrónicos de ' +
+        'Perú Compras) comprende <b>bienes y servicios</b>. Las <b>obras y consultorías de obra</b> se contratan por ' +
+        'procedimientos SEACE (licitación/adjudicación), que el OECE publica solo vía Pentaho BI. Esta vista se poblará ' +
+        'al integrar SEACE en el pipeline. Ver «Fuentes y metodología».</div>' + fichaFuente(state.agg) + '</div>';
+      return;
+    }
+    box.innerHTML = sampleNote() +
       '<div class="card"><h3>Obras y consultorías — ' + esc(state.year) + '</h3>' +
         '<div class="cx-kpis">' +
           kpi("N.° procedimientos", numf(oc.length), null, "neg") +
@@ -661,7 +724,7 @@
     add(repet ? "ambar" : "gris", "🔁", "Repetición de órdenes similares", repet, "Combinaciones entidad + categoría + proveedor con 3 o más procedimientos.");
     add("azul", "🔍", "Diferencias contratación vs. ejecución", "Revisar", "El adjudicado del filtro (" + moneyM(computeAgg(rows).adjudicado) + ") no equivale al devengado del año (" + moneyM(state.agg.indicadores.dev) + "). Compare con el módulo de ejecución.");
 
-    box.innerHTML =
+    box.innerHTML = sampleNote() +
       '<div class="card"><h3>Alertas — señales estadísticas ' + esc(state.year) + '</h3>' +
         '<div class="cx-aviso"><b>Importante:</b> las alertas son <b>señales estadísticas</b> derivadas de los datos abiertos. ' +
         'No constituyen prueba de irregularidad ni determinación de responsabilidad. Sirven para orientar la verificación ciudadana en las fuentes oficiales.</div>' +

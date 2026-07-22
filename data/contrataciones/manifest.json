@@ -1,9 +1,9 @@
 {
  "modulo": "contrataciones-publicas",
- "version": 1,
- "estado_datos": "demostracion",
+ "version": 2,
+ "estado_datos": "validado",
  "actualizado": "2026-07-21",
- "cobertura": "Muestra de demostración con 10 entidades y ~500 procedimientos ilustrativos (2023-2026).",
+ "cobertura": "Órdenes de compra (bienes) y de servicio por Catálogos Electrónicos de Perú Compras. Subconjunto real de la contratación pública; no incluye licitaciones/adjudicaciones SEACE.",
  "anios": [
   2023,
   2024,
@@ -20,79 +20,75 @@
  "evolucion": [
   {
    "anio": 2023,
-   "pim": 21200000000,
-   "convocado": 481025892.06,
-   "adjudicado": 265372756.56,
-   "contratado": 139057867.16,
-   "dev": 18900000000,
+   "pim": null,
+   "convocado": 2045543294.66,
+   "adjudicado": 2045543294.66,
+   "contratado": 2045543294.66,
+   "dev": null,
    "parcial": false
   },
   {
    "anio": 2024,
-   "pim": 23800000000,
-   "convocado": 645020801.0,
-   "adjudicado": 380748664.58,
-   "contratado": 172732852.66,
-   "dev": 20600000000,
+   "pim": null,
+   "convocado": 2131871876.81,
+   "adjudicado": 2131871876.81,
+   "contratado": 2131871876.81,
+   "dev": null,
    "parcial": false
   },
   {
    "anio": 2025,
-   "pim": 25100000000,
-   "convocado": 630385652.56,
-   "adjudicado": 275060798.82,
-   "contratado": 167835404.95,
-   "dev": 21800000000,
+   "pim": null,
+   "convocado": 1987585182.35,
+   "adjudicado": 1987585182.35,
+   "contratado": 1987585182.35,
+   "dev": null,
    "parcial": false
   },
   {
    "anio": 2026,
-   "pim": 24900000000,
-   "convocado": 272450846.32,
-   "adjudicado": 151021876.21,
-   "contratado": 84523882.06,
-   "dev": 9600000000,
+   "pim": null,
+   "convocado": 674228187.03,
+   "adjudicado": 674228187.03,
+   "contratado": 674228187.03,
+   "dev": null,
    "parcial": true
   }
  ],
  "fuentes": [
   {
-   "nombre": "OECE / SEACE - Datos Abiertos (OCDS)",
-   "url": "https://contratacionesabiertas.oece.gob.pe/",
-   "descripcion": "Procedimientos de selección, adjudicaciones y contratos en estándar OCDS."
+   "nombre": "Perú Compras — Órdenes por Catálogos Electrónicos (bienes y servicios)",
+   "url": "https://www.datosabiertos.gob.pe/group/organismo-especializado-para-las-contrataciones-p%C3%BAblicas-eficientes-oece",
+   "descripcion": "Órdenes formalizadas mediante Acuerdos Marco. CSV mensual oficial."
   },
   {
-   "nombre": "MEF - Consulta Amigable",
+   "nombre": "OECE/SEACE — Adjudicaciones y contratos (Pentaho BI)",
+   "url": "https://bi.seace.gob.pe/",
+   "descripcion": "Licitaciones y adjudicaciones SEACE (integración futura)."
+  },
+  {
+   "nombre": "MEF — Consulta Amigable",
    "url": "https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx",
-   "descripcion": "PIA, PIM, devengado y girado por pliego y unidad ejecutora."
-  },
-  {
-   "nombre": "Perú Compras - Órdenes de compra y servicio",
-   "url": "https://www.gob.pe/perucompras",
-   "descripcion": "Catálogos electrónicos y órdenes derivadas de Acuerdos Marco."
-  },
-  {
-   "nombre": "Contraloría - Sanciones e inhabilitaciones",
-   "url": "https://www.gob.pe/contraloria",
-   "descripcion": "Registro de proveedores sancionados e inhabilitados."
+   "descripcion": "PIA, PIM, devengado y girado (integración futura para el embudo presupuestal)."
   },
   {
    "nombre": "Datos Abiertos del Estado Peruano",
    "url": "https://www.datosabiertos.gob.pe/",
-   "descripcion": "Portal central de conjuntos de datos abiertos."
+   "descripcion": "Portal CKAN que sirve los CSV oficiales usados por este módulo."
   }
  ],
  "limitaciones": [
-  "El monto adjudicado no equivale al monto devengado ni girado.",
-  "No se asume correspondencia uno a uno entre pliego MEF, unidad ejecutora y entidad contratante OECE.",
-  "Para el año en curso (2026) las cifras corresponden al acumulado disponible a la última fecha de actualización.",
-  "Las alertas son señales estadísticas y no constituyen prueba de irregularidad ni determinación de responsabilidad.",
-  "Los datos de esta versión son de DEMOSTRACIÓN y no reemplazan a las fuentes oficiales."
+  "Cobertura: solo Catálogos Electrónicos / Acuerdos Marco de Perú Compras (no toda la contratación pública).",
+  "El importe mostrado es el TOTAL de la orden (con IGV); no equivale al devengado ni al girado del MEF.",
+  "La tabla detallada muestra las 4000 órdenes de mayor monto por año; los agregados usan el universo completo.",
+  "No hay dato geográfico (departamento) en esta fuente; el mapa se mostrará al integrar SEACE.",
+  "El año en curso corresponde al acumulado disponible hasta la última fecha de actualización.",
+  "Las alertas son señales estadísticas y no constituyen prueba de irregularidad."
  ],
  "log_actualizacion": [
   {
    "fecha": "2026-07-21",
-   "evento": "Generación de datos de demostración del módulo.",
+   "evento": "Ingesta real Perú Compras (2023, 2024, 2025, 2026)",
    "estado": "ok"
   }
  ]

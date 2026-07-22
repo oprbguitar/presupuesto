@@ -39,30 +39,11 @@ jobs:
         run: |
           if [ ! -f config.json ]; then cp config.example.json config.json; fi
 
-      # 1) Descargar las fuentes disponibles (no falla el job si una fuente no responde)
-      - name: Descargar fuentes
-        id: descarga
-        continue-on-error: true
-        run: |
-          python descargar_oece.py --anios 2023 2024 2025 2026 || echo "OECE: sin datos nuevos"
-          python descargar_mef.py  --anios 2023 2024 2025 2026 || echo "MEF: sin datos nuevos"
-
-      # 2) Validar la ESTRUCTURA de las fuentes (bloqueante ante cambios de formato)
-      - name: Detectar cambios de estructura
-        id: esquema
-        run: python detectar_cambios.py
-
-      # 3) Normalización: catálogos y procesamiento OCDS / Perú Compras
-      - name: Normalizar y procesar
-        run: |
-          python catalogo_entidades.py
-          python procesar_ocds.py       --anios 2023 2024 2025 2026 || echo "Sin paquetes OCDS crudos"
-          python perucompras_ordenes.py --anios 2023 2024 2025 2026 || echo "Sin órdenes Perú Compras"
-          python catalogo_proveedores.py --anios 2023 2024 2025 2026
-
-      # 4) Generar los JSON públicos (agregados + manifiesto con fecha de actualización)
-      - name: Generar agregados y manifiesto
-        run: python generar_agregados.py --anios 2023 2024 2025 2026 --parcial 2026
+      # 1) Ingesta REAL desde Perú Compras (Catálogos Electrónicos, Datos Abiertos del Estado).
+      #    Descarga los CSV mensuales, agrega en streaming y genera los JSON públicos.
+      - name: Ingesta real Perú Compras
+        id: ingesta
+        run: python perucompras_real.py --anios 2023 2024 2025 2026 --parcial 2026
 
       # 5) Validación de los JSON públicos (bloqueante)
       - name: Validar JSON públicos
