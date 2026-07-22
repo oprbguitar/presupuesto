@@ -1,9 +1,9 @@
 {
  "modulo": "contrataciones-publicas",
- "version": 2,
+ "version": 3,
  "estado_datos": "validado",
- "actualizado": "2026-07-21",
- "cobertura": "Órdenes de compra (bienes) y de servicio por Catálogos Electrónicos de Perú Compras. Subconjunto real de la contratación pública; no incluye licitaciones/adjudicaciones SEACE.",
+ "actualizado": "2026-07-22",
+ "cobertura": "Adjudicaciones SEACE (procedimientos de selección, incluye obras) 2023-2025 + órdenes por Catálogos Electrónicos de Perú Compras (2026). Presupuesto nacional del MEF.",
  "anios": [
   2023,
   2024,
@@ -18,33 +18,33 @@
   "proveedores": "proveedores.json",
   "geo_departamentos": "peru_departamentos.json"
  },
- "geo_nota": "Departamento atribuido por el nombre/ámbito de la entidad contratante (sede aproximada). Las entidades nacionales sin ámbito geográfico no se atribuyen a ningún departamento.",
+ "geo_nota": "Departamento tomado del campo oficial de la entidad en SEACE.",
  "evolucion": [
   {
    "anio": 2023,
-   "pim": null,
-   "convocado": 2045543294.66,
-   "adjudicado": 2045543294.66,
-   "contratado": 2045543294.66,
-   "dev": null,
+   "pim": 249947413952.0,
+   "convocado": 74891339102.66,
+   "adjudicado": 62655043183.32,
+   "contratado": 62655043183.32,
+   "dev": 222979170306.0,
    "parcial": false
   },
   {
    "anio": 2024,
-   "pim": null,
-   "convocado": 2131871876.81,
-   "adjudicado": 2131871876.81,
-   "contratado": 2131871876.81,
-   "dev": null,
+   "pim": 262058019205.0,
+   "convocado": 80865999645.7,
+   "adjudicado": 73529500608.84,
+   "contratado": 73529500608.84,
+   "dev": 238893055447.0,
    "parcial": false
   },
   {
    "anio": 2025,
-   "pim": null,
-   "convocado": 1987585182.35,
-   "adjudicado": 1987585182.35,
-   "contratado": 1987585182.35,
-   "dev": null,
+   "pim": 272450859407.0,
+   "convocado": 72065980751.63,
+   "adjudicado": 67929338622.94,
+   "contratado": 67929338622.94,
+   "dev": 253679227261.0,
    "parcial": false
   },
   {
@@ -59,38 +59,48 @@
  ],
  "fuentes": [
   {
-   "nombre": "Perú Compras — Órdenes por Catálogos Electrónicos (bienes y servicios)",
-   "url": "https://www.datosabiertos.gob.pe/group/organismo-especializado-para-las-contrataciones-p%C3%BAblicas-eficientes-oece",
-   "descripcion": "Órdenes formalizadas mediante Acuerdos Marco. CSV mensual oficial."
-  },
-  {
-   "nombre": "OECE/SEACE — Adjudicaciones y contratos (Pentaho BI)",
+   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE)",
    "url": "https://bi.seace.gob.pe/",
-   "descripcion": "Licitaciones y adjudicaciones SEACE (integración futura)."
+   "descripcion": "Reportes anuales de adjudicaciones a nivel de ítem (incluye obras y consultorías)."
   },
   {
    "nombre": "MEF — Consulta Amigable",
    "url": "https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx",
-   "descripcion": "PIA, PIM, devengado y girado (integración futura para el embudo presupuestal)."
+   "descripcion": "PIA, PIM, devengado y girado (nivel nacional) para el embudo presupuestal."
+  },
+  {
+   "nombre": "Perú Compras — Catálogos Electrónicos",
+   "url": "https://www.datosabiertos.gob.pe/",
+   "descripcion": "Órdenes por Acuerdos Marco (cobertura del año en curso)."
   },
   {
    "nombre": "Datos Abiertos del Estado Peruano",
    "url": "https://www.datosabiertos.gob.pe/",
-   "descripcion": "Portal CKAN que sirve los CSV oficiales usados por este módulo."
+   "descripcion": "Portal CKAN de conjuntos de datos oficiales."
   }
  ],
  "limitaciones": [
-  "Cobertura: solo Catálogos Electrónicos / Acuerdos Marco de Perú Compras (no toda la contratación pública).",
-  "El importe mostrado es el TOTAL de la orden (con IGV); no equivale al devengado ni al girado del MEF.",
-  "La tabla detallada muestra las 4000 órdenes de mayor monto por año; los agregados usan el universo completo.",
-  "No hay dato geográfico (departamento) en esta fuente; el mapa se mostrará al integrar SEACE.",
-  "El año en curso corresponde al acumulado disponible hasta la última fecha de actualización.",
+  "El monto adjudicado (SEACE) no equivale al devengado ni al girado (MEF).",
+  "El presupuesto MEF es nacional; no se atribuye a un procedimiento concreto.",
+  "La tabla detallada muestra los 5000 ítems de mayor monto por año; los agregados usan el universo completo.",
+  "Cobertura por año: 2023-2025 = adjudicaciones SEACE; 2026 = órdenes Perú Compras (el consolidado SEACE del año en curso aún no se publica).",
+  "El año en curso corresponde al acumulado disponible hasta la última actualización.",
   "Las alertas son señales estadísticas y no constituyen prueba de irregularidad."
  ],
  "log_actualizacion": [
   {
    "fecha": "2026-07-21",
    "evento": "Ingesta real Perú Compras (2023, 2024, 2025, 2026)",
+   "estado": "ok"
+  },
+  {
+   "fecha": "2026-07-22",
+   "evento": "Ingesta SEACE 2024 + MEF",
+   "estado": "ok"
+  },
+  {
+   "fecha": "2026-07-22",
+   "evento": "Ingesta SEACE 2023, 2024, 2025 + MEF",
    "estado": "ok"
   }
  ]

@@ -585,33 +585,42 @@
     if (usarAgg) {
       list = state.agg.por_entidad.map(function (e) {
         return { nombre: e.entidad, nivel: e.nivel, sector: e.sector, ruc: e.ruc,
-          bienes: e.bienes, servicios: e.servicios, adjudicado: e.adjudicado, n: e.n };
+          bienes: e.bienes, servicios: e.servicios, obras: e.obras || 0, consultoria: e.consultoria || 0,
+          adjudicado: e.adjudicado, n: e.n };
       });
     } else {
       var ent = {};
       rows.forEach(function (r) {
-        var g = ent[r.entidad_id] || (ent[r.entidad_id] = { nombre: r.entidad, nivel: r.nivel, sector: r.sector, ruc: r.ruc, bienes: 0, servicios: 0, adjudicado: 0, n: 0 });
+        var g = ent[r.entidad_id] || (ent[r.entidad_id] = { nombre: r.entidad, nivel: r.nivel, sector: r.sector, ruc: r.ruc, bienes: 0, servicios: 0, obras: 0, consultoria: 0, adjudicado: 0, n: 0 });
         var m = r.adjudicado != null ? r.adjudicado : (r.convocado || 0);
-        if (r.objeto === "Servicios") g.servicios += m; else g.bienes += m;
+        if (r.objeto === "Servicios") g.servicios += m;
+        else if (r.objeto === "Obras") g.obras += m;
+        else if (r.objeto === "Consultoría de obras") g.consultoria += m;
+        else g.bienes += m;
         g.adjudicado += m; g.n++;
       });
       list = Object.keys(ent).map(function (k) { return ent[k]; }).sort(function (a, b) { return b.adjudicado - a.adjudicado; });
     }
+    // ¿Hay obras/consultoría en estos datos? (SEACE sí; Perú Compras no)
+    var hayObras = list.some(function (e) { return (e.obras || 0) + (e.consultoria || 0) > 0; });
     var totMonto = list.reduce(function (a, e) { return a + (e.adjudicado || 0); }, 0) || 1;
     var tope = 300, shown = list.slice(0, tope);
-    var csv = "Puesto;Entidad;RUC;Nivel;Bienes;Servicios;Total;Ordenes;Anio\n" +
-      list.map(function (e, i) { return [i + 1, '"' + (e.nombre || "").replace(/"/g, '""') + '"', e.ruc || "", e.nivel || "", Math.round(e.bienes || 0), Math.round(e.servicios || 0), Math.round(e.adjudicado || 0), e.n || 0, state.year].join(";"); }).join("\n");
+    var csv = "Puesto;Entidad;RUC;Nivel;Bienes;Servicios;Obras;Consultoria;Total;Procedimientos;Anio\n" +
+      list.map(function (e, i) { return [i + 1, '"' + (e.nombre || "").replace(/"/g, '""') + '"', e.ruc || "", e.nivel || "", Math.round(e.bienes || 0), Math.round(e.servicios || 0), Math.round(e.obras || 0), Math.round(e.consultoria || 0), Math.round(e.adjudicado || 0), e.n || 0, state.year].join(";"); }).join("\n");
     box.innerHTML =
       '<div class="card">' + kpisHTML(comp, state.agg.indicadores, "Total del año") + fichaFuente(state.agg) + '</div>' +
       '<div class="card"><h3>Ranking de entidades por mayor gasto — ' + esc(state.year) + ' <span class="cx-count">(' + list.length + ' entidades)</span></h3>' +
-      '<p class="cx-map-note">Ordenado por monto total. «Tipo de gasto» = bienes / servicios. ' + (usarAgg ? 'Universo completo del año.' : 'Muestra filtrada.') + '</p>' +
+      '<p class="cx-map-note">Ordenado por monto adjudicado. «Tipo de gasto» = objeto contractual. ' + (usarAgg ? 'Universo completo del año.' : 'Muestra filtrada.') + '</p>' +
       '<div class="cx-tbl-tools"><button class="cx-btn" id="cxEntCSV" type="button">Exportar ranking CSV</button>' +
       (list.length > tope ? '<span class="cx-count">Mostrando las ' + tope + ' de ' + list.length + '</span>' : '') + '</div>' +
       '<div class="tbl-wrap"><table class="cx-t"><thead><tr>' +
-      '<th>#</th><th class="l">Entidad</th><th class="l">Nivel</th><th>Bienes</th><th>Servicios</th><th>Total</th><th>% del total</th><th>Órdenes</th></tr></thead><tbody>' +
+      '<th>#</th><th class="l">Entidad</th><th class="l">Nivel</th><th>Bienes</th><th>Servicios</th>' +
+      (hayObras ? '<th>Obras</th><th>Consultoría</th>' : '') +
+      '<th>Total</th><th>% del total</th><th>N.°</th></tr></thead><tbody>' +
       shown.map(function (e, i) {
         return '<tr><td>' + (i + 1) + '</td><td class="l"><b>' + esc(e.nombre) + '</b><br><small style="color:var(--gris)">RUC ' + esc(e.ruc || "—") + '</small></td>' +
           '<td class="l">' + esc(e.nivel) + '</td><td>' + money(e.bienes) + '</td><td>' + money(e.servicios) + '</td>' +
+          (hayObras ? '<td>' + money(e.obras) + '</td><td>' + money(e.consultoria) + '</td>' : '') +
           '<td><b>' + money(e.adjudicado) + '</b></td><td>' + pct(e.adjudicado / totMonto * 100) + '</td><td>' + numf(e.n) + '</td></tr>';
       }).join("") + '</tbody></table></div>' +
       '<p class="cx-map-note">La entidad contratante (OECE) no siempre coincide uno a uno con el pliego o la unidad ejecutora (MEF).</p></div>';

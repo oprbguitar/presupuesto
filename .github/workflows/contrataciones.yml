@@ -39,11 +39,15 @@ jobs:
         run: |
           if [ ! -f config.json ]; then cp config.example.json config.json; fi
 
-      # 1) Ingesta REAL desde Perú Compras (Catálogos Electrónicos, Datos Abiertos del Estado).
-      #    Descarga los CSV mensuales, agrega en streaming y genera los JSON públicos.
-      - name: Ingesta real Perú Compras
+      # 1a) Año en curso (sin consolidado SEACE): órdenes por Catálogos Electrónicos de Perú Compras.
+      - name: Ingesta Perú Compras (año en curso)
+        run: python perucompras_real.py --anios 2026 --parcial 2026
+
+      # 1b) Adjudicaciones SEACE (CONOSCE) + presupuesto MEF para 2023-2025 (universo completo, con obras).
+      #     Sobrescribe manifest/maestro/proveedores fusionando el año en curso de Perú Compras.
+      - name: Ingesta real SEACE + MEF
         id: ingesta
-        run: python perucompras_real.py --anios 2023 2024 2025 2026 --parcial 2026
+        run: python seace_real.py --anios 2023 2024 2025 --parcial 2026
 
       # Geometría de departamentos para el mapa coroplético (regenera si cambia la fuente)
       - name: Generar mapa de departamentos

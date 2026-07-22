@@ -1,6 +1,6 @@
-# El pipeline usa solo la biblioteca estándar de Python 3.9+ (urllib, csv, json).
-# No requiere dependencias externas para funcionar.
-# Descomente si en el futuro incorpora estas utilidades:
+# Perú Compras y catálogos: solo biblioteca estándar (urllib, csv, json).
+# SEACE (adjudicaciones): requiere openpyxl para leer los XLSX anuales de CONOSCE.
+openpyxl>=3.1
+# Opcionales para futuras fuentes:
 # requests>=2.31
 # ijson>=3.2        # streaming de paquetes OCDS muy grandes
-# openpyxl>=3.1     # lectura de exportaciones .xlsx del MEF

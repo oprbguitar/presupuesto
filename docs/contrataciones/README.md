@@ -79,18 +79,21 @@ metodología. Ver también [ESQUEMA.md](ESQUEMA.md) y [LIMITACIONES.md](LIMITACI
 
 ## Estado actual — datos reales
 
-El módulo se sirve con **datos reales** (`estado_datos: "validado"`) extraídos de la fuente oficial
-**Perú Compras — Órdenes por Catálogos Electrónicos** (bienes y servicios), publicada en el portal
-[Datos Abiertos del Estado](https://www.datosabiertos.gob.pe/) por el OECE. Los genera
-`scripts/contrataciones/perucompras_real.py` (descarga los CSV mensuales, agrega en streaming y
-produce los JSON del módulo).
+El módulo se sirve con **datos reales** (`estado_datos: "validado"`) de fuentes oficiales:
 
-**Cobertura:** Catálogos Electrónicos / Acuerdos Marco (un subconjunto real y bien definido). No
-incluye licitaciones/adjudicaciones SEACE ni obras, que el OECE publica solo vía Pentaho BI
-(`bi.seace.gob.pe`), sin CSV directo — integración prevista como siguiente fase. Los indicadores de
-presupuesto (PIA/PIM/devengado/girado) se muestran como «—» hasta integrar el MEF.
+| Años | Fuente | Script | Cobertura |
+|---|---|---|---|
+| 2023–2025 | **OECE/SEACE — Adjudicaciones (CONOSCE)** | `seace_real.py` | Ítems adjudicados en procedimientos de selección, **incluye obras y consultorías**, con departamento oficial y tipo de procedimiento. |
+| 2026 | **Perú Compras — Catálogos Electrónicos** | `perucompras_real.py` | Órdenes por Acuerdos Marco (el consolidado SEACE del año en curso aún no se publica). |
+| todos | **MEF — Consulta Amigable** (`data/mef.js`) | `seace_real.py` | PIA/PIM/devengado/girado **nacional** para el embudo presupuestal. |
 
-La lógica de ejecución presupuestal del portal **no se modifica**.
+`seace_real.py` resuelve el XLSX anual de adjudicaciones (vía el acortador oficial del tablero
+`bi.seace.gob.pe`), lo descarga (~19 MB/año), lo procesa en streaming con `openpyxl` y agrega por
+entidad, objeto, tipo, departamento y proveedor; además inyecta los totales del MEF.
+
+**Reglas:** el monto adjudicado (SEACE) **no** equivale al devengado ni al girado (MEF); el
+presupuesto MEF es nacional y no se atribuye a un procedimiento concreto. La lógica de ejecución
+presupuestal del portal **no se modifica**.
 
 ## Desarrollo local
 
