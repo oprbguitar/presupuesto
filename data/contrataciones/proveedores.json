@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-22",
+ "actualizado": "2026-08-03",
  "estado_datos": "validado",
  "nota": "Top 2000 proveedores por monto adjudicado (catálogo acotado).",
  "proveedores": [
@@ -251,7 +251,7 @@
   {
    "ruc": "99999999999",
    "nombre": "OFUSCADO",
-   "monto": 383313226.45,
+   "monto": 383024619.45,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -426,7 +426,7 @@
   {
    "ruc": "20100018625",
    "nombre": "MEDIFARMA S A",
-   "monto": 278706825.05,
+   "monto": 282557070.05,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -713,7 +713,7 @@
   {
    "ruc": "20100027021",
    "nombre": "UNIMAQ S.A.",
-   "monto": 203428056.07,
+   "monto": 203763056.07,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1215,16 +1215,16 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "1754625",
-   "nombre": "CONSORCIO PMO MAJES SIGUAS",
-   "monto": 148038866.66,
+   "ruc": "20332970411",
+   "nombre": "PACIFICO COMPAÑIA DE SEGUROS Y REASEGUROS",
+   "monto": 148235004.39,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "20332970411",
-   "nombre": "PACIFICO COMPAÑIA DE SEGUROS Y REASEGUROS",
-   "monto": 147802815.75,
+   "ruc": "1754625",
+   "nombre": "CONSORCIO PMO MAJES SIGUAS",
+   "monto": 148038866.66,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -2265,6 +2265,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20427797920",
+   "nombre": "ALFIL CONSULTORIA & COMUNICACIONES S.A.C",
+   "monto": 78513129.16,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1604128",
    "nombre": "CONSORCIO IMPERIAL",
    "monto": 78445800.0,
@@ -2275,13 +2282,6 @@
    "ruc": "20559601439",
    "nombre": "REYOUNG PHARMA S.A.C.",
    "monto": 78266978.67,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20427797920",
-   "nombre": "ALFIL CONSULTORIA & COMUNICACIONES S.A.C",
-   "monto": 78094129.16,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -2503,6 +2503,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20519049822",
+   "nombre": "PACIFICO EDITORES S.A.C.",
+   "monto": 71517161.24,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20508571152",
    "nombre": "AFE SERVICE SOCIEDAD ANONIMA CERRADA",
    "monto": 71448134.48,
@@ -2534,13 +2541,6 @@
    "ruc": "1639111",
    "nombre": "CONSORCIO EDUCATIVO GALVEZ",
    "monto": 70988547.79,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20519049822",
-   "nombre": "PACIFICO EDITORES S.A.C.",
-   "monto": 70975071.24,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -2944,6 +2944,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20516920123",
+   "nombre": "SURGICORP SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA - SURGICORP S.R.L.",
+   "monto": 61433098.0,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "L0611179757",
    "nombre": "HAUSSMANN ASSOCI¿S SEL¿RL",
    "monto": 61367387.91,
@@ -2982,13 +2989,6 @@
    "ruc": "1467174",
    "nombre": "CONSORCIO VIAL RIO BLANCO",
    "monto": 60616703.27,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20516920123",
-   "nombre": "SURGICORP SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA - SURGICORP S.R.L.",
-   "monto": 60311098.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -3847,6 +3847,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20502853750",
+   "nombre": "COVIDIEN PERU S.A.",
+   "monto": 48624445.99,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20537758377",
    "nombre": "ICU MEDICAL PERU S.R.L.",
    "monto": 48587627.18,
@@ -3871,13 +3878,6 @@
    "ruc": "20482137319",
    "nombre": "DROGUERIA INVERSIONES JPS SAC",
    "monto": 48434358.64,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20502853750",
-   "nombre": "COVIDIEN PERU S.A.",
-   "monto": 48401425.99,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -5366,6 +5366,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "1813789",
+   "nombre": "CONSORCIO LOS OLMOS",
+   "monto": 36916596.99,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20512831983",
    "nombre": "SERVICIOS BRICKELL S.A.C.",
    "monto": 36895553.26,
@@ -5857,7 +5864,7 @@
   },
   {
    "ruc": "20515422154",
-   "nombre": "CONSTRUCTORA COPER E.I.R.L",
+   "nombre": "CONSTRUCTORA COPER S.A.C.",
    "monto": 34305205.35,
    "sancionado": false,
    "sancion_detalle": ""
@@ -6388,6 +6395,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20501842347",
+   "nombre": "INDUSTRIAS MIXTAS DE APOYO LOGISTICO SOCIEDAD ANONIMA -  INDUSTRIAS MIXTAS DE APOYO LOGISTICO S.A.",
+   "monto": 32166998.8,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20522095797",
    "nombre": "TECNOLOGIA DESARROLLO Y MEDICION SOCIEDAD COMERCIAL DE RESPONSABIILIDAD LIMITADA  TDEM S.R.L.",
    "monto": 32068115.16,
@@ -6528,16 +6542,16 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "1734172",
-   "nombre": "CONSORCIO PIEDRA DEL TORO",
-   "monto": 31484535.74,
+   "ruc": "20197705249",
+   "nombre": "UNILENE S.A.C.",
+   "monto": 31529655.41,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "20197705249",
-   "nombre": "UNILENE S.A.C.",
-   "monto": 31449655.41,
+   "ruc": "1734172",
+   "nombre": "CONSORCIO PIEDRA DEL TORO",
+   "monto": 31484535.74,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -7188,7 +7202,7 @@
   {
    "ruc": "20160056062",
    "nombre": "BELOMED S.R.L.",
-   "monto": 29130812.78,
+   "monto": 29130812.81,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -7469,13 +7483,6 @@
    "ruc": "1704311",
    "nombre": "CONSORCIO G & S",
    "monto": 28049982.66,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20501842347",
-   "nombre": "INDUSTRIAS MIXTAS DE APOYO LOGISTICO SOCIEDAD ANONIMA -  INDUSTRIAS MIXTAS DE APOYO LOGISTICO S.A.",
-   "monto": 28024598.8,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -8876,6 +8883,13 @@
    "ruc": "1738453",
    "nombre": "CONSORCIO AGUAS DEL SHIPAGO",
    "monto": 24070782.0,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20609000083",
+   "nombre": "ILLARIE CONSTRUCTION GROUP COMPANY E.I.R.L.",
+   "monto": 24033441.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -11400,6 +11414,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20600318536",
+   "nombre": "COMPAÑIA INDUSTRIAL CLAYDERMAN E.I.R.L",
+   "monto": 19005477.0,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20568286562",
    "nombre": "COMPAÑIA DE INVERSIONES Y SERVICIOS VIGILANCIA PROTECCION SEGURIDAD Y RESGUARDO S.A.C.",
    "monto": 18984952.4,
@@ -13857,13 +13878,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20609000083",
-   "nombre": "ILLARIE CONSTRUCTION GROUP COMPANY E.I.R.L.",
-   "monto": 16022294.0,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "20512636854",
    "nombre": "H.S PRODUCCIONES SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
    "monto": 16020832.32,
@@ -13986,20 +14000,6 @@
    "ruc": "20480215819",
    "nombre": "CIX ORION CONTRATISTAS GENERALES SAC",
    "monto": 15919708.42,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "1572194",
-   "nombre": "CONSORCIO LIBERTAD",
-   "monto": 15905786.23,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "1693619",
-   "nombre": "CONSORCIO SUPERVISOR BOCA DEL RIO TACNA",
-   "monto": 15904669.16,
    "sancionado": false,
    "sancion_detalle": ""
   }

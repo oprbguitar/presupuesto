@@ -1,7 +1,7 @@
 {
  "anio": 2023,
  "parcial": false,
- "actualizado": "2026-07-22",
+ "actualizado": "2026-08-03",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -16,8 +16,8 @@
   "gir": 222575300944.0,
   "pac_programado": null,
   "convocado": 74891339102.66,
-  "adjudicado": 62655043183.32,
-  "contratado": 62655043183.32,
+  "adjudicado": 62655043185.56,
+  "contratado": 62655043185.56,
   "n_procedimientos": 58903,
   "n_oc": 35281,
   "n_os": 23271,
@@ -30,7 +30,7 @@
  "distribucion_objeto": [
   {
    "objeto": "Bienes",
-   "monto": 14244588672.8,
+   "monto": 14244588675.04,
    "n": 35281
   },
   {
@@ -62,7 +62,7 @@
   },
   {
    "categoria": "Bienes",
-   "monto": 14244588672.8,
+   "monto": 14244588675.04,
    "n": 35281
   },
   {
@@ -246,7 +246,7 @@
   },
   {
    "tipo": "Convenio",
-   "monto": 3758935700.58,
+   "monto": 3758935702.82,
    "n": 1908
   },
   {
@@ -352,8 +352,8 @@
  ],
  "comparacion_montos": {
   "convocado": 74891339102.66,
-  "adjudicado": 62655043183.32,
-  "contratado": 62655043183.32
+  "adjudicado": 62655043185.56,
+  "contratado": 62655043185.56
  },
  "embudo": [
   {
@@ -370,11 +370,11 @@
   },
   {
    "etapa": "Adjudicado",
-   "monto": 62655043183.32
+   "monto": 62655043185.56
   },
   {
    "etapa": "Contratado",
-   "monto": 62655043183.32
+   "monto": 62655043185.56
   },
   {
    "etapa": "Devengado",
@@ -384,7 +384,7 @@
  "por_departamento": [
   {
    "departamento": "Lima",
-   "monto": 32616629129.66,
+   "monto": 32616629131.9,
    "n": 26372
   },
   {
@@ -1780,10 +1780,10 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 137059317.57,
-   "adjudicado": 137059317.57,
-   "contratado": 137059317.57,
-   "bienes": 23431949.86,
+   "convocado": 137059319.81,
+   "adjudicado": 137059319.81,
+   "contratado": 137059319.81,
+   "bienes": 23431952.1,
    "servicios": 55554042.46,
    "obras": 58073325.25,
    "consultoria": 0.0,
