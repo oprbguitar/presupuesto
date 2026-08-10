@@ -1,7 +1,7 @@
 {
  "anio": 2023,
  "parcial": false,
- "actualizado": "2026-08-03",
+ "actualizado": "2026-08-10",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -15,10 +15,10 @@
   "dev": 222979170306.0,
   "gir": 222575300944.0,
   "pac_programado": null,
-  "convocado": 74891339102.66,
-  "adjudicado": 62655043185.56,
-  "contratado": 62655043185.56,
-  "n_procedimientos": 58903,
+  "convocado": 74888526548.74,
+  "adjudicado": 62652282377.93,
+  "contratado": 62652282377.93,
+  "n_procedimientos": 58901,
   "n_oc": 35281,
   "n_os": 23271,
   "n_proveedores": 33892,
@@ -40,20 +40,20 @@
   },
   {
    "objeto": "Obras",
-   "monto": 27091899306.82,
-   "n": 5239
+   "monto": 27089374706.8,
+   "n": 5238
   },
   {
    "objeto": "Consultoría de obras",
-   "monto": 1782608906.91,
-   "n": 4675
+   "monto": 1782372699.3,
+   "n": 4674
   }
  ],
  "top_categorias": [
   {
    "categoria": "Obras",
-   "monto": 27091899306.82,
-   "n": 5239
+   "monto": 27089374706.8,
+   "n": 5238
   },
   {
    "categoria": "Servicios",
@@ -67,8 +67,8 @@
   },
   {
    "categoria": "Consultoría de obras",
-   "monto": 1782608906.91,
-   "n": 4675
+   "monto": 1782372699.3,
+   "n": 4674
   }
  ],
  "top_proveedores": [
@@ -217,10 +217,10 @@
    "n": 1
   },
   {
-   "proveedor": "PROTECCION Y RESGUARDO S A",
-   "ruc": "20100717124",
-   "monto": 234711313.95,
-   "n": 18
+   "proveedor": "SERVICIOS INTEGRADOS DE LIMPIEZA SA (SIL SA)",
+   "ruc": "20100362598",
+   "monto": 231094803.35,
+   "n": 17
   }
  ],
  "por_tipo_procedimiento": [
@@ -261,8 +261,8 @@
   },
   {
    "tipo": "Adjudicación Simplificada - Decreto Urgencia 032-2023",
-   "monto": 1297528162.89,
-   "n": 594
+   "monto": 1294767355.26,
+   "n": 592
   },
   {
    "tipo": "Regímen Especial",
@@ -351,9 +351,9 @@
   }
  ],
  "comparacion_montos": {
-  "convocado": 74891339102.66,
-  "adjudicado": 62655043185.56,
-  "contratado": 62655043185.56
+  "convocado": 74888526548.74,
+  "adjudicado": 62652282377.93,
+  "contratado": 62652282377.93
  },
  "embudo": [
   {
@@ -366,15 +366,15 @@
   },
   {
    "etapa": "Referencial",
-   "monto": 74891339102.66
+   "monto": 74888526548.74
   },
   {
    "etapa": "Adjudicado",
-   "monto": 62655043185.56
+   "monto": 62652282377.93
   },
   {
    "etapa": "Contratado",
-   "monto": 62655043185.56
+   "monto": 62652282377.93
   },
   {
    "etapa": "Devengado",
@@ -409,8 +409,8 @@
   },
   {
    "departamento": "Junin",
-   "monto": 1864602602.47,
-   "n": 2118
+   "monto": 1861841794.84,
+   "n": 2116
   },
   {
    "departamento": "Ancash",

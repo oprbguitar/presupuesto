@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-03",
+ "actualizado": "2026-08-10",
  "estado_datos": "validado",
  "nota": "Top 2000 proveedores por monto adjudicado (catálogo acotado).",
  "proveedores": [
@@ -571,13 +571,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20100717124",
-   "nombre": "PROTECCION Y RESGUARDO S A",
-   "monto": 235969563.65,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "20100177341",
    "nombre": "PRODUCTOS ROCHE Q F S A",
    "monto": 233616143.63,
@@ -644,6 +637,13 @@
    "ruc": "1601522",
    "nombre": "CONSORCIO VIAL SAUCE",
    "monto": 218000000.0,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20100717124",
+   "nombre": "PROTECCION Y RESGUARDO S A",
+   "monto": 216080336.06,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1124,16 +1124,16 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20468787360",
-   "nombre": "ROCHEM BIOCARE DEL PERU S.A.C",
-   "monto": 156283683.29,
+   "ruc": "20553853355",
+   "nombre": "SIMED PERU S.A.C.",
+   "monto": 156312377.15,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "20553853355",
-   "nombre": "SIMED PERU S.A.C.",
-   "monto": 154982777.15,
+   "ruc": "20468787360",
+   "nombre": "ROCHEM BIOCARE DEL PERU S.A.C",
+   "monto": 156283683.29,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1502,16 +1502,16 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20487782590",
-   "nombre": "2B & C INGENIEROS S.A.C.",
-   "monto": 119991284.41,
+   "ruc": "20516605104",
+   "nombre": "INTEGRIT SOCIEDAD ANONIMA CERRADA - INTEGRIT S.A.C.",
+   "monto": 120392501.49,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "20516605104",
-   "nombre": "INTEGRIT SOCIEDAD ANONIMA CERRADA - INTEGRIT S.A.C.",
-   "monto": 119806001.49,
+   "ruc": "20487782590",
+   "nombre": "2B & C INGENIEROS S.A.C.",
+   "monto": 119991284.41,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -3336,6 +3336,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20502853750",
+   "nombre": "COVIDIEN PERU S.A.",
+   "monto": 55283185.99,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1561089",
    "nombre": "CONSORCIO LIMA EXPRESA",
    "monto": 55258955.42,
@@ -3843,13 +3850,6 @@
    "ruc": "1717249",
    "nombre": "CONSORCIO CANVIA - SONDA",
    "monto": 48665020.0,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20502853750",
-   "nombre": "COVIDIEN PERU S.A.",
-   "monto": 48624445.99,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -6363,13 +6363,6 @@
    "ruc": "20102708394",
    "nombre": "ELECTRONOROESTE S.A",
    "monto": 32296113.45,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20515184113",
-   "nombre": "INNOVACIONES INDUSTRIALES RIPER SOCIEDAD ANONIMA (INIRSA)",
-   "monto": 32257063.28,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -10861,6 +10854,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "L0100717124",
+   "nombre": "PROTECCION Y RESGUARDO S A",
+   "monto": 19889227.59,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20102937661",
    "nombre": "VULCANO S.R.L",
    "monto": 19881551.02,
@@ -13822,13 +13822,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "1795277",
-   "nombre": "CONSORCIO ARICA NUEVA",
-   "monto": 16051083.36,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "585051",
    "nombre": "CONSORCIO SAN PEDRO",
    "monto": 16048892.04,
@@ -14000,6 +13993,13 @@
    "ruc": "20480215819",
    "nombre": "CIX ORION CONTRATISTAS GENERALES SAC",
    "monto": 15919708.42,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20515184113",
+   "nombre": "INNOVACIONES INDUSTRIALES RIPER SOCIEDAD ANONIMA (INIRSA)",
+   "monto": 15914319.68,
    "sancionado": false,
    "sancion_detalle": ""
   }
