@@ -2,7 +2,7 @@
  "modulo": "contrataciones-publicas",
  "version": 3,
  "estado_datos": "validado",
- "actualizado": "2026-08-10",
+ "actualizado": "2026-08-17",
  "cobertura": "Adjudicaciones SEACE (procedimientos de selección, incluye obras) 2023-2025 + órdenes por Catálogos Electrónicos de Perú Compras (2026). Presupuesto nacional del MEF.",
  "anios": [
   2023,
@@ -32,18 +32,18 @@
   {
    "anio": 2024,
    "pim": 262058019205.0,
-   "convocado": 80870168545.7,
-   "adjudicado": 73533593808.84,
-   "contratado": 73533593808.84,
+   "convocado": 80870806146.2,
+   "adjudicado": 73534201900.44,
+   "contratado": 73534201900.44,
    "dev": 238893055447.0,
    "parcial": false
   },
   {
    "anio": 2025,
    "pim": 272450859407.0,
-   "convocado": 72235225578.01,
-   "adjudicado": 68072051156.76,
-   "contratado": 68072051156.76,
+   "convocado": 72188840191.41,
+   "adjudicado": 68032860754.71,
+   "contratado": 68032860754.71,
    "dev": 253679227261.0,
    "parcial": false
   },
@@ -89,12 +89,12 @@
  ],
  "log_actualizacion": [
   {
-   "fecha": "2026-08-10",
+   "fecha": "2026-08-17",
    "evento": "Ingesta real Perú Compras (2026)",
    "estado": "ok"
   },
   {
-   "fecha": "2026-08-10",
+   "fecha": "2026-08-17",
    "evento": "Ingesta SEACE 2023, 2024, 2025 + MEF",
    "estado": "ok"
   }

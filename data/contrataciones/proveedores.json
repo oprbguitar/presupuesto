@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-10",
+ "actualizado": "2026-08-17",
  "estado_datos": "validado",
  "nota": "Top 2000 proveedores por monto adjudicado (catálogo acotado).",
  "proveedores": [
@@ -244,7 +244,7 @@
   {
    "ruc": "20501887286",
    "nombre": "DIAGNOSTICA PERUANA S.A.C.",
-   "monto": 395374060.14,
+   "monto": 395972094.14,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -571,6 +571,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20100717124",
+   "nombre": "PROTECCION Y RESGUARDO S A",
+   "monto": 235969563.65,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20100177341",
    "nombre": "PRODUCTOS ROCHE Q F S A",
    "monto": 233616143.63,
@@ -637,13 +644,6 @@
    "ruc": "1601522",
    "nombre": "CONSORCIO VIAL SAUCE",
    "monto": 218000000.0,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20100717124",
-   "nombre": "PROTECCION Y RESGUARDO S A",
-   "monto": 216080336.06,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1103,6 +1103,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20553853355",
+   "nombre": "SIMED PERU S.A.C.",
+   "monto": 159507527.15,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1696252",
    "nombre": "CONSORCIO PP 911",
    "monto": 157898688.14,
@@ -1120,13 +1127,6 @@
    "ruc": "1624107",
    "nombre": "CONSORCIO VIAL SANTA MARIA",
    "monto": 156754179.01,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20553853355",
-   "nombre": "SIMED PERU S.A.C.",
-   "monto": 156312377.15,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1754,16 +1754,16 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "1686670",
-   "nombre": "CONSORCIO VIAL CHICAMA",
-   "monto": 104437569.67,
+   "ruc": "20101337261",
+   "nombre": "ROCA S.A.C.",
+   "monto": 104667318.06,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "20101337261",
-   "nombre": "ROCA S.A.C.",
-   "monto": 104375592.06,
+   "ruc": "1686670",
+   "nombre": "CONSORCIO VIAL CHICAMA",
+   "monto": 104437569.67,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -4799,6 +4799,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20538597121",
+   "nombre": "DRAEGER  PERU   S.A.C.",
+   "monto": 40223082.4,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1791092",
    "nombre": "CONSORCIO VIRGEN DEL CARMEN",
    "monto": 40052767.39,
@@ -4809,13 +4816,6 @@
    "ruc": "L0603769681",
    "nombre": "SQUIRE PATTON BOGGS (UK) LLP",
    "monto": 39935460.0,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20538597121",
-   "nombre": "DRAEGER  PERU   S.A.C.",
-   "monto": 39906716.8,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -5362,13 +5362,6 @@
    "ruc": "20507371281",
    "nombre": "LAB TOP PERU S.R.L.",
    "monto": 36921060.48,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "1813789",
-   "nombre": "CONSORCIO LOS OLMOS",
-   "monto": 36916596.99,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -10203,14 +10196,14 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "1761759",
+   "ruc": "1756247",
    "nombre": "CONSORCIO LOS INCAS",
    "monto": 20839000.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "1756247",
+   "ruc": "1761759",
    "nombre": "CONSORCIO LOS INCAS",
    "monto": 20839000.0,
    "sancionado": false,
@@ -10850,13 +10843,6 @@
    "ruc": "1679820",
    "nombre": "CONSORCIO CONSULTOR VIAL N10",
    "monto": 19894158.04,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "L0100717124",
-   "nombre": "PROTECCION Y RESGUARDO S A",
-   "monto": 19889227.59,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -14000,6 +13986,20 @@
    "ruc": "20515184113",
    "nombre": "INNOVACIONES INDUSTRIALES RIPER SOCIEDAD ANONIMA (INIRSA)",
    "monto": 15914319.68,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "1572194",
+   "nombre": "CONSORCIO LIBERTAD",
+   "monto": 15905786.23,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "1693619",
+   "nombre": "CONSORCIO SUPERVISOR BOCA DEL RIO TACNA",
+   "monto": 15904669.16,
    "sancionado": false,
    "sancion_detalle": ""
   }

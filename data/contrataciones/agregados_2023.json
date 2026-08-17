@@ -1,7 +1,7 @@
 {
  "anio": 2023,
  "parcial": false,
- "actualizado": "2026-08-10",
+ "actualizado": "2026-08-17",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -21,7 +21,7 @@
   "n_procedimientos": 58901,
   "n_oc": 35281,
   "n_os": 23271,
-  "n_proveedores": 33892,
+  "n_proveedores": 33891,
   "cd_num": 6684,
   "cd_monto": 6152318499.42,
   "desiertos": 0,
@@ -217,10 +217,10 @@
    "n": 1
   },
   {
-   "proveedor": "SERVICIOS INTEGRADOS DE LIMPIEZA SA (SIL SA)",
-   "ruc": "20100362598",
-   "monto": 231094803.35,
-   "n": 17
+   "proveedor": "PROTECCION Y RESGUARDO S A",
+   "ruc": "20100717124",
+   "monto": 234711313.95,
+   "n": 18
   }
  ],
  "por_tipo_procedimiento": [
