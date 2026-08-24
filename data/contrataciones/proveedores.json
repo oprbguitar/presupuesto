@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-17",
+ "actualizado": "2026-08-24",
  "estado_datos": "validado",
  "nota": "Top 2000 proveedores por monto adjudicado (catálogo acotado).",
  "proveedores": [
@@ -160,7 +160,14 @@
   {
    "ruc": "20467534026",
    "nombre": "AMERICA MOVIL PERU S.A.C.",
-   "monto": 491468883.53,
+   "monto": 510230571.69,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20604269009",
+   "nombre": "CHINA CIVIL ENGINEERING CONSTRUCTION CORPORATION SUCURSAL DEL PERU",
+   "monto": 496168435.33,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -279,7 +286,7 @@
   {
    "ruc": "20511037001",
    "nombre": "GRUPO SANTA FE SOCIEDAD ANONIMA CERRADA - GRUPO SANTA FE S.A.C.",
-   "monto": 353390093.96,
+   "monto": 353306528.96,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -412,7 +419,7 @@
   {
    "ruc": "20600989040",
    "nombre": "NEGOCIOS INNOVACIONES E INGENIERIA S.A.",
-   "monto": 283385417.31,
+   "monto": 284220858.49,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -557,6 +564,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20100177341",
+   "nombre": "PRODUCTOS ROCHE Q F S A",
+   "monto": 241907166.82,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1492595",
    "nombre": "CONSORCIO AGUAS DE PROFAM",
    "monto": 239445339.57,
@@ -574,13 +588,6 @@
    "ruc": "20100717124",
    "nombre": "PROTECCION Y RESGUARDO S A",
    "monto": 235969563.65,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20100177341",
-   "nombre": "PRODUCTOS ROCHE Q F S A",
-   "monto": 233616143.63,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1105,7 +1112,7 @@
   {
    "ruc": "20553853355",
    "nombre": "SIMED PERU S.A.C.",
-   "monto": 159507527.15,
+   "monto": 159774927.15,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1113,6 +1120,13 @@
    "ruc": "1696252",
    "nombre": "CONSORCIO PP 911",
    "monto": 157898688.14,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20468787360",
+   "nombre": "ROCHEM BIOCARE DEL PERU S.A.C",
+   "monto": 156820183.29,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1127,13 +1141,6 @@
    "ruc": "1624107",
    "nombre": "CONSORCIO VIAL SANTA MARIA",
    "monto": 156754179.01,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20468787360",
-   "nombre": "ROCHEM BIOCARE DEL PERU S.A.C",
-   "monto": 156283683.29,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1302,6 +1309,13 @@
    "ruc": "1664851",
    "nombre": "CONSORCIO SERVIAS",
    "monto": 136963990.84,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20604884307",
+   "nombre": "DAKH EQUIPOS Y MATERIALES E.I.R.L.",
+   "monto": 136910000.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1630,7 +1644,7 @@
   {
    "ruc": "20108629909",
    "nombre": "CARDIO PERFUSION EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
-   "monto": 111370554.63,
+   "monto": 111799554.63,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1873,16 +1887,16 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "L5552918028",
-   "nombre": "BORNAN SPORTS TECHNOLOGY SL",
-   "monto": 97560975.65,
+   "ruc": "20100176701",
+   "nombre": "ALMACENES SANTA CLARA S A",
+   "monto": 97934220.3,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "20100176701",
-   "nombre": "ALMACENES SANTA CLARA S A",
-   "monto": 96935020.3,
+   "ruc": "L5552918028",
+   "nombre": "BORNAN SPORTS TECHNOLOGY SL",
+   "monto": 97560975.65,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -2881,6 +2895,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20376181015",
+   "nombre": "BECTON DICKINSON DEL URUGUAY SA SUC PERU",
+   "monto": 62959966.11,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20521006588",
    "nombre": "MAFERSA COMPANY S.A.C.",
    "monto": 62915238.6,
@@ -2912,13 +2933,6 @@
    "ruc": "20212561534",
    "nombre": "ALCON PHARMACEUTICAL DEL PERU SA",
    "monto": 62523408.77,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20376181015",
-   "nombre": "BECTON DICKINSON DEL URUGUAY SA SUC PERU",
-   "monto": 62181266.11,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -3052,6 +3066,13 @@
    "ruc": "20609314126",
    "nombre": "SERESCO S.A. SUCURSAL DEL PERU",
    "monto": 58878039.02,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20616168143",
+   "nombre": "CONSORCIO ZARUMILLA 1",
+   "monto": 58750371.76,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -3994,15 +4015,15 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "1606031",
-   "nombre": "CONSORCIO EJECUTOR SHILCAYO",
+   "ruc": "1642218",
+   "nombre": "CONSORCIO EJECUTOR MARTIRES",
    "monto": 47000000.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "1642218",
-   "nombre": "CONSORCIO EJECUTOR MARTIRES",
+   "ruc": "1606031",
+   "nombre": "CONSORCIO EJECUTOR SHILCAYO",
    "monto": 47000000.0,
    "sancionado": false,
    "sancion_detalle": ""
@@ -5362,6 +5383,13 @@
    "ruc": "20507371281",
    "nombre": "LAB TOP PERU S.R.L.",
    "monto": 36921060.48,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "1813789",
+   "nombre": "CONSORCIO LOS OLMOS",
+   "monto": 36916596.99,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -9244,13 +9272,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20348511824",
-   "nombre": "SAMITEX SA",
-   "monto": 23112220.25,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "586044",
    "nombre": "CONSORCIO ZENWARE EILR-ALFILCONSULTORIA COMUNICACIONES SAC-LINE OF COMPUTING SERVICES SAC",
    "monto": 23107587.0,
@@ -9394,6 +9415,13 @@
    "ruc": "20601397553",
    "nombre": "CORPORACION CLABE S.R.L.",
    "monto": 22777662.96,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20348511824",
+   "nombre": "SAMITEX SA",
+   "monto": 22758720.57,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -10161,6 +10189,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20546876722",
+   "nombre": "CORPORACION CRIMOC SOCIEDAD ANONIMA CERRADA - CORPORACION CRIMOC S.A.C.",
+   "monto": 20909765.0,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20600071077",
    "nombre": "VICOP SOCIEDAD ANONIMA",
    "monto": 20901556.76,
@@ -10514,13 +10549,6 @@
    "ruc": "570389",
    "nombre": "CONSORCIO LA UNION",
    "monto": 20405647.15,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20546876722",
-   "nombre": "CORPORACION CRIMOC SOCIEDAD ANONIMA CERRADA - CORPORACION CRIMOC S.A.C.",
-   "monto": 20390123.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -11898,7 +11926,7 @@
   },
   {
    "ruc": "20607015130",
-   "nombre": "PLATAFORMA TECNOLOGICA EN COMUNICACION Y SEGURIDAD S.A.C. - PLATECCS S.A.C.",
+   "nombre": "VERION TECH S.A.C.",
    "monto": 18222500.0,
    "sancionado": false,
    "sancion_detalle": ""
@@ -13972,34 +14000,6 @@
    "ruc": "1567031",
    "nombre": "CONSORCIO CONTIBAM 2024",
    "monto": 15922285.6,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20480215819",
-   "nombre": "CIX ORION CONTRATISTAS GENERALES SAC",
-   "monto": 15919708.42,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20515184113",
-   "nombre": "INNOVACIONES INDUSTRIALES RIPER SOCIEDAD ANONIMA (INIRSA)",
-   "monto": 15914319.68,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "1572194",
-   "nombre": "CONSORCIO LIBERTAD",
-   "monto": 15905786.23,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "1693619",
-   "nombre": "CONSORCIO SUPERVISOR BOCA DEL RIO TACNA",
-   "monto": 15904669.16,
    "sancionado": false,
    "sancion_detalle": ""
   }
