@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-24",
+ "actualizado": "2026-08-31",
  "estado_datos": "validado",
  "nota": "Entidades de adjudicaciones SEACE (con departamento) y Perú Compras. No se asume correspondencia 1:1 con pliego/UE del MEF.",
  "entidades": [
@@ -9701,7 +9701,7 @@
   },
   {
    "id": "E-0809",
-   "nombre": "ESCUELA NACIONAL SUPERIOR DE FOLKLORE",
+   "nombre": "UNIVERSIDAD NACIONAL DE FOLKLORE JOSÉ MARÍA ARGUEDAS",
    "ruc": "20174237388",
    "cod_oece": null,
    "cod_pliego_mef": null,

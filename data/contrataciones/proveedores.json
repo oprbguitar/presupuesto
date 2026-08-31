@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-24",
+ "actualizado": "2026-08-31",
  "estado_datos": "validado",
  "nota": "Top 2000 proveedores por monto adjudicado (catálogo acotado).",
  "proveedores": [
@@ -251,7 +251,7 @@
   {
    "ruc": "20501887286",
    "nombre": "DIAGNOSTICA PERUANA S.A.C.",
-   "monto": 395972094.14,
+   "monto": 396492984.14,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -665,6 +665,13 @@
    "ruc": "588200",
    "nombre": "CONSORCIO CALEMAR",
    "monto": 213026933.51,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "1823454",
+   "nombre": "CONSORCIO OCROS",
+   "monto": 209312182.39,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1208,13 +1215,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20452562864",
-   "nombre": "CONSTRUCTORA J.Q. S.R.L.",
-   "monto": 149042209.54,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "20393633990",
    "nombre": "CONSTRUCTORA PREIMAQ S.A.C.",
    "monto": 148919071.41,
@@ -1313,13 +1313,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20604884307",
-   "nombre": "DAKH EQUIPOS Y MATERIALES E.I.R.L.",
-   "monto": 136910000.0,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "1595884",
    "nombre": "CONSORCIO HOSPITALARIO QUILLABAMBA",
    "monto": 136574698.9,
@@ -1371,7 +1364,7 @@
   {
    "ruc": "20263368992",
    "nombre": "CYMED MEDICAL SAC",
-   "monto": 134223924.4,
+   "monto": 134508324.4,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1561,6 +1554,13 @@
    "ruc": "1475008",
    "nombre": "CONSORCIO PIURA",
    "monto": 117775971.89,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20452562864",
+   "nombre": "CONSTRUCTORA J.Q. S.R.L.",
+   "monto": 116956707.88,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -2398,6 +2398,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20519049822",
+   "nombre": "PACIFICO EDITORES S.A.C.",
+   "monto": 75279827.9,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1534480",
    "nombre": "CONSORCIO VIAL TURICARAMI",
    "monto": 75237754.5,
@@ -2503,6 +2510,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20506248036",
+   "nombre": "ALKHOFAR SOCIEDAD ANONIMA CERRADA",
+   "monto": 72081298.42,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "561530",
    "nombre": "CONSORCIO CONSTRUCTOR AREQUIPA",
    "monto": 71732289.99,
@@ -2513,13 +2527,6 @@
    "ruc": "1612945",
    "nombre": "CONSORCIO CASUARINAS",
    "monto": 71564817.09,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20519049822",
-   "nombre": "PACIFICO EDITORES S.A.C.",
-   "monto": 71517161.24,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -2555,13 +2562,6 @@
    "ruc": "1639111",
    "nombre": "CONSORCIO EDUCATIVO GALVEZ",
    "monto": 70988547.79,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20506248036",
-   "nombre": "ALKHOFAR SOCIEDAD ANONIMA CERRADA",
-   "monto": 70926632.82,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -4015,15 +4015,15 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "1642218",
-   "nombre": "CONSORCIO EJECUTOR MARTIRES",
+   "ruc": "1606031",
+   "nombre": "CONSORCIO EJECUTOR SHILCAYO",
    "monto": 47000000.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "1606031",
-   "nombre": "CONSORCIO EJECUTOR SHILCAYO",
+   "ruc": "1642218",
+   "nombre": "CONSORCIO EJECUTOR MARTIRES",
    "monto": 47000000.0,
    "sancionado": false,
    "sancion_detalle": ""
@@ -4729,6 +4729,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20538597121",
+   "nombre": "DRAEGER  PERU   S.A.C.",
+   "monto": 40855813.6,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20526146191",
    "nombre": "EXAMOVA MAQUINARIAS Y SERVICIOS E.I.R.L.",
    "monto": 40795253.81,
@@ -4816,13 +4823,6 @@
    "ruc": "20538736695",
    "nombre": "CHALSA CORPORATION S.A.C.",
    "monto": 40242899.99,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20538597121",
-   "nombre": "DRAEGER  PERU   S.A.C.",
-   "monto": 40223082.4,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -6521,6 +6521,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20602964320",
+   "nombre": "COEPER PERU S.A.C.",
+   "monto": 31707568.25,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20602007970",
    "nombre": "LC BIOCORP S.A.C.",
    "monto": 31705167.11,
@@ -7025,6 +7032,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20307704049",
+   "nombre": "CARDIO EQUIPOS E.I.R.L.",
+   "monto": 29807775.5,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1599982",
    "nombre": "CONSORCIO EL CUMBE",
    "monto": 29800622.69,
@@ -7084,13 +7098,6 @@
    "ruc": "20264180971",
    "nombre": "PROFILE CONSULTING GROUP SOCIEDAD ANONIMA CERRADA - PROFILE CONSULTING GROUP S.A.C.",
    "monto": 29628476.62,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20307704049",
-   "nombre": "CARDIO EQUIPOS E.I.R.L.",
-   "monto": 29616815.5,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -7308,6 +7315,13 @@
    "ruc": "20375937884",
    "nombre": "VIGILANCIA UNIVERSAL S.A.C.",
    "monto": 28559669.48,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20477760318",
+   "nombre": "ACVO INGENIERIA Y CONSTRUCCION S.A.C.",
+   "monto": 28554798.09,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -9013,13 +9027,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20477760318",
-   "nombre": "ACVO INGENIERIA Y CONSTRUCCION S.A.C.",
-   "monto": 23804722.27,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "1764063",
    "nombre": "CONSORCIO ELECTRICO SAN CHILINA",
    "monto": 23795393.95,
@@ -9058,6 +9065,13 @@
    "ruc": "20605898905",
    "nombre": "CONSTRUCTORA POLADIS S.R.L",
    "monto": 23745502.63,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20452523451",
+   "nombre": "INVERSIONES V Y V S.A.C.",
+   "monto": 23724515.53,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -9135,6 +9149,13 @@
    "ruc": "1469091",
    "nombre": "CONSORCIO VIAL ROSARIO",
    "monto": 23521102.11,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20511549249",
+   "nombre": "NOVA MEDICAL S.A.C.",
+   "monto": 23514350.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -9576,13 +9597,6 @@
    "ruc": "1495538",
    "nombre": "CONSORCIO BICENTENARIO I",
    "monto": 22447577.34,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20452523451",
-   "nombre": "INVERSIONES V Y V S.A.C.",
-   "monto": 22433303.71,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -10231,14 +10245,14 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "1756247",
+   "ruc": "1761759",
    "nombre": "CONSORCIO LOS INCAS",
    "monto": 20839000.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "1761759",
+   "ruc": "1756247",
    "nombre": "CONSORCIO LOS INCAS",
    "monto": 20839000.0,
    "sancionado": false,
@@ -10458,6 +10472,13 @@
    "ruc": "1517806",
    "nombre": "CONSORCIO VIAL JOSE GALVEZ",
    "monto": 20553193.33,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20423555182",
+   "nombre": "CIA IMPORTADORA AMERICANA S.A.",
+   "monto": 20546087.8,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -10724,13 +10745,6 @@
    "ruc": "20511751404",
    "nombre": "INDUSTRIAS GABUTEAU SOCIEDAD ANONIMA",
    "monto": 20137282.0,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20423555182",
-   "nombre": "CIA IMPORTADORA AMERICANA S.A.",
-   "monto": 20136887.8,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -13766,13 +13780,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20511549249",
-   "nombre": "NOVA MEDICAL S.A.C.",
-   "monto": 16109350.0,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "1551504",
    "nombre": "CONSORCIO EDUCATIVO SAN JUAN BAUTISTA LA SALLE",
    "monto": 16100000.0,
@@ -13993,13 +14000,6 @@
    "ruc": "1574409",
    "nombre": "CONSORCIO NUEVA JERUSALEN 24",
    "monto": 15937021.6,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "1567031",
-   "nombre": "CONSORCIO CONTIBAM 2024",
-   "monto": 15922285.6,
    "sancionado": false,
    "sancion_detalle": ""
   }
