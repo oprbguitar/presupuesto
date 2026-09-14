@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-07",
+ "actualizado": "2026-09-14",
  "estado_datos": "validado",
  "nota": "Entidades de adjudicaciones SEACE (con departamento) y Perú Compras. No se asume correspondencia 1:1 con pliego/UE del MEF.",
  "entidades": [
@@ -29561,7 +29561,7 @@
   },
   {
    "id": "E-2464",
-   "nombre": "INSTITUTO VIAL PROVINCIAL MUNICIPAL DE JAUJA - IVP JAUJA",
+   "nombre": "INSTITUTO VIAL PROVINCIAL MUNICIPAL DE JAUJA",
    "ruc": "20486672871",
    "cod_oece": null,
    "cod_pliego_mef": null,

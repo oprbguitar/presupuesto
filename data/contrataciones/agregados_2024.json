@@ -1,7 +1,7 @@
 {
  "anio": 2024,
  "parcial": false,
- "actualizado": "2026-09-07",
+ "actualizado": "2026-09-14",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -15,13 +15,13 @@
   "dev": 238893055447.0,
   "gir": 238459697695.0,
   "pac_programado": null,
-  "convocado": 80871732125.69,
-  "adjudicado": 73534997080.98,
-  "contratado": 73534997080.98,
+  "convocado": 80871837116.03,
+  "adjudicado": 73535047245.27,
+  "contratado": 73535047245.27,
   "n_procedimientos": 60604,
-  "n_oc": 32913,
-  "n_os": 22742,
-  "n_proveedores": 34911,
+  "n_oc": 32914,
+  "n_os": 22741,
+  "n_proveedores": 34910,
   "cd_num": 4430,
   "cd_monto": 5151427395.62,
   "desiertos": 0,
@@ -30,13 +30,13 @@
  "distribucion_objeto": [
   {
    "objeto": "Bienes",
-   "monto": 14109770051.05,
-   "n": 32913
+   "monto": 14110079215.34,
+   "n": 32914
   },
   {
    "objeto": "Servicios",
-   "monto": 19334409459.56,
-   "n": 22742
+   "monto": 19334150459.56,
+   "n": 22741
   },
   {
    "objeto": "Obras",
@@ -57,13 +57,13 @@
   },
   {
    "categoria": "Servicios",
-   "monto": 19334409459.56,
-   "n": 22742
+   "monto": 19334150459.56,
+   "n": 22741
   },
   {
    "categoria": "Bienes",
-   "monto": 14109770051.05,
-   "n": 32913
+   "monto": 14110079215.34,
+   "n": 32914
   },
   {
    "categoria": "Consultoría de obras",
@@ -231,7 +231,7 @@
   },
   {
    "tipo": "Adjudicación Simplificada",
-   "monto": 15701626151.44,
+   "monto": 15701676315.73,
    "n": 34792
   },
   {
@@ -341,9 +341,9 @@
   }
  ],
  "comparacion_montos": {
-  "convocado": 80871732125.69,
-  "adjudicado": 73534997080.98,
-  "contratado": 73534997080.98
+  "convocado": 80871837116.03,
+  "adjudicado": 73535047245.27,
+  "contratado": 73535047245.27
  },
  "embudo": [
   {
@@ -356,15 +356,15 @@
   },
   {
    "etapa": "Referencial",
-   "monto": 80871732125.69
+   "monto": 80871837116.03
   },
   {
    "etapa": "Adjudicado",
-   "monto": 73534997080.98
+   "monto": 73535047245.27
   },
   {
    "etapa": "Contratado",
-   "monto": 73534997080.98
+   "monto": 73535047245.27
   },
   {
    "etapa": "Devengado",
@@ -374,8 +374,8 @@
  "por_departamento": [
   {
    "departamento": "Lima",
-   "monto": 37822344204.91,
-   "n": 24208
+   "monto": 37822653369.2,
+   "n": 24209
   },
   {
    "departamento": "La Libertad",
@@ -449,8 +449,8 @@
   },
   {
    "departamento": "Puno",
-   "monto": 1207070150.28,
-   "n": 2582
+   "monto": 1206811150.28,
+   "n": 2581
   },
   {
    "departamento": "Huanuco",
@@ -522,14 +522,14 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 2781804034.29,
-   "adjudicado": 2781804034.29,
-   "contratado": 2781804034.29,
-   "bienes": 1464266118.95,
+   "convocado": 2782113198.58,
+   "adjudicado": 2782113198.58,
+   "contratado": 2782113198.58,
+   "bienes": 1464575283.24,
    "servicios": 733782810.8,
    "obras": 557157477.36,
    "consultoria": 26597627.18,
-   "n": 2059
+   "n": 2060
   },
   {
    "id": "E-1641",
@@ -3828,22 +3828,6 @@
    "n": 64
   },
   {
-   "id": "E-0215",
-   "entidad": "UNIVERSIDAD NACIONAL DEL ALTIPLANO",
-   "ruc": "20145496170",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Puno",
-   "convocado": 54276181.33,
-   "adjudicado": 54276181.33,
-   "contratado": 54276181.33,
-   "bienes": 44880091.3,
-   "servicios": 9396090.03,
-   "obras": 0.0,
-   "consultoria": 0.0,
-   "n": 153
-  },
-  {
    "id": "E-0377",
    "entidad": "MUNICIPALIDAD PROVINCIAL DE MARISCAL NIETO - MOQUEGUA",
    "ruc": "20154469941",
@@ -3890,6 +3874,22 @@
    "obras": 45114792.33,
    "consultoria": 3032519.05,
    "n": 79
+  },
+  {
+   "id": "E-0215",
+   "entidad": "UNIVERSIDAD NACIONAL DEL ALTIPLANO",
+   "ruc": "20145496170",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Puno",
+   "convocado": 54017181.33,
+   "adjudicado": 54017181.33,
+   "contratado": 54017181.33,
+   "bienes": 44880091.3,
+   "servicios": 9137090.03,
+   "obras": 0.0,
+   "consultoria": 0.0,
+   "n": 152
   },
   {
    "id": "E-2619",

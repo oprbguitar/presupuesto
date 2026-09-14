@@ -1,7 +1,7 @@
 {
  "anio": 2025,
  "parcial": false,
- "actualizado": "2026-09-07",
+ "actualizado": "2026-09-14",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -15,13 +15,13 @@
   "dev": 253679227261.0,
   "gir": 253412318120.0,
   "pac_programado": null,
-  "convocado": 73171792185.09,
-  "adjudicado": 68917745340.53,
-  "contratado": 68917745340.53,
-  "n_procedimientos": 58093,
-  "n_oc": 30044,
-  "n_os": 21896,
-  "n_proveedores": 34491,
+  "convocado": 73087580319.17,
+  "adjudicado": 68824744014.1,
+  "contratado": 68824744014.1,
+  "n_procedimientos": 58129,
+  "n_oc": 30059,
+  "n_os": 21905,
+  "n_proveedores": 34509,
   "cd_num": 4315,
   "cd_monto": 6786222571.84,
   "desiertos": 0,
@@ -30,45 +30,45 @@
  "distribucion_objeto": [
   {
    "objeto": "Bienes",
-   "monto": 12718147999.82,
-   "n": 30044
+   "monto": 12701572149.39,
+   "n": 30059
   },
   {
    "objeto": "Servicios",
-   "monto": 18302650732.95,
-   "n": 21896
+   "monto": 18618809106.89,
+   "n": 21905
   },
   {
    "objeto": "Obras",
-   "monto": 35540410787.09,
-   "n": 7014
+   "monto": 35145557948.99,
+   "n": 7025
   },
   {
    "objeto": "Consultoría de obras",
-   "monto": 2356535820.67,
-   "n": 5061
+   "monto": 2358804808.83,
+   "n": 5064
   }
  ],
  "top_categorias": [
   {
    "categoria": "Obras",
-   "monto": 35540410787.09,
-   "n": 7014
+   "monto": 35145557948.99,
+   "n": 7025
   },
   {
    "categoria": "Servicios",
-   "monto": 18302650732.95,
-   "n": 21896
+   "monto": 18618809106.89,
+   "n": 21905
   },
   {
    "categoria": "Bienes",
-   "monto": 12718147999.82,
-   "n": 30044
+   "monto": 12701572149.39,
+   "n": 30059
   },
   {
    "categoria": "Consultoría de obras",
-   "monto": 2356535820.67,
-   "n": 5061
+   "monto": 2358804808.83,
+   "n": 5064
   }
  ],
  "top_proveedores": [
@@ -95,12 +95,6 @@
    "ruc": "1719581",
    "monto": 598800820.99,
    "n": 1
-  },
-  {
-   "proveedor": "CHINA CIVIL ENGINEERING CONSTRUCTION CORPORATION SUCURSAL DEL PERU",
-   "ruc": "20604269009",
-   "monto": 496168435.33,
-   "n": 2
   },
   {
    "proveedor": "SINOHYDRO CORPORATION LIMITED, SUCURSAL DEL PERU",
@@ -160,6 +154,12 @@
    "proveedor": "CONSORCIO SAN FELIPE",
    "ruc": "1753284",
    "monto": 246417533.3,
+   "n": 1
+  },
+  {
+   "proveedor": "CONSORCIO PUNO",
+   "ruc": "1828331",
+   "monto": 243072942.02,
    "n": 1
   },
   {
@@ -226,18 +226,18 @@
  "por_tipo_procedimiento": [
   {
    "tipo": "Licitación Pública",
-   "monto": 24650763021.22,
-   "n": 4118
+   "monto": 24190760860.01,
+   "n": 4122
   },
   {
    "tipo": "Adjudicación Simplificada",
-   "monto": 7681296309.29,
-   "n": 12449
+   "monto": 7682932414.49,
+   "n": 12450
   },
   {
    "tipo": "Licitación Pública Abreviada",
-   "monto": 7658130933.28,
-   "n": 11233
+   "monto": 7660404414.01,
+   "n": 11241
   },
   {
    "tipo": "Contratación Directa",
@@ -246,18 +246,18 @@
   },
   {
    "tipo": "Concurso Público de Servicios",
-   "monto": 5544381136.78,
-   "n": 2058
+   "monto": 5614785288.22,
+   "n": 2062
   },
   {
    "tipo": "Concurso Público",
-   "monto": 3291609340.83,
-   "n": 1132
+   "monto": 3289431340.83,
+   "n": 1131
   },
   {
    "tipo": "Convenio",
-   "monto": 2732263668.31,
-   "n": 2213
+   "monto": 3012817951.78,
+   "n": 2221
   },
   {
    "tipo": "Subasta Inversa Electrónica",
@@ -266,13 +266,13 @@
   },
   {
    "tipo": "Regímen Especial",
-   "monto": 2152311788.0,
-   "n": 2298
+   "monto": 2162082977.06,
+   "n": 2308
   },
   {
    "tipo": "Concurso Público Abreviado",
-   "monto": 2076212028.43,
-   "n": 9308
+   "monto": 2076529357.8,
+   "n": 9309
   },
   {
    "tipo": "Contratación Internacional",
@@ -286,8 +286,8 @@
   },
   {
    "tipo": "Concurso Público para Consultoría",
-   "monto": 668290070.09,
-   "n": 484
+   "monto": 672512365.6,
+   "n": 487
   },
   {
    "tipo": "Adjudicación Selectiva",
@@ -376,9 +376,9 @@
   }
  ],
  "comparacion_montos": {
-  "convocado": 73171792185.09,
-  "adjudicado": 68917745340.53,
-  "contratado": 68917745340.53
+  "convocado": 73087580319.17,
+  "adjudicado": 68824744014.1,
+  "contratado": 68824744014.1
  },
  "embudo": [
   {
@@ -391,15 +391,15 @@
   },
   {
    "etapa": "Referencial",
-   "monto": 73171792185.09
+   "monto": 73087580319.17
   },
   {
    "etapa": "Adjudicado",
-   "monto": 68917745340.53
+   "monto": 68824744014.1
   },
   {
    "etapa": "Contratado",
-   "monto": 68917745340.53
+   "monto": 68824744014.1
   },
   {
    "etapa": "Devengado",
@@ -409,8 +409,8 @@
  "por_departamento": [
   {
    "departamento": "Lima",
-   "monto": 31233988439.69,
-   "n": 21408
+   "monto": 31018351139.85,
+   "n": 21428
   },
   {
    "departamento": "Piura",
@@ -419,18 +419,18 @@
   },
   {
    "departamento": "La Libertad",
-   "monto": 2886550434.22,
-   "n": 2194
+   "monto": 2887420941.22,
+   "n": 2197
   },
   {
    "departamento": "Cajamarca",
-   "monto": 2820925602.25,
-   "n": 2550
+   "monto": 2834844952.23,
+   "n": 2553
   },
   {
    "departamento": "Cusco",
-   "monto": 2724228181.82,
-   "n": 4753
+   "monto": 2724493391.82,
+   "n": 4755
   },
   {
    "departamento": "Ancash",
@@ -444,18 +444,18 @@
   },
   {
    "departamento": "Arequipa",
-   "monto": 2302537242.16,
-   "n": 2303
+   "monto": 2372624260.14,
+   "n": 2307
   },
   {
    "departamento": "Ica",
-   "monto": 1846525210.99,
-   "n": 1254
+   "monto": 1844347210.99,
+   "n": 1253
   },
   {
    "departamento": "Puno",
-   "monto": 1620913312.46,
-   "n": 2820
+   "monto": 1624361830.86,
+   "n": 2822
   },
   {
    "departamento": "Loreto",
@@ -464,8 +464,8 @@
   },
   {
    "departamento": "Lambayeque",
-   "monto": 1424902998.81,
-   "n": 966
+   "monto": 1428501867.2,
+   "n": 969
   },
   {
    "departamento": "Huanuco",
@@ -509,8 +509,8 @@
   },
   {
    "departamento": "Callao",
-   "monto": 973763411.3,
-   "n": 1266
+   "monto": 1005848912.96,
+   "n": 1267
   },
   {
    "departamento": "Apurimac",
@@ -519,8 +519,8 @@
   },
   {
    "departamento": "Moquegua",
-   "monto": 418647297.66,
-   "n": 1087
+   "monto": 419186297.66,
+   "n": 1088
   },
   {
    "departamento": "Tumbes",
@@ -557,12 +557,12 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 2367716058.96,
-   "adjudicado": 2367716058.96,
-   "contratado": 2367716058.96,
+   "convocado": 1871771624.63,
+   "adjudicado": 1871771624.63,
+   "contratado": 1871771624.63,
    "bienes": 60444276.2,
-   "servicios": 917302636.59,
-   "obras": 1317650262.11,
+   "servicios": 917526636.59,
+   "obras": 821481827.78,
    "consultoria": 72318884.06,
    "n": 308
   },
@@ -589,14 +589,14 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 1283621316.54,
-   "adjudicado": 1283621316.54,
-   "contratado": 1283621316.54,
-   "bienes": 588507330.07,
-   "servicios": 688521061.58,
+   "convocado": 1284319337.54,
+   "adjudicado": 1284319337.54,
+   "contratado": 1284319337.54,
+   "bienes": 589378546.07,
+   "servicios": 688347866.58,
    "obras": 0.0,
    "consultoria": 6592924.89,
-   "n": 1150
+   "n": 1152
   },
   {
    "id": "E-2450",
@@ -613,6 +613,22 @@
    "obras": 1109750266.19,
    "consultoria": 76356131.71,
    "n": 397
+  },
+  {
+   "id": "E-2226",
+   "entidad": "MTC-PROYECTO ESPECIAL DE INFRAESTRUCTURA DE TRANSPORTE DESCENTRALIZADO - PROVIAS DESCENTRALIZADO",
+   "ruc": "20380419247",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Lima",
+   "convocado": 1205408218.8,
+   "adjudicado": 1205408218.8,
+   "contratado": 1205408218.8,
+   "bienes": 2496530.9,
+   "servicios": 877605158.5,
+   "obras": 300727609.06,
+   "consultoria": 24578920.34,
+   "n": 91
   },
   {
    "id": "E-0009",
@@ -637,14 +653,14 @@
    "nivel": "Regional",
    "sector": "",
    "departamento": "La Libertad",
-   "convocado": 1131227958.93,
-   "adjudicado": 1131227958.93,
-   "contratado": 1131227958.93,
-   "bienes": 50223170.43,
+   "convocado": 1132098465.93,
+   "adjudicado": 1132098465.93,
+   "contratado": 1132098465.93,
+   "bienes": 51093677.43,
    "servicios": 17720790.28,
    "obras": 1015910722.99,
    "consultoria": 47373275.23,
-   "n": 202
+   "n": 205
   },
   {
    "id": "E-2696",
@@ -661,22 +677,6 @@
    "obras": 0.0,
    "consultoria": 0.0,
    "n": 471
-  },
-  {
-   "id": "E-2226",
-   "entidad": "MTC-PROYECTO ESPECIAL DE INFRAESTRUCTURA DE TRANSPORTE DESCENTRALIZADO - PROVIAS DESCENTRALIZADO",
-   "ruc": "20380419247",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 945695997.34,
-   "adjudicado": 945695997.34,
-   "contratado": 945695997.34,
-   "bienes": 2496530.9,
-   "servicios": 634824564.43,
-   "obras": 284676525.7,
-   "consultoria": 23698376.31,
-   "n": 89
   },
   {
    "id": "E-2442",
@@ -733,14 +733,14 @@
    "nivel": "Local",
    "sector": "",
    "departamento": "Ica",
-   "convocado": 791124374.63,
-   "adjudicado": 791124374.63,
-   "contratado": 791124374.63,
+   "convocado": 788946374.63,
+   "adjudicado": 788946374.63,
+   "contratado": 788946374.63,
    "bienes": 11671400.62,
    "servicios": 5197772.42,
    "obras": 746915463.85,
-   "consultoria": 27339737.74,
-   "n": 127
+   "consultoria": 25161737.74,
+   "n": 126
   },
   {
    "id": "E-0010",
@@ -797,14 +797,14 @@
    "nivel": "Regional",
    "sector": "",
    "departamento": "Puno",
-   "convocado": 592080512.4,
-   "adjudicado": 592080512.4,
-   "contratado": 592080512.4,
-   "bienes": 243101958.58,
+   "convocado": 595529030.8,
+   "adjudicado": 595529030.8,
+   "contratado": 595529030.8,
+   "bienes": 243747458.58,
    "servicios": 32618205.67,
    "obras": 297368896.98,
-   "consultoria": 18991451.17,
-   "n": 722
+   "consultoria": 21794469.57,
+   "n": 724
   },
   {
    "id": "E-2417",
@@ -1255,6 +1255,22 @@
    "n": 58
   },
   {
+   "id": "E-0013",
+   "entidad": "SOCIEDAD ELECTRICA DEL SUR OESTE S.A.",
+   "ruc": "20100188628",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Arequipa",
+   "convocado": 269700785.1,
+   "adjudicado": 269700785.1,
+   "contratado": 269700785.1,
+   "bienes": 30199040.48,
+   "servicios": 158951127.37,
+   "obras": 70618400.09,
+   "consultoria": 9932217.16,
+   "n": 98
+  },
+  {
    "id": "E-2592",
    "entidad": "MUNICIPALIDAD DISTRITAL DE CORONEL GREGORIO ALBARRACIN LANCHIPA",
    "ruc": "20519610214",
@@ -1415,22 +1431,6 @@
    "n": 97
   },
   {
-   "id": "E-2408",
-   "entidad": "FONDO NACIONAL DE FINANCIAMIENTO DE LA ACTIVIDAD EMPRESARIAL - FONAFE",
-   "ruc": "20458605662",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 227148928.33,
-   "adjudicado": 227148928.33,
-   "contratado": 227148928.33,
-   "bienes": 58649115.4,
-   "servicios": 168499812.93,
-   "obras": 0.0,
-   "consultoria": 0.0,
-   "n": 38
-  },
-  {
    "id": "E-2742",
    "entidad": "UNIDAD EJECUTORA 003 GESTION INTEGRAL DE LA CALIDAD AMBIENTAL",
    "ruc": "20551322590",
@@ -1527,22 +1527,6 @@
    "n": 745
   },
   {
-   "id": "E-0013",
-   "entidad": "SOCIEDAD ELECTRICA DEL SUR OESTE S.A.",
-   "ruc": "20100188628",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Arequipa",
-   "convocado": 201609162.26,
-   "adjudicado": 201609162.26,
-   "contratado": 201609162.26,
-   "bienes": 30199040.48,
-   "servicios": 90859504.53,
-   "obras": 70618400.09,
-   "consultoria": 9932217.16,
-   "n": 96
-  },
-  {
    "id": "E-0108",
    "entidad": "MUNICIPALIDAD DISTRITAL DE SAN MARTIN DE PORRES",
    "ruc": "20131372427",
@@ -1559,6 +1543,22 @@
    "n": 75
   },
   {
+   "id": "E-2408",
+   "entidad": "FONDO NACIONAL DE FINANCIAMIENTO DE LA ACTIVIDAD EMPRESARIAL - FONAFE",
+   "ruc": "20458605662",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Lima",
+   "convocado": 197946166.18,
+   "adjudicado": 197946166.18,
+   "contratado": 197946166.18,
+   "bienes": 29446353.25,
+   "servicios": 168499812.93,
+   "obras": 0.0,
+   "consultoria": 0.0,
+   "n": 34
+  },
+  {
    "id": "E-2589",
    "entidad": "INSTITUTO NACIONAL DE ENFERMEDADES NEOPLASICAS",
    "ruc": "20514964778",
@@ -1573,6 +1573,22 @@
    "obras": 0.0,
    "consultoria": 843539.52,
    "n": 178
+  },
+  {
+   "id": "E-2215",
+   "entidad": "GOBIERNO REGIONAL DE CAJAMARCA - GERENCIA SUB REGIONAL JAEN",
+   "ruc": "20368807916",
+   "nivel": "Regional",
+   "sector": "",
+   "departamento": "Cajamarca",
+   "convocado": 192138850.91,
+   "adjudicado": 192138850.91,
+   "contratado": 192138850.91,
+   "bienes": 691998.84,
+   "servicios": 1090866.82,
+   "obras": 183657409.78,
+   "consultoria": 6698575.47,
+   "n": 53
   },
   {
    "id": "E-1641",
@@ -1597,14 +1613,30 @@
    "nivel": "Local",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 183889317.73,
-   "adjudicado": 183889317.73,
-   "contratado": 183889317.73,
-   "bienes": 83106928.7,
+   "convocado": 185089264.73,
+   "adjudicado": 185089264.73,
+   "contratado": 185089264.73,
+   "bienes": 84306875.7,
    "servicios": 74772583.02,
    "obras": 24940621.95,
    "consultoria": 1069184.06,
-   "n": 50
+   "n": 51
+  },
+  {
+   "id": "E-2093",
+   "entidad": "OFICINA NACIONAL DE PROCESOS ELECTORALES",
+   "ruc": "20291973851",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Lima",
+   "convocado": 181820464.89,
+   "adjudicado": 181820464.89,
+   "contratado": 181820464.89,
+   "bienes": 93665642.86,
+   "servicios": 88154822.03,
+   "obras": 0.0,
+   "consultoria": 0.0,
+   "n": 246
   },
   {
    "id": "E-2230",
@@ -1621,22 +1653,6 @@
    "obras": 0.0,
    "consultoria": 0.0,
    "n": 34
-  },
-  {
-   "id": "E-2215",
-   "entidad": "GOBIERNO REGIONAL DE CAJAMARCA - GERENCIA SUB REGIONAL JAEN",
-   "ruc": "20368807916",
-   "nivel": "Regional",
-   "sector": "",
-   "departamento": "Cajamarca",
-   "convocado": 178444193.58,
-   "adjudicado": 178444193.58,
-   "contratado": 178444193.58,
-   "bienes": 691998.84,
-   "servicios": 1090866.82,
-   "obras": 170501485.53,
-   "consultoria": 6159842.39,
-   "n": 51
   },
   {
    "id": "E-2877",
@@ -1669,22 +1685,6 @@
    "obras": 146418245.76,
    "consultoria": 4854269.94,
    "n": 183
-  },
-  {
-   "id": "E-2093",
-   "entidad": "OFICINA NACIONAL DE PROCESOS ELECTORALES",
-   "ruc": "20291973851",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 172049275.83,
-   "adjudicado": 172049275.83,
-   "contratado": 172049275.83,
-   "bienes": 85716883.14,
-   "servicios": 86332392.69,
-   "obras": 0.0,
-   "consultoria": 0.0,
-   "n": 236
   },
   {
    "id": "E-2622",
@@ -1941,6 +1941,22 @@
    "obras": 18945638.5,
    "consultoria": 189941.02,
    "n": 66
+  },
+  {
+   "id": "E-2570",
+   "entidad": "GOBIERNO REGIONAL DE CALLAO SEDE CENTRAL",
+   "ruc": "20505703554",
+   "nivel": "Regional",
+   "sector": "",
+   "departamento": "Callao",
+   "convocado": 135315721.42,
+   "adjudicado": 135315721.42,
+   "contratado": 135315721.42,
+   "bienes": 28846385.36,
+   "servicios": 20661943.86,
+   "obras": 80252581.97,
+   "consultoria": 5554810.23,
+   "n": 67
   },
   {
    "id": "E-1993",
@@ -2295,22 +2311,6 @@
    "n": 7
   },
   {
-   "id": "E-2570",
-   "entidad": "GOBIERNO REGIONAL DE CALLAO SEDE CENTRAL",
-   "ruc": "20505703554",
-   "nivel": "Regional",
-   "sector": "",
-   "departamento": "Callao",
-   "convocado": 103230219.76,
-   "adjudicado": 103230219.76,
-   "contratado": 103230219.76,
-   "bienes": 28846385.36,
-   "servicios": 20661943.86,
-   "obras": 48167080.31,
-   "consultoria": 5554810.23,
-   "n": 66
-  },
-  {
    "id": "E-2907",
    "entidad": "UNIDAD EJECUTORA MEJORAMIENTO DEL SISTEMA DE INFORMACION DE LA SUNAT - MSI",
    "ruc": "20602259065",
@@ -2375,6 +2375,22 @@
    "n": 68
   },
   {
+   "id": "E-0019",
+   "entidad": "EMPRESA DE SERVICIO PUBLICO DE ELECTRICIDAD ELECTRONORTE S.A.",
+   "ruc": "20103117560",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Lambayeque",
+   "convocado": 101343387.88,
+   "adjudicado": 101343387.88,
+   "contratado": 101343387.88,
+   "bienes": 20859427.73,
+   "servicios": 37629958.79,
+   "obras": 39882641.58,
+   "consultoria": 2971359.78,
+   "n": 47
+  },
+  {
    "id": "E-0137",
    "entidad": "MINISTERIO DE RELACIONES EXTERIORES",
    "ruc": "20131380101",
@@ -2405,22 +2421,6 @@
    "obras": 0.0,
    "consultoria": 0.0,
    "n": 48
-  },
-  {
-   "id": "E-0019",
-   "entidad": "EMPRESA DE SERVICIO PUBLICO DE ELECTRICIDAD ELECTRONORTE S.A.",
-   "ruc": "20103117560",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lambayeque",
-   "convocado": 99030859.28,
-   "adjudicado": 99030859.28,
-   "contratado": 99030859.28,
-   "bienes": 20859427.73,
-   "servicios": 35317430.19,
-   "obras": 39882641.58,
-   "consultoria": 2971359.78,
-   "n": 45
   },
   {
    "id": "E-0313",
@@ -3063,6 +3063,22 @@
    "n": 53
   },
   {
+   "id": "E-2735",
+   "entidad": "PROGRAMA NACIONAL DE SANEAMIENTO RURAL",
+   "ruc": "20548776920",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Lima",
+   "convocado": 76001499.31,
+   "adjudicado": 76001499.31,
+   "contratado": 76001499.31,
+   "bienes": 4861795.66,
+   "servicios": 23408755.53,
+   "obras": 44174095.98,
+   "consultoria": 3556852.14,
+   "n": 61
+  },
+  {
    "id": "E-2395",
    "entidad": "GOBIERNO REGIONAL DE CAJAMARCA DIRECCION REGIONAL AGRARIA CAJAMARCA",
    "ruc": "20453743862",
@@ -3357,14 +3373,14 @@
    "nivel": "Local",
    "sector": "",
    "departamento": "Cusco",
-   "convocado": 66908885.7,
-   "adjudicado": 66908885.7,
-   "contratado": 66908885.7,
-   "bienes": 36051597.54,
+   "convocado": 66974675.7,
+   "adjudicado": 66974675.7,
+   "contratado": 66974675.7,
+   "bienes": 36117387.54,
    "servicios": 2826133.9,
    "obras": 26499135.96,
    "consultoria": 1532018.3,
-   "n": 184
+   "n": 185
   },
   {
    "id": "E-2578",
@@ -3607,6 +3623,22 @@
    "n": 79
   },
   {
+   "id": "E-2745",
+   "entidad": "INSTITUTO NACIONAL DE SALUD DEL NIÑO - SAN BORJA",
+   "ruc": "20552196725",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Lima",
+   "convocado": 60876952.72,
+   "adjudicado": 60876952.72,
+   "contratado": 60876952.72,
+   "bienes": 58820632.89,
+   "servicios": 2056319.83,
+   "obras": 0.0,
+   "consultoria": 0.0,
+   "n": 157
+  },
+  {
    "id": "E-2415",
    "entidad": "UNIVERSIDAD NACIONAL TORIBIO RODRIGUEZ DE MENDOZA DE AMAZONAS",
    "ruc": "20479393568",
@@ -3637,22 +3669,6 @@
    "obras": 36316185.75,
    "consultoria": 314053.0,
    "n": 91
-  },
-  {
-   "id": "E-2745",
-   "entidad": "INSTITUTO NACIONAL DE SALUD DEL NIÑO - SAN BORJA",
-   "ruc": "20552196725",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 60390760.72,
-   "adjudicado": 60390760.72,
-   "contratado": 60390760.72,
-   "bienes": 58334440.89,
-   "servicios": 2056319.83,
-   "obras": 0.0,
-   "consultoria": 0.0,
-   "n": 155
   },
   {
    "id": "E-2259",
@@ -4679,6 +4695,22 @@
    "n": 174
   },
   {
+   "id": "E-2106",
+   "entidad": "MUNICIPALIDAD DISTRITAL DE ALTO SELVA ALEGRE",
+   "ruc": "20311886879",
+   "nivel": "Local",
+   "sector": "",
+   "departamento": "Arequipa",
+   "convocado": 43927615.25,
+   "adjudicado": 43927615.25,
+   "contratado": 43927615.25,
+   "bienes": 3989687.94,
+   "servicios": 6445921.73,
+   "obras": 32013156.74,
+   "consultoria": 1478848.84,
+   "n": 53
+  },
+  {
    "id": "E-0413",
    "entidad": "MUNICIPALIDAD PROVINCIAL DE BAGUA",
    "ruc": "20156003060",
@@ -4741,22 +4773,6 @@
    "obras": 40639156.02,
    "consultoria": 2387829.47,
    "n": 7
-  },
-  {
-   "id": "E-2106",
-   "entidad": "MUNICIPALIDAD DISTRITAL DE ALTO SELVA ALEGRE",
-   "ruc": "20311886879",
-   "nivel": "Local",
-   "sector": "",
-   "departamento": "Arequipa",
-   "convocado": 43542100.31,
-   "adjudicado": 43542100.31,
-   "contratado": 43542100.31,
-   "bienes": 3989687.94,
-   "servicios": 6445921.73,
-   "obras": 31627641.8,
-   "consultoria": 1478848.84,
-   "n": 52
   },
   {
    "id": "E-0352",
@@ -5157,22 +5173,6 @@
    "obras": 38767954.1,
    "consultoria": 0.0,
    "n": 8
-  },
-  {
-   "id": "E-2735",
-   "entidad": "PROGRAMA NACIONAL DE SANEAMIENTO RURAL",
-   "ruc": "20548776920",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 39260147.28,
-   "adjudicado": 39260147.28,
-   "contratado": 39260147.28,
-   "bienes": 4861795.66,
-   "servicios": 23408755.53,
-   "obras": 7432743.95,
-   "consultoria": 3556852.14,
-   "n": 55
   },
   {
    "id": "E-0087",
@@ -5687,6 +5687,22 @@
    "n": 66
   },
   {
+   "id": "E-0456",
+   "entidad": "GOBIERNO REGIONAL DE CUSCO - PROYECTO ESPECIAL REGIONAL PLAN COPESCO",
+   "ruc": "20159311598",
+   "nivel": "Regional",
+   "sector": "",
+   "departamento": "Cusco",
+   "convocado": 34472910.43,
+   "adjudicado": 34472910.43,
+   "contratado": 34472910.43,
+   "bienes": 29186169.5,
+   "servicios": 5286740.93,
+   "obras": 0.0,
+   "consultoria": 0.0,
+   "n": 60
+  },
+  {
    "id": "E-0156",
    "entidad": "HOSPITAL NACIONAL DOCENTE MADRE NIÑO - SAN BARTOLOME",
    "ruc": "20137729751",
@@ -5717,22 +5733,6 @@
    "obras": 16932153.39,
    "consultoria": 612601.68,
    "n": 40
-  },
-  {
-   "id": "E-0456",
-   "entidad": "GOBIERNO REGIONAL DE CUSCO - PROYECTO ESPECIAL REGIONAL PLAN COPESCO",
-   "ruc": "20159311598",
-   "nivel": "Regional",
-   "sector": "",
-   "departamento": "Cusco",
-   "convocado": 34273490.43,
-   "adjudicado": 34273490.43,
-   "contratado": 34273490.43,
-   "bienes": 29186169.5,
-   "servicios": 5087320.93,
-   "obras": 0.0,
-   "consultoria": 0.0,
-   "n": 59
   },
   {
    "id": "E-2906",
@@ -6359,22 +6359,6 @@
    "n": 45
   },
   {
-   "id": "E-0146",
-   "entidad": "INSTITUTO NACIONAL DE DEFENSA DE LA COMPETENCIA Y DE LA PROTECCION DE LA PROPIEDAD INTELECTUAL",
-   "ruc": "20133840533",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 29812596.76,
-   "adjudicado": 29812596.76,
-   "contratado": 29812596.76,
-   "bienes": 6116620.9,
-   "servicios": 23695975.86,
-   "obras": 0.0,
-   "consultoria": 0.0,
-   "n": 28
-  },
-  {
    "id": "E-1048",
    "entidad": "MINAG - PROYECTO ESPECIAL - JAEN - SAN IGNACIO - BAGUA",
    "ruc": "20187384142",
@@ -6389,6 +6373,22 @@
    "obras": 14696126.55,
    "consultoria": 1201300.6,
    "n": 60
+  },
+  {
+   "id": "E-0146",
+   "entidad": "INSTITUTO NACIONAL DE DEFENSA DE LA COMPETENCIA Y DE LA PROTECCION DE LA PROPIEDAD INTELECTUAL",
+   "ruc": "20133840533",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Lima",
+   "convocado": 29732346.76,
+   "adjudicado": 29732346.76,
+   "contratado": 29732346.76,
+   "bienes": 6116620.9,
+   "servicios": 23615725.86,
+   "obras": 0.0,
+   "consultoria": 0.0,
+   "n": 27
   },
   {
    "id": "E-2229",
@@ -8247,6 +8247,22 @@
    "n": 28
   },
   {
+   "id": "E-0149",
+   "entidad": "INSTITUTO NACIONAL DE DEFENSA CIVIL",
+   "ruc": "20135890031",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Lima",
+   "convocado": 20035682.45,
+   "adjudicado": 20035682.45,
+   "contratado": 20035682.45,
+   "bienes": 6113845.8,
+   "servicios": 13921836.65,
+   "obras": 0.0,
+   "consultoria": 0.0,
+   "n": 32
+  },
+  {
    "id": "E-0740",
    "entidad": "MUNICIPALIDAD DISTRITAL DE BUENOS AIRES - MORROPON",
    "ruc": "20171662631",
@@ -8341,22 +8357,6 @@
    "obras": 0.0,
    "consultoria": 0.0,
    "n": 34
-  },
-  {
-   "id": "E-0149",
-   "entidad": "INSTITUTO NACIONAL DE DEFENSA CIVIL",
-   "ruc": "20135890031",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 19794447.78,
-   "adjudicado": 19794447.78,
-   "contratado": 19794447.78,
-   "bienes": 6113845.8,
-   "servicios": 13680601.98,
-   "obras": 0.0,
-   "consultoria": 0.0,
-   "n": 31
   },
   {
    "id": "E-1080",
@@ -8919,6 +8919,22 @@
    "n": 43
   },
   {
+   "id": "E-2639",
+   "entidad": "UNIVERSIDAD NACIONAL AUTONOMA DE CHOTA",
+   "ruc": "20529358220",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Cajamarca",
+   "convocado": 18149841.75,
+   "adjudicado": 18149841.75,
+   "contratado": 18149841.75,
+   "bienes": 3333866.0,
+   "servicios": 3046623.95,
+   "obras": 10842624.4,
+   "consultoria": 926727.4,
+   "n": 24
+  },
+  {
    "id": "E-2924",
    "entidad": "CONTRALORÍA GENERAL - GESTIÓN DE PROYECTOS Y FORTALECIMIENTO DE CAPACIDADES",
    "ruc": "20603348541",
@@ -8981,22 +8997,6 @@
    "obras": 0.0,
    "consultoria": 0.0,
    "n": 26
-  },
-  {
-   "id": "E-2639",
-   "entidad": "UNIVERSIDAD NACIONAL AUTONOMA DE CHOTA",
-   "ruc": "20529358220",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Cajamarca",
-   "convocado": 17925149.1,
-   "adjudicado": 17925149.1,
-   "contratado": 17925149.1,
-   "bienes": 3333866.0,
-   "servicios": 3046623.95,
-   "obras": 10842624.4,
-   "consultoria": 702034.75,
-   "n": 23
   },
   {
    "id": "E-2820",

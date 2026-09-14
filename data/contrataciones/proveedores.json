@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-07",
+ "actualizado": "2026-09-14",
  "estado_datos": "validado",
  "nota": "Top 2000 proveedores por monto adjudicado (catálogo acotado).",
  "proveedores": [
@@ -161,13 +161,6 @@
    "ruc": "20467534026",
    "nombre": "AMERICA MOVIL PERU S.A.C.",
    "monto": 510230571.69,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20604269009",
-   "nombre": "CHINA CIVIL ENGINEERING CONSTRUCTION CORPORATION SUCURSAL DEL PERU",
-   "monto": 496168435.33,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -560,6 +553,13 @@
    "ruc": "587917",
    "nombre": "CONSORCIO CYMSOCOIRH",
    "monto": 243560183.51,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "1828331",
+   "nombre": "CONSORCIO PUNO",
+   "monto": 243072942.02,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1110,16 +1110,16 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "561353",
-   "nombre": "CONSORCIO CORREDOR VIAL",
-   "monto": 161394981.38,
+   "ruc": "20553853355",
+   "nombre": "SIMED PERU S.A.C.",
+   "monto": 161686407.15,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "20553853355",
-   "nombre": "SIMED PERU S.A.C.",
-   "monto": 159774927.15,
+   "ruc": "561353",
+   "nombre": "CONSORCIO CORREDOR VIAL",
+   "monto": 161394981.38,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -1733,6 +1733,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20130471464",
+   "nombre": "COMERCIAL TRES ESTRELLAS S.A.",
+   "monto": 106676626.47,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1742188",
    "nombre": "CONSORCIO SALUD CHACHAPOYAS",
    "monto": 106465512.83,
@@ -1827,13 +1834,6 @@
    "ruc": "1596074",
    "nombre": "CONSORCIO EJECUTOR 2B",
    "monto": 101192773.36,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20130471464",
-   "nombre": "COMERCIAL TRES ESTRELLAS S.A.",
-   "monto": 100590820.26,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -2657,6 +2657,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "1778662",
+   "nombre": "Consorcio Corporacion Peruana de Mantenimiento Electrico - Consorcio Copemane",
+   "monto": 68091622.84,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1488979",
    "nombre": "CONSORCIO VIRGEN DE FATIMA",
    "monto": 67978047.36,
@@ -2895,13 +2902,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20376181015",
-   "nombre": "BECTON DICKINSON DEL URUGUAY SA SUC PERU",
-   "monto": 62959966.11,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "20521006588",
    "nombre": "MAFERSA COMPANY S.A.C.",
    "monto": 62915238.6,
@@ -2933,6 +2933,13 @@
    "ruc": "20212561534",
    "nombre": "ALCON PHARMACEUTICAL DEL PERU SA",
    "monto": 62523408.77,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20376181015",
+   "nombre": "BECTON DICKINSON DEL URUGUAY SA SUC PERU",
+   "monto": 62181266.11,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -3651,6 +3658,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20518498682",
+   "nombre": "GATT PERU S.R.L.",
+   "monto": 50980173.16,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20505110651",
    "nombre": "W.P. BIOMED SOCIEDAD ANONIMA",
    "monto": 50941399.67,
@@ -3675,13 +3689,6 @@
    "ruc": "1557612",
    "nombre": "CONSORCIO TOKIO SALUD",
    "monto": 50640000.0,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20518498682",
-   "nombre": "GATT PERU S.R.L.",
-   "monto": 50441173.16,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -4701,6 +4708,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20538597121",
+   "nombre": "DRAEGER  PERU   S.A.C.",
+   "monto": 41164977.89,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1587544",
    "nombre": "CONSORCIO SALUD ANDOAS",
    "monto": 41153830.2,
@@ -4725,13 +4739,6 @@
    "ruc": "20109925757",
    "nombre": "HAUG S.A.",
    "monto": 40922538.5,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20538597121",
-   "nombre": "DRAEGER  PERU   S.A.C.",
-   "monto": 40855813.6,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -6416,6 +6423,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "1827291",
+   "nombre": "CONSORCIO AD ASTRA",
+   "monto": 32085501.66,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20522095797",
    "nombre": "TECNOLOGIA DESARROLLO Y MEDICION SOCIEDAD COMERCIAL DE RESPONSABIILIDAD LIMITADA  TDEM S.R.L.",
    "monto": 32068115.16,
@@ -6517,13 +6531,6 @@
    "ruc": "20519951551",
    "nombre": "EMPRESA DE VIGILANCIA ARMADA Y SERVICIOS VIGSER SOCIEDAD ANONIMA CERRADA",
    "monto": 31732986.65,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20602964320",
-   "nombre": "COEPER PERU S.A.C.",
-   "monto": 31707568.25,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -10294,15 +10301,15 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "L0609017886",
-   "nombre": "BIOMATIC PHARMA  S.A.",
+   "ruc": "L0609017885",
+   "nombre": "TRADELINK LOGISTICS",
    "monto": 20748000.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "L0609017885",
-   "nombre": "TRADELINK LOGISTICS",
+   "ruc": "L0609017886",
+   "nombre": "BIOMATIC PHARMA  S.A.",
    "monto": 20748000.0,
    "sancionado": false,
    "sancion_detalle": ""
@@ -11779,7 +11786,7 @@
   },
   {
    "ruc": "20537185661",
-   "nombre": "CORONEL EJECUTORES E.I.R.L.",
+   "nombre": "CORONEL EJECUTORES S.A.C.",
    "monto": 18440016.92,
    "sancionado": false,
    "sancion_detalle": ""
@@ -13843,6 +13850,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "1795277",
+   "nombre": "CONSORCIO ARICA NUEVA",
+   "monto": 16051083.36,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "585051",
    "nombre": "CONSORCIO SAN PEDRO",
    "monto": 16048892.04,
@@ -13986,20 +14000,6 @@
    "ruc": "20603563060",
    "nombre": "CORPORACION HUAURA S.A.C.",
    "monto": 15947646.66,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "1694104",
-   "nombre": "CONSORCIO SAN PEDRO",
-   "monto": 15946843.79,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "1574409",
-   "nombre": "CONSORCIO NUEVA JERUSALEN 24",
-   "monto": 15937021.6,
    "sancionado": false,
    "sancion_detalle": ""
   }
