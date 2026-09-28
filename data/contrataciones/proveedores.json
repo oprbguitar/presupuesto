@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-21",
+ "actualizado": "2026-09-28",
  "estado_datos": "validado",
  "nota": "Top 2000 proveedores por monto adjudicado (catálogo acotado).",
  "proveedores": [
@@ -3203,6 +3203,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20502853750",
+   "nombre": "COVIDIEN PERU S.A.",
+   "monto": 56869105.99,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "20608496859",
    "nombre": "ZANE CONSTRUCCION S.A.C.",
    "monto": 56824119.38,
@@ -3360,13 +3367,6 @@
    "ruc": "20486746581",
    "nombre": "M.R.G. SECURITY S.A.C.",
    "monto": 55297611.56,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20502853750",
-   "nombre": "COVIDIEN PERU S.A.",
-   "monto": 55283185.99,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -4386,6 +4386,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "1833125",
+   "nombre": "CONSORCIO SALUD LA LIBERTAD",
+   "monto": 43713491.42,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "576975",
    "nombre": "Consorcio Santo Domingo",
    "monto": 43688739.05,
@@ -4830,6 +4837,13 @@
    "ruc": "20538736695",
    "nombre": "CHALSA CORPORATION S.A.C.",
    "monto": 40242899.99,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20605701435",
+   "nombre": "LINAMES S.A.C.",
+   "monto": 40138954.63,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -5436,13 +5450,6 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "20605701435",
-   "nombre": "LINAMES S.A.C.",
-   "monto": 36813754.63,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
    "ruc": "20100904315",
    "nombre": "SEGUROC SOCIEDAD ANONIMA",
    "monto": 36804093.98,
@@ -5821,6 +5828,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20604537372",
+   "nombre": "NOVAMED PERU S.A.C.",
+   "monto": 34800248.79,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "1703649",
    "nombre": "CONSORCIO VICTORIA",
    "monto": 34705498.46,
@@ -5852,13 +5866,6 @@
    "ruc": "1686478",
    "nombre": "CONSORCIO VICTOR ANDRES",
    "monto": 34599850.38,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20604537372",
-   "nombre": "NOVAMED PERU S.A.C.",
-   "monto": 34550648.79,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -6391,6 +6398,13 @@
    "ruc": "20102708394",
    "nombre": "ELECTRONOROESTE S.A",
    "monto": 32296113.45,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20515184113",
+   "nombre": "INNOVACIONES INDUSTRIALES RIPER SOCIEDAD ANONIMA (INIRSA)",
+   "monto": 32257063.28,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -9300,6 +9314,13 @@
    "sancion_detalle": ""
   },
   {
+   "ruc": "20348511824",
+   "nombre": "SAMITEX SA",
+   "monto": 23112220.25,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
    "ruc": "586044",
    "nombre": "CONSORCIO ZENWARE EILR-ALFILCONSULTORIA COMUNICACIONES SAC-LINE OF COMPUTING SERVICES SAC",
    "monto": 23107587.0,
@@ -9443,13 +9464,6 @@
    "ruc": "20601397553",
    "nombre": "CORPORACION CLABE S.R.L.",
    "monto": 22777662.96,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20348511824",
-   "nombre": "SAMITEX SA",
-   "monto": 22758720.57,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -10301,15 +10315,15 @@
    "sancion_detalle": ""
   },
   {
-   "ruc": "L0609017885",
-   "nombre": "TRADELINK LOGISTICS",
+   "ruc": "L0609017886",
+   "nombre": "BIOMATIC PHARMA  S.A.",
    "monto": 20748000.0,
    "sancionado": false,
    "sancion_detalle": ""
   },
   {
-   "ruc": "L0609017886",
-   "nombre": "BIOMATIC PHARMA  S.A.",
+   "ruc": "L0609017885",
+   "nombre": "TRADELINK LOGISTICS",
    "monto": 20748000.0,
    "sancionado": false,
    "sancion_detalle": ""
@@ -10640,6 +10654,13 @@
    "ruc": "1681600",
    "nombre": "CONSORCIO E Y R S.A. - CROMOS",
    "monto": 20301084.01,
+   "sancionado": false,
+   "sancion_detalle": ""
+  },
+  {
+   "ruc": "20100331285",
+   "nombre": "ILENDER PERU S.A",
+   "monto": 20278081.63,
    "sancionado": false,
    "sancion_detalle": ""
   },
@@ -13979,27 +14000,6 @@
    "ruc": "1734294",
    "nombre": "CONSORCIO JYM CLEANING SERVICE",
    "monto": 15980000.0,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20600112369",
-   "nombre": "INVERSIONES CONSTRUMAX E.I.R.L.",
-   "monto": 15978492.88,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "1721143",
-   "nombre": "CONSORCIO SALUD",
-   "monto": 15974450.79,
-   "sancionado": false,
-   "sancion_detalle": ""
-  },
-  {
-   "ruc": "20603563060",
-   "nombre": "CORPORACION HUAURA S.A.C.",
-   "monto": 15947646.66,
    "sancionado": false,
    "sancion_detalle": ""
   }

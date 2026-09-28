@@ -1,7 +1,7 @@
 {
  "anio": 2024,
  "parcial": false,
- "actualizado": "2026-09-21",
+ "actualizado": "2026-09-28",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -15,13 +15,13 @@
   "dev": 238893055447.0,
   "gir": 238459697695.0,
   "pac_programado": null,
-  "convocado": 80871837116.03,
-  "adjudicado": 73535047245.27,
-  "contratado": 73535047245.27,
-  "n_procedimientos": 60604,
-  "n_oc": 32914,
+  "convocado": 80883627497.51,
+  "adjudicado": 73537346770.79,
+  "contratado": 73537346770.79,
+  "n_procedimientos": 60609,
+  "n_oc": 32915,
   "n_os": 22741,
-  "n_proveedores": 34910,
+  "n_proveedores": 34914,
   "cd_num": 4430,
   "cd_monto": 5151427395.62,
   "desiertos": 0,
@@ -30,8 +30,8 @@
  "distribucion_objeto": [
   {
    "objeto": "Bienes",
-   "monto": 14110079215.34,
-   "n": 32914
+   "monto": 14110464415.34,
+   "n": 32915
   },
   {
    "objeto": "Servicios",
@@ -40,19 +40,19 @@
   },
   {
    "objeto": "Obras",
-   "monto": 37492219230.12,
+   "monto": 37493083902.51,
    "n": 5963
   },
   {
    "objeto": "Consultoría de obras",
-   "monto": 2598598340.25,
-   "n": 5850
+   "monto": 2599647993.38,
+   "n": 5854
   }
  ],
  "top_categorias": [
   {
    "categoria": "Obras",
-   "monto": 37492219230.12,
+   "monto": 37493083902.51,
    "n": 5963
   },
   {
@@ -62,13 +62,13 @@
   },
   {
    "categoria": "Bienes",
-   "monto": 14110079215.34,
-   "n": 32914
+   "monto": 14110464415.34,
+   "n": 32915
   },
   {
    "categoria": "Consultoría de obras",
-   "monto": 2598598340.25,
-   "n": 5850
+   "monto": 2599647993.38,
+   "n": 5854
   }
  ],
  "top_proveedores": [
@@ -226,12 +226,12 @@
  "por_tipo_procedimiento": [
   {
    "tipo": "Licitación Pública",
-   "monto": 29840324739.71,
-   "n": 4941
+   "monto": 29840709939.71,
+   "n": 4942
   },
   {
    "tipo": "Adjudicación Simplificada",
-   "monto": 15701676315.73,
+   "monto": 15702540988.12,
    "n": 34792
   },
   {
@@ -251,8 +251,8 @@
   },
   {
    "tipo": "Convenio",
-   "monto": 2884336368.0,
-   "n": 1399
+   "monto": 2885386021.13,
+   "n": 1403
   },
   {
    "tipo": "Regímen Especial",
@@ -341,9 +341,9 @@
   }
  ],
  "comparacion_montos": {
-  "convocado": 80871837116.03,
-  "adjudicado": 73535047245.27,
-  "contratado": 73535047245.27
+  "convocado": 80883627497.51,
+  "adjudicado": 73537346770.79,
+  "contratado": 73537346770.79
  },
  "embudo": [
   {
@@ -356,15 +356,15 @@
   },
   {
    "etapa": "Referencial",
-   "monto": 80871837116.03
+   "monto": 80883627497.51
   },
   {
    "etapa": "Adjudicado",
-   "monto": 73535047245.27
+   "monto": 73537346770.79
   },
   {
    "etapa": "Contratado",
-   "monto": 73535047245.27
+   "monto": 73537346770.79
   },
   {
    "etapa": "Devengado",
@@ -374,12 +374,12 @@
  "por_departamento": [
   {
    "departamento": "Lima",
-   "monto": 37822653369.2,
-   "n": 24209
+   "monto": 37824088222.33,
+   "n": 24214
   },
   {
    "departamento": "La Libertad",
-   "monto": 3325949531.32,
+   "monto": 3326814203.71,
    "n": 2424
   },
   {
@@ -522,14 +522,14 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 2782113198.58,
-   "adjudicado": 2782113198.58,
-   "contratado": 2782113198.58,
-   "bienes": 1464575283.24,
+   "convocado": 2782498398.58,
+   "adjudicado": 2782498398.58,
+   "contratado": 2782498398.58,
+   "bienes": 1464960483.24,
    "servicios": 733782810.8,
    "obras": 557157477.36,
    "consultoria": 26597627.18,
-   "n": 2060
+   "n": 2061
   },
   {
    "id": "E-1641",
@@ -2772,6 +2772,22 @@
    "n": 45
   },
   {
+   "id": "E-2735",
+   "entidad": "PROGRAMA NACIONAL DE SANEAMIENTO RURAL",
+   "ruc": "20548776920",
+   "nivel": "Nacional",
+   "sector": "",
+   "departamento": "Lima",
+   "convocado": 75792074.3,
+   "adjudicado": 75792074.3,
+   "contratado": 75792074.3,
+   "bienes": 510516.06,
+   "servicios": 13900944.4,
+   "obras": 56863312.06,
+   "consultoria": 4517301.78,
+   "n": 63
+  },
+  {
    "id": "E-0778",
    "entidad": "GOBIERNO REGIONAL DE HUANUCO-TRANSPORTES",
    "ruc": "20172373144",
@@ -2850,22 +2866,6 @@
    "obras": 65095708.63,
    "consultoria": 2418956.96,
    "n": 15
-  },
-  {
-   "id": "E-2735",
-   "entidad": "PROGRAMA NACIONAL DE SANEAMIENTO RURAL",
-   "ruc": "20548776920",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 74742421.17,
-   "adjudicado": 74742421.17,
-   "contratado": 74742421.17,
-   "bienes": 510516.06,
-   "servicios": 13900944.4,
-   "obras": 56863312.06,
-   "consultoria": 3467648.65,
-   "n": 59
   },
   {
    "id": "E-0157",
