@@ -1,7 +1,7 @@
 {
  "anio": 2025,
  "parcial": false,
- "actualizado": "2026-10-05",
+ "actualizado": "2026-10-12",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -15,13 +15,13 @@
   "dev": 253679227261.0,
   "gir": 253412318120.0,
   "pac_programado": null,
-  "convocado": 73204178000.85,
-  "adjudicado": 68928120870.65,
-  "contratado": 68928120870.65,
-  "n_procedimientos": 58157,
-  "n_oc": 30075,
-  "n_os": 21907,
-  "n_proveedores": 34523,
+  "convocado": 73192419096.25,
+  "adjudicado": 68913811059.74,
+  "contratado": 68913811059.74,
+  "n_procedimientos": 58160,
+  "n_oc": 30086,
+  "n_os": 21908,
+  "n_proveedores": 0,
   "cd_num": 4316,
   "cd_monto": 6786925538.55,
   "desiertos": 0,
@@ -30,204 +30,53 @@
  "distribucion_objeto": [
   {
    "objeto": "Bienes",
-   "monto": 12732132005.93,
-   "n": 30075
+   "monto": 12734209878.63,
+   "n": 30086
   },
   {
    "objeto": "Servicios",
-   "monto": 18642909628.0,
-   "n": 21907
+   "monto": 18626895681.98,
+   "n": 21908
   },
   {
    "objeto": "Obras",
-   "monto": 35190543969.65,
+   "monto": 35187403606.75,
    "n": 7027
   },
   {
    "objeto": "Consultoría de obras",
-   "monto": 2362535267.07,
+   "monto": 2365301892.38,
    "n": 5075
   }
  ],
  "top_categorias": [
   {
    "categoria": "Obras",
-   "monto": 35190543969.65,
+   "monto": 35187403606.75,
    "n": 7027
   },
   {
    "categoria": "Servicios",
-   "monto": 18642909628.0,
-   "n": 21907
+   "monto": 18626895681.98,
+   "n": 21908
   },
   {
    "categoria": "Bienes",
-   "monto": 12732132005.93,
-   "n": 30075
+   "monto": 12734209878.63,
+   "n": 30086
   },
   {
    "categoria": "Consultoría de obras",
-   "monto": 2362535267.07,
+   "monto": 2365301892.38,
    "n": 5075
   }
  ],
- "top_proveedores": [
-  {
-   "proveedor": "VIETTEL  PERU  S.A.C.",
-   "ruc": "20543254798",
-   "monto": 720367885.63,
-   "n": 21
-  },
-  {
-   "proveedor": "Consorcio Puente Chalaco",
-   "ruc": "1751909",
-   "monto": 615795125.4,
-   "n": 1
-  },
-  {
-   "proveedor": "PETROLEOS DEL PERU PETROPERU SA",
-   "ruc": "20100128218",
-   "monto": 603366100.32,
-   "n": 9
-  },
-  {
-   "proveedor": "CONSORCIO HOSPITALARIO CHOTA",
-   "ruc": "1719581",
-   "monto": 598800820.99,
-   "n": 1
-  },
-  {
-   "proveedor": "SINOHYDRO CORPORATION LIMITED, SUCURSAL DEL PERU",
-   "ruc": "20602979173",
-   "monto": 481763312.4,
-   "n": 2
-  },
-  {
-   "proveedor": "CONSORCIO HOSPITALARIO MANCHAY",
-   "ruc": "1696880",
-   "monto": 467794135.53,
-   "n": 1
-  },
-  {
-   "proveedor": "AMERICA MOVIL PERU S.A.C.",
-   "ruc": "20467534026",
-   "monto": 366184723.25,
-   "n": 111
-  },
-  {
-   "proveedor": "CONSORCIO 35V",
-   "ruc": "1735364",
-   "monto": 306024853.89,
-   "n": 1
-  },
-  {
-   "proveedor": "CORPORACION LINDLEY S.A.",
-   "ruc": "20101024645",
-   "monto": 291472083.62,
-   "n": 1
-  },
-  {
-   "proveedor": "TECNOLOGIAS ECOLOGICAS PRISMA SAC",
-   "ruc": "20502221796",
-   "monto": 280038391.3,
-   "n": 9
-  },
-  {
-   "proveedor": "CONSORCIO VIAL HUANDOY",
-   "ruc": "1639542",
-   "monto": 277863785.56,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO VIAL HUARI",
-   "ruc": "1697836",
-   "monto": 273242908.25,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO KABSA",
-   "ruc": "1752542",
-   "monto": 264436693.86,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO SAN FELIPE",
-   "ruc": "1753284",
-   "monto": 246417533.3,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO PUNO",
-   "ruc": "1828331",
-   "monto": 243072942.02,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO VIAL CUSCO",
-   "ruc": "1734847",
-   "monto": 229218699.42,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO RIJ",
-   "ruc": "1698050",
-   "monto": 226736750.83,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO TOM",
-   "ruc": "1758804",
-   "monto": 224940297.38,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO VIADUCTO BEGONIAS",
-   "ruc": "1701022",
-   "monto": 224533398.58,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO HOSPITALARIO ZACARIAS",
-   "ruc": "1643072",
-   "monto": 221165658.64,
-   "n": 1
-  },
-  {
-   "proveedor": "RIMAC SEGUROS Y REASEGUROS",
-   "ruc": "20100041953",
-   "monto": 215019008.74,
-   "n": 36
-  },
-  {
-   "proveedor": "CONSORCIO OCROS",
-   "ruc": "1823454",
-   "monto": 209312182.39,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO DIMAQ",
-   "ruc": "1762184",
-   "monto": 208016225.0,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO HOSPITAL ARAKAKI",
-   "ruc": "1672319",
-   "monto": 207091607.05,
-   "n": 1
-  },
-  {
-   "proveedor": "FABRICA DE ARMAS Y MUNICIONES DEL EJERCITO SAC - FAME SAC",
-   "ruc": "1748579",
-   "monto": 202620000.0,
-   "n": 1
-  }
- ],
+ "top_proveedores": [],
  "por_tipo_procedimiento": [
   {
    "tipo": "Licitación Pública",
-   "monto": 24220233081.29,
-   "n": 4135
+   "monto": 24202461612.97,
+   "n": 4145
   },
   {
    "tipo": "Adjudicación Simplificada",
@@ -246,7 +95,7 @@
   },
   {
    "tipo": "Concurso Público de Servicios",
-   "monto": 5631128031.82,
+   "monto": 5614884085.8,
    "n": 2063
   },
   {
@@ -266,12 +115,12 @@
   },
   {
    "tipo": "Regímen Especial",
-   "monto": 2213753014.54,
-   "n": 2311
+   "monto": 2230461992.66,
+   "n": 2312
   },
   {
    "tipo": "Concurso Público Abreviado",
-   "monto": 2076638785.35,
+   "monto": 2076747501.95,
    "n": 9309
   },
   {
@@ -286,8 +135,8 @@
   },
   {
    "tipo": "Concurso Público para Consultoría",
-   "monto": 670818823.26,
-   "n": 487
+   "monto": 673706731.97,
+   "n": 488
   },
   {
    "tipo": "Adjudicación Selectiva",
@@ -376,9 +225,9 @@
   }
  ],
  "comparacion_montos": {
-  "convocado": 73204178000.85,
-  "adjudicado": 68928120870.65,
-  "contratado": 68928120870.65
+  "convocado": 73192419096.25,
+  "adjudicado": 68913811059.74,
+  "contratado": 68913811059.74
  },
  "embudo": [
   {
@@ -391,15 +240,15 @@
   },
   {
    "etapa": "Referencial",
-   "monto": 73204178000.85
+   "monto": 73192419096.25
   },
   {
    "etapa": "Adjudicado",
-   "monto": 68928120870.65
+   "monto": 68913811059.74
   },
   {
    "etapa": "Contratado",
-   "monto": 68928120870.65
+   "monto": 68913811059.74
   },
   {
    "etapa": "Devengado",
@@ -409,8 +258,8 @@
  "por_departamento": [
   {
    "departamento": "Lima",
-   "monto": 31061411613.86,
-   "n": 21450
+   "monto": 31049305113.04,
+   "n": 21462
   },
   {
    "departamento": "Piura",
@@ -429,22 +278,22 @@
   },
   {
    "departamento": "Cusco",
-   "monto": 2724493391.82,
-   "n": 4755
+   "monto": 2725143391.82,
+   "n": 4756
   },
   {
    "departamento": "Ancash",
-   "monto": 2607185746.55,
-   "n": 3183
+   "monto": 2610122057.05,
+   "n": 3184
   },
   {
    "departamento": "Junin",
-   "monto": 2436494488.34,
-   "n": 2586
+   "monto": 2416645147.32,
+   "n": 2585
   },
   {
    "departamento": "Arequipa",
-   "monto": 2374532638.52,
+   "monto": 2390605767.5,
    "n": 2309
   },
   {
@@ -454,7 +303,7 @@
   },
   {
    "departamento": "Puno",
-   "monto": 1622843025.65,
+   "monto": 1622201526.6,
    "n": 2823
   },
   {
@@ -509,8 +358,8 @@
   },
   {
    "departamento": "Callao",
-   "monto": 1007220822.46,
-   "n": 1268
+   "monto": 1005848912.96,
+   "n": 1267
   },
   {
    "departamento": "Apurimac",
@@ -589,14 +438,14 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 1304906865.14,
-   "adjudicado": 1304906865.14,
-   "contratado": 1304906865.14,
-   "bienes": 593623330.07,
-   "servicios": 704690610.18,
+   "convocado": 1290797403.42,
+   "adjudicado": 1290797403.42,
+   "contratado": 1290797403.42,
+   "bienes": 595626611.95,
+   "servicios": 688577866.58,
    "obras": 0.0,
    "consultoria": 6592924.89,
-   "n": 1156
+   "n": 1166
   },
   {
    "id": "E-2450",
@@ -621,14 +470,14 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 1205408218.8,
-   "adjudicado": 1205408218.8,
-   "contratado": 1205408218.8,
+   "convocado": 1206637165.2,
+   "adjudicado": 1206637165.2,
+   "contratado": 1206637165.2,
    "bienes": 2496530.9,
    "servicios": 877605158.5,
    "obras": 300727609.06,
-   "consultoria": 24578920.34,
-   "n": 91
+   "consultoria": 25807866.74,
+   "n": 92
   },
   {
    "id": "E-0009",
@@ -797,14 +646,14 @@
    "nivel": "Regional",
    "sector": "",
    "departamento": "Puno",
-   "convocado": 594010225.59,
-   "adjudicado": 594010225.59,
-   "contratado": 594010225.59,
+   "convocado": 592837812.4,
+   "adjudicado": 592837812.4,
+   "contratado": 592837812.4,
    "bienes": 243859258.58,
    "servicios": 32618205.67,
    "obras": 297368896.98,
-   "consultoria": 20163864.36,
-   "n": 725
+   "consultoria": 18991451.17,
+   "n": 724
   },
   {
    "id": "E-2417",
@@ -1133,14 +982,14 @@
    "nivel": "Regional",
    "sector": "",
    "departamento": "Ancash",
-   "convocado": 322422140.49,
-   "adjudicado": 322422140.49,
-   "contratado": 322422140.49,
+   "convocado": 325358450.99,
+   "adjudicado": 325358450.99,
+   "contratado": 325358450.99,
    "bienes": 9612093.53,
    "servicios": 2305244.56,
    "obras": 298367027.91,
-   "consultoria": 12137774.49,
-   "n": 119
+   "consultoria": 15074084.99,
+   "n": 120
   },
   {
    "id": "E-1836",
@@ -1415,22 +1264,6 @@
    "n": 87
   },
   {
-   "id": "E-0056",
-   "entidad": "EMPRESA REGIONAL DE SERVICIO PUBLICO DE ELECTRICIDAD DEL CENTRO SA ELECTROCENTRO S.A.",
-   "ruc": "20129646099",
-   "nivel": "Regional",
-   "sector": "",
-   "departamento": "Junin",
-   "convocado": 230260241.04,
-   "adjudicado": 230260241.04,
-   "contratado": 230260241.04,
-   "bienes": 46789256.87,
-   "servicios": 160520213.42,
-   "obras": 21992572.0,
-   "consultoria": 958198.75,
-   "n": 97
-  },
-  {
    "id": "E-2742",
    "entidad": "UNIDAD EJECUTORA 003 GESTION INTEGRAL DE LA CALIDAD AMBIENTAL",
    "ruc": "20551322590",
@@ -1509,6 +1342,22 @@
    "obras": 0.0,
    "consultoria": 0.0,
    "n": 37
+  },
+  {
+   "id": "E-0056",
+   "entidad": "EMPRESA REGIONAL DE SERVICIO PUBLICO DE ELECTRICIDAD DEL CENTRO SA ELECTROCENTRO S.A.",
+   "ruc": "20129646099",
+   "nivel": "Regional",
+   "sector": "",
+   "departamento": "Junin",
+   "convocado": 210410900.02,
+   "adjudicado": 210410900.02,
+   "contratado": 210410900.02,
+   "bienes": 46789256.87,
+   "servicios": 160520213.42,
+   "obras": 2143230.98,
+   "consultoria": 958198.75,
+   "n": 96
   },
   {
    "id": "E-2115",
@@ -1821,14 +1670,14 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Callao",
-   "convocado": 151431184.17,
-   "adjudicado": 151431184.17,
-   "contratado": 151431184.17,
-   "bienes": 46716969.9,
+   "convocado": 150059274.67,
+   "adjudicado": 150059274.67,
+   "contratado": 150059274.67,
+   "bienes": 45345060.4,
    "servicios": 86877303.54,
    "obras": 17403774.03,
    "consultoria": 433136.7,
-   "n": 85
+   "n": 84
   },
   {
    "id": "E-2231",
@@ -2173,14 +2022,14 @@
    "nivel": "Local",
    "sector": "",
    "departamento": "Arequipa",
-   "convocado": 111741027.35,
-   "adjudicado": 111741027.35,
-   "contratado": 111741027.35,
+   "convocado": 111105178.21,
+   "adjudicado": 111105178.21,
+   "contratado": 111105178.21,
    "bienes": 6711581.79,
    "servicios": 4223579.26,
    "obras": 94034766.54,
-   "consultoria": 6771099.76,
-   "n": 79
+   "consultoria": 6135250.62,
+   "n": 78
   },
   {
    "id": "E-2094",
@@ -2503,6 +2352,22 @@
    "n": 55
   },
   {
+   "id": "E-0579",
+   "entidad": "MUNICIPALIDAD PROVINCIAL DE SAN ROMAN - JULIACA",
+   "ruc": "20165195290",
+   "nivel": "Local",
+   "sector": "",
+   "departamento": "Puno",
+   "convocado": 94472596.72,
+   "adjudicado": 94472596.72,
+   "contratado": 94472596.72,
+   "bienes": 22693450.0,
+   "servicios": 3907636.99,
+   "obras": 65746288.85,
+   "consultoria": 2125220.88,
+   "n": 118
+  },
+  {
    "id": "E-0127",
    "entidad": "MUNICIPALIDAD DISTRITAL DE SAN JUAN DE MIRAFLORES",
    "ruc": "20131378204",
@@ -2517,22 +2382,6 @@
    "obras": 38556017.41,
    "consultoria": 276176.23,
    "n": 50
-  },
-  {
-   "id": "E-0579",
-   "entidad": "MUNICIPALIDAD PROVINCIAL DE SAN ROMAN - JULIACA",
-   "ruc": "20165195290",
-   "nivel": "Local",
-   "sector": "",
-   "departamento": "Puno",
-   "convocado": 93941682.58,
-   "adjudicado": 93941682.58,
-   "contratado": 93941682.58,
-   "bienes": 22693450.0,
-   "servicios": 3907636.99,
-   "obras": 65746288.85,
-   "consultoria": 1594306.74,
-   "n": 117
   },
   {
    "id": "E-0017",
@@ -2557,14 +2406,14 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 93020353.35,
-   "adjudicado": 93020353.35,
-   "contratado": 93020353.35,
+   "convocado": 92899069.95,
+   "adjudicado": 92899069.95,
+   "contratado": 92899069.95,
    "bienes": 537549.98,
    "servicios": 36022207.44,
    "obras": 53379119.3,
-   "consultoria": 3081476.63,
-   "n": 124
+   "consultoria": 2960193.23,
+   "n": 123
   },
   {
    "id": "E-0673",
@@ -6135,6 +5984,22 @@
    "n": 56
   },
   {
+   "id": "E-0153",
+   "entidad": "ENTIDAD PRESTADORA DE SERVICIO DE SANEAMIENTO DE CUSCO S.A.",
+   "ruc": "20136353315",
+   "nivel": "Local",
+   "sector": "",
+   "departamento": "Cusco",
+   "convocado": 30856397.85,
+   "adjudicado": 30856397.85,
+   "contratado": 30856397.85,
+   "bienes": 14209526.67,
+   "servicios": 16646871.18,
+   "obras": 0.0,
+   "consultoria": 0.0,
+   "n": 67
+  },
+  {
    "id": "E-0072",
    "entidad": "INTENDENCIA NACIONAL DE BOMBEROS DEL PERÚ",
    "ruc": "20131366885",
@@ -6215,20 +6080,20 @@
    "n": 113
   },
   {
-   "id": "E-0153",
-   "entidad": "ENTIDAD PRESTADORA DE SERVICIO DE SANEAMIENTO DE CUSCO S.A.",
-   "ruc": "20136353315",
-   "nivel": "Local",
+   "id": "E-0477",
+   "entidad": "HOSPITAL NACIONAL SERGIO E. BERNALES",
+   "ruc": "20160588234",
+   "nivel": "Nacional",
    "sector": "",
-   "departamento": "Cusco",
-   "convocado": 30206397.85,
-   "adjudicado": 30206397.85,
-   "contratado": 30206397.85,
-   "bienes": 13559526.67,
-   "servicios": 16646871.18,
+   "departamento": "Lima",
+   "convocado": 30241113.99,
+   "adjudicado": 30241113.99,
+   "contratado": 30241113.99,
+   "bienes": 19296345.0,
+   "servicios": 10944768.99,
    "obras": 0.0,
    "consultoria": 0.0,
-   "n": 66
+   "n": 49
   },
   {
    "id": "E-0568",
@@ -6503,22 +6368,6 @@
    "n": 53
   },
   {
-   "id": "E-0477",
-   "entidad": "HOSPITAL NACIONAL SERGIO E. BERNALES",
-   "ruc": "20160588234",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 29091113.99,
-   "adjudicado": 29091113.99,
-   "contratado": 29091113.99,
-   "bienes": 18146345.0,
-   "servicios": 10944768.99,
-   "obras": 0.0,
-   "consultoria": 0.0,
-   "n": 48
-  },
-  {
    "id": "E-2976",
    "entidad": "HOSPITAL DE LIMA ESTE - VITARTE",
    "ruc": "20611127511",
@@ -6741,6 +6590,22 @@
    "obras": 0.0,
    "consultoria": 0.0,
    "n": 41
+  },
+  {
+   "id": "E-0618",
+   "entidad": "MUNICIPALIDAD PROVINCIAL DE ISLAY - MOLLENDO",
+   "ruc": "20166164789",
+   "nivel": "Local",
+   "sector": "",
+   "departamento": "Arequipa",
+   "convocado": 27405834.23,
+   "adjudicado": 27405834.23,
+   "contratado": 27405834.23,
+   "bienes": 8724620.73,
+   "servicios": 1412586.4,
+   "obras": 16708978.12,
+   "consultoria": 559648.98,
+   "n": 63
   },
   {
    "id": "E-1825",
@@ -11589,22 +11454,6 @@
    "obras": 10685902.3,
    "consultoria": 320025.3,
    "n": 17
-  },
-  {
-   "id": "E-2904",
-   "entidad": "DIRECCION DE REDES INTEGRADAS DE SALUD LIMA ESTE",
-   "ruc": "20602236596",
-   "nivel": "Nacional",
-   "sector": "",
-   "departamento": "Lima",
-   "convocado": 12652832.09,
-   "adjudicado": 12652832.09,
-   "contratado": 12652832.09,
-   "bienes": 7170299.0,
-   "servicios": 5482533.09,
-   "obras": 0.0,
-   "consultoria": 0.0,
-   "n": 45
   },
   {
    "id": "E-0148",

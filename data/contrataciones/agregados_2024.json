@@ -1,7 +1,7 @@
 {
  "anio": 2024,
  "parcial": false,
- "actualizado": "2026-10-05",
+ "actualizado": "2026-10-12",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -15,11 +15,11 @@
   "dev": 238893055447.0,
   "gir": 238459697695.0,
   "pac_programado": null,
-  "convocado": 80883627497.51,
-  "adjudicado": 73537346770.79,
-  "contratado": 73537346770.79,
-  "n_procedimientos": 60609,
-  "n_oc": 32915,
+  "convocado": 80884248146.51,
+  "adjudicado": 73540345360.79,
+  "contratado": 73540345360.79,
+  "n_procedimientos": 60611,
+  "n_oc": 32924,
   "n_os": 22741,
   "n_proveedores": 34914,
   "cd_num": 4430,
@@ -30,8 +30,8 @@
  "distribucion_objeto": [
   {
    "objeto": "Bienes",
-   "monto": 14110464415.34,
-   "n": 32915
+   "monto": 14113463005.34,
+   "n": 32924
   },
   {
    "objeto": "Servicios",
@@ -62,8 +62,8 @@
   },
   {
    "categoria": "Bienes",
-   "monto": 14110464415.34,
-   "n": 32915
+   "monto": 14113463005.34,
+   "n": 32924
   },
   {
    "categoria": "Consultoría de obras",
@@ -226,8 +226,8 @@
  "por_tipo_procedimiento": [
   {
    "tipo": "Licitación Pública",
-   "monto": 29840709939.71,
-   "n": 4942
+   "monto": 29843708529.71,
+   "n": 4951
   },
   {
    "tipo": "Adjudicación Simplificada",
@@ -341,9 +341,9 @@
   }
  ],
  "comparacion_montos": {
-  "convocado": 80883627497.51,
-  "adjudicado": 73537346770.79,
-  "contratado": 73537346770.79
+  "convocado": 80884248146.51,
+  "adjudicado": 73540345360.79,
+  "contratado": 73540345360.79
  },
  "embudo": [
   {
@@ -356,15 +356,15 @@
   },
   {
    "etapa": "Referencial",
-   "monto": 80883627497.51
+   "monto": 80884248146.51
   },
   {
    "etapa": "Adjudicado",
-   "monto": 73537346770.79
+   "monto": 73540345360.79
   },
   {
    "etapa": "Contratado",
-   "monto": 73537346770.79
+   "monto": 73540345360.79
   },
   {
    "etapa": "Devengado",
@@ -374,8 +374,8 @@
  "por_departamento": [
   {
    "departamento": "Lima",
-   "monto": 37824088222.33,
-   "n": 24214
+   "monto": 37827086812.33,
+   "n": 24223
   },
   {
    "departamento": "La Libertad",
@@ -522,14 +522,14 @@
    "nivel": "Nacional",
    "sector": "",
    "departamento": "Lima",
-   "convocado": 2782498398.58,
-   "adjudicado": 2782498398.58,
-   "contratado": 2782498398.58,
-   "bienes": 1464960483.24,
+   "convocado": 2785496988.58,
+   "adjudicado": 2785496988.58,
+   "contratado": 2785496988.58,
+   "bienes": 1467959073.24,
    "servicios": 733782810.8,
    "obras": 557157477.36,
    "consultoria": 26597627.18,
-   "n": 2061
+   "n": 2070
   },
   {
    "id": "E-1641",

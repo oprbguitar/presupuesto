@@ -2,7 +2,7 @@
  "modulo": "contrataciones-publicas",
  "version": 3,
  "estado_datos": "validado",
- "actualizado": "2026-10-05",
+ "actualizado": "2026-10-12",
  "cobertura": "Adjudicaciones SEACE (procedimientos de selección, incluye obras) 2023-2025 + órdenes por Catálogos Electrónicos de Perú Compras (2026). Presupuesto nacional del MEF.",
  "anios": [
   2023,
@@ -32,27 +32,27 @@
   {
    "anio": 2024,
    "pim": 262058019205.0,
-   "convocado": 80883627497.51,
-   "adjudicado": 73537346770.79,
-   "contratado": 73537346770.79,
+   "convocado": 80884248146.51,
+   "adjudicado": 73540345360.79,
+   "contratado": 73540345360.79,
    "dev": 238893055447.0,
    "parcial": false
   },
   {
    "anio": 2025,
    "pim": 272450859407.0,
-   "convocado": 73204178000.85,
-   "adjudicado": 68928120870.65,
-   "contratado": 68928120870.65,
+   "convocado": 73192419096.25,
+   "adjudicado": 68913811059.74,
+   "contratado": 68913811059.74,
    "dev": 253679227261.0,
    "parcial": false
   },
   {
    "anio": 2026,
    "pim": null,
-   "convocado": 962078914.87,
-   "adjudicado": 962078914.87,
-   "contratado": 962078914.87,
+   "convocado": 925112205.49,
+   "adjudicado": 925112205.49,
+   "contratado": 925112205.49,
    "dev": null,
    "parcial": true
   }
@@ -89,12 +89,12 @@
  ],
  "log_actualizacion": [
   {
-   "fecha": "2026-10-05",
+   "fecha": "2026-10-12",
    "evento": "Ingesta real Perú Compras (2026)",
    "estado": "ok"
   },
   {
-   "fecha": "2026-10-05",
+   "fecha": "2026-10-12",
    "evento": "Ingesta SEACE 2023, 2024, 2025 + MEF",
    "estado": "ok"
   }
