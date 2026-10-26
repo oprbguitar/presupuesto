@@ -1,7 +1,7 @@
 {
  "anio": 2024,
  "parcial": false,
- "actualizado": "2026-10-19",
+ "actualizado": "2026-10-26",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -16,12 +16,12 @@
   "gir": 238459697695.0,
   "pac_programado": null,
   "convocado": 80884248146.51,
-  "adjudicado": 73540345360.79,
-  "contratado": 73540345360.79,
+  "adjudicado": 73539480688.4,
+  "contratado": 73539480688.4,
   "n_procedimientos": 60611,
   "n_oc": 32924,
   "n_os": 22741,
-  "n_proveedores": 34914,
+  "n_proveedores": 0,
   "cd_num": 4430,
   "cd_monto": 5151427395.62,
   "desiertos": 0,
@@ -40,7 +40,7 @@
   },
   {
    "objeto": "Obras",
-   "monto": 37493083902.51,
+   "monto": 37492219230.12,
    "n": 5963
   },
   {
@@ -52,7 +52,7 @@
  "top_categorias": [
   {
    "categoria": "Obras",
-   "monto": 37493083902.51,
+   "monto": 37492219230.12,
    "n": 5963
   },
   {
@@ -71,158 +71,7 @@
    "n": 5854
   }
  ],
- "top_proveedores": [
-  {
-   "proveedor": "CONSORCIO LIMA NORTE",
-   "ruc": "1652147",
-   "monto": 806093923.08,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO HUAYLAS",
-   "ruc": "1658782",
-   "monto": 678197013.61,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO CASTILLA",
-   "ruc": "1647851",
-   "monto": 658234902.15,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO AGUA CASTILLA",
-   "ruc": "1565656",
-   "monto": 653513985.52,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO VIAL SAMA",
-   "ruc": "1686546",
-   "monto": 608578824.66,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO VIAL HUANUCO",
-   "ruc": "1650037",
-   "monto": 579849085.85,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO PUENTES PIURA",
-   "ruc": "1638093",
-   "monto": 533262100.58,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO CARRETERO HUALLANCA",
-   "ruc": "1691730",
-   "monto": 523040998.72,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO CARRETERA SAN RAFAEL-CCS",
-   "ruc": "1698531",
-   "monto": 515044501.07,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO PROCERES",
-   "ruc": "1662363",
-   "monto": 489455268.86,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO SANEAMIENTO SEÑOR CAUTIVO",
-   "ruc": "1700381",
-   "monto": 460732842.57,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSTRUCTORA M.P.M. S.A.",
-   "ruc": "20100995108",
-   "monto": 414978351.04,
-   "n": 2
-  },
-  {
-   "proveedor": "BANCO DE CREDITO DEL PERU",
-   "ruc": "20100047218",
-   "monto": 412278498.33,
-   "n": 3
-  },
-  {
-   "proveedor": "CONSORCIO CONSERVIAL",
-   "ruc": "1613693",
-   "monto": 404024912.24,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO DEPORTIVO LIBERTAD",
-   "ruc": "1618373",
-   "monto": 380839457.95,
-   "n": 1
-  },
-  {
-   "proveedor": "RIMAC SEGUROS Y REASEGUROS",
-   "ruc": "20100041953",
-   "monto": 368735195.92,
-   "n": 54
-  },
-  {
-   "proveedor": "CONSORCIO EDIFICADOR SUR",
-   "ruc": "1601907",
-   "monto": 347883662.85,
-   "n": 1
-  },
-  {
-   "proveedor": "VIETTEL  PERU  S.A.C.",
-   "ruc": "20543254798",
-   "monto": 345016473.4,
-   "n": 19
-  },
-  {
-   "proveedor": "CONSORCIO VIAL COSTANERA TALARA",
-   "ruc": "1556345",
-   "monto": 335858713.31,
-   "n": 1
-  },
-  {
-   "proveedor": "TECNOLOGIAS ECOLOGICAS PRISMA SAC",
-   "ruc": "20502221796",
-   "monto": 334516026.77,
-   "n": 15
-  },
-  {
-   "proveedor": "CONSORCIO HOSPITALARIO PACASMAYO",
-   "ruc": "1580717",
-   "monto": 327608691.85,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO VIAL BRM",
-   "ruc": "1628071",
-   "monto": 323363390.59,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO QHAPAQ ÑAN NCC",
-   "ruc": "1492758",
-   "monto": 286541176.3,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO SAN FERNANDO",
-   "ruc": "1720831",
-   "monto": 265322947.44,
-   "n": 1
-  },
-  {
-   "proveedor": "SUDAMERICANA INTEGRAL DE CONSTRUCCIONES SUDINCO S.A., SUCURSAL PERÚ",
-   "ruc": "20600419839",
-   "monto": 262753036.65,
-   "n": 1
-  }
- ],
+ "top_proveedores": [],
  "por_tipo_procedimiento": [
   {
    "tipo": "Licitación Pública",
@@ -231,7 +80,7 @@
   },
   {
    "tipo": "Adjudicación Simplificada",
-   "monto": 15702540988.12,
+   "monto": 15701676315.73,
    "n": 34792
   },
   {
@@ -342,8 +191,8 @@
  ],
  "comparacion_montos": {
   "convocado": 80884248146.51,
-  "adjudicado": 73540345360.79,
-  "contratado": 73540345360.79
+  "adjudicado": 73539480688.4,
+  "contratado": 73539480688.4
  },
  "embudo": [
   {
@@ -360,11 +209,11 @@
   },
   {
    "etapa": "Adjudicado",
-   "monto": 73540345360.79
+   "monto": 73539480688.4
   },
   {
    "etapa": "Contratado",
-   "monto": 73540345360.79
+   "monto": 73539480688.4
   },
   {
    "etapa": "Devengado",
@@ -379,7 +228,7 @@
   },
   {
    "departamento": "La Libertad",
-   "monto": 3326814203.71,
+   "monto": 3325949531.32,
    "n": 2424
   },
   {

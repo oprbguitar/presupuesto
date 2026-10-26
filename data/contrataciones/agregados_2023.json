@@ -1,7 +1,7 @@
 {
  "anio": 2023,
  "parcial": false,
- "actualizado": "2026-10-19",
+ "actualizado": "2026-10-26",
  "estado_datos": "validado",
  "fuente": {
   "nombre": "OECE/SEACE — Adjudicaciones (CONOSCE) + MEF (Consulta Amigable)",
@@ -21,7 +21,7 @@
   "n_procedimientos": 58901,
   "n_oc": 35281,
   "n_os": 23271,
-  "n_proveedores": 33891,
+  "n_proveedores": 0,
   "cd_num": 6684,
   "cd_monto": 6152318499.42,
   "desiertos": 0,
@@ -71,158 +71,7 @@
    "n": 4674
   }
  ],
- "top_proveedores": [
-  {
-   "proveedor": "ALDESA CONSTRUCCIONES SA SUCURSAL EN PERU",
-   "ruc": "20548838461",
-   "monto": 808223191.24,
-   "n": 3
-  },
-  {
-   "proveedor": "CONSORCIO ESPERANZA",
-   "ruc": "1502102",
-   "monto": 597202220.06,
-   "n": 1
-  },
-  {
-   "proveedor": "CHINA GEZHOUBA GROUP COMPANY LIMITED SUCURSAL PERU",
-   "ruc": "20602371442",
-   "monto": 580148244.35,
-   "n": 4
-  },
-  {
-   "proveedor": "CONSORCIO HIDRAULICO LOROS",
-   "ruc": "1481413",
-   "monto": 399543054.36,
-   "n": 1
-  },
-  {
-   "proveedor": "FERREYROS SOCIEDAD ANÓNIMA",
-   "ruc": "20100028698",
-   "monto": 364040588.85,
-   "n": 160
-  },
-  {
-   "proveedor": "RIMAC SEGUROS Y REASEGUROS",
-   "ruc": "20100041953",
-   "monto": 358145378.28,
-   "n": 72
-  },
-  {
-   "proveedor": "MOTA-ENGIL PERU S.A.",
-   "ruc": "20100045517",
-   "monto": 356253522.11,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO CONSTRUCTOR LUSOPERUANO",
-   "ruc": "1508386",
-   "monto": 347128831.7,
-   "n": 1
-  },
-  {
-   "proveedor": "CONCYSSA S A",
-   "ruc": "20100370426",
-   "monto": 346784473.19,
-   "n": 3
-  },
-  {
-   "proveedor": "CONSORCIO TAMBOPATA",
-   "ruc": "1521554",
-   "monto": 323553522.46,
-   "n": 1
-  },
-  {
-   "proveedor": "NAVIERA TRANSOCEANICA S.A.",
-   "ruc": "20522163890",
-   "monto": 313802292.86,
-   "n": 3
-  },
-  {
-   "proveedor": "CONSORCIO SALUD DEL CENTRO",
-   "ruc": "1489472",
-   "monto": 294696625.27,
-   "n": 1
-  },
-  {
-   "proveedor": "OFUSCADO",
-   "ruc": "99999999999",
-   "monto": 282097044.2,
-   "n": 124
-  },
-  {
-   "proveedor": "CONSORCIO PACIFICO",
-   "ruc": "592407",
-   "monto": 273314126.84,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO GE HYDRO",
-   "ruc": "1504829",
-   "monto": 270468429.58,
-   "n": 3
-  },
-  {
-   "proveedor": "CONSORCIO HOSPITALARIO PAMPAS",
-   "ruc": "1494566",
-   "monto": 267248701.57,
-   "n": 1
-  },
-  {
-   "proveedor": "VIPROSEG SOCIEDAD ANONIMA CERRADA - VIPROSEG S.A.C.",
-   "ruc": "20605681281",
-   "monto": 261595547.17,
-   "n": 19
-  },
-  {
-   "proveedor": "MAPFRE PERU VIDA COMPAÑIA DE SEGUROS Y REASEGUROS",
-   "ruc": "20418896915",
-   "monto": 260277808.52,
-   "n": 100
-  },
-  {
-   "proveedor": "CONSORCIO VIAS DE SAYAN",
-   "ruc": "589441",
-   "monto": 257367929.49,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO INGENIERIA",
-   "ruc": "1486962",
-   "monto": 253742051.1,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO CYMSOCOIRH",
-   "ruc": "587917",
-   "monto": 243560183.51,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSORCIO AGUAS DE PROFAM",
-   "ruc": "1492595",
-   "monto": 239445339.57,
-   "n": 1
-  },
-  {
-   "proveedor": "ACEA PERU S.A.C.",
-   "ruc": "20603339607",
-   "monto": 238879566.69,
-   "n": 1
-  },
-  {
-   "proveedor": "CONSTRUCTORA M.P.M. S.A.",
-   "ruc": "20100995108",
-   "monto": 236335663.26,
-   "n": 1
-  },
-  {
-   "proveedor": "PROTECCION Y RESGUARDO S A",
-   "ruc": "20100717124",
-   "monto": 234711313.95,
-   "n": 18
-  }
- ],
+ "top_proveedores": [],
  "por_tipo_procedimiento": [
   {
    "tipo": "Licitación Pública",
