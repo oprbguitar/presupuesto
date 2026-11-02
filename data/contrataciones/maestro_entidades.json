@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26",
+ "actualizado": "2026-11-02",
  "estado_datos": "validado",
  "nota": "Entidades de adjudicaciones SEACE (con departamento) y Perú Compras. No se asume correspondencia 1:1 con pliego/UE del MEF.",
  "entidades": [
@@ -35872,7 +35872,7 @@
    "departamento": "Lima"
   },
   {
-   "id": "E-1078",
+   "id": "E-1088",
    "nombre": "UNIDAD DE GESTION EDUCATIVA DE CORONGO",
    "ruc": "20286922342",
    "cod_oece": null,
@@ -35884,7 +35884,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1108",
+   "id": "E-1118",
    "nombre": "UNIDAD DE GESTION EDUCATIVA LOCAL Nº 11 - CAJATAMBO",
    "ruc": "20320710660",
    "cod_oece": null,
@@ -35896,7 +35896,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1255",
+   "id": "E-1265",
    "nombre": "SERVICIO DE ADMINIS. TRIBUTARIA DE PIURA",
    "ruc": "20441554436",
    "cod_oece": null,
@@ -35908,7 +35908,7 @@
    "departamento": "Piura"
   },
   {
-   "id": "E-1271",
+   "id": "E-1281",
    "nombre": "UNIDAD DE GESTION EDUCATIVA DE MOHO",
    "ruc": "20448689973",
    "cod_oece": null,
@@ -35920,7 +35920,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1272",
+   "id": "E-1282",
    "nombre": "UNIDAD DE GESTION EDUCATIVA LOCAL DE CRUCERO",
    "ruc": "20448697054",
    "cod_oece": null,
@@ -35932,7 +35932,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1291",
+   "id": "E-1301",
    "nombre": "UNIDAD DE GESTION EDUCATIVA DE PAUCAR DEL SARASARA",
    "ruc": "20452720796",
    "cod_oece": null,
@@ -35944,7 +35944,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1296",
+   "id": "E-1306",
    "nombre": "UNIDAD EJECUTORA 303 SANCHEZ CERRO",
    "ruc": "20453944337",
    "cod_oece": null,
@@ -35956,7 +35956,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1323",
+   "id": "E-1334",
    "nombre": "SERVICIO DE ADMINISTRACION DE INMUEBLES MUNICIPALES",
    "ruc": "20481297223",
    "cod_oece": null,
@@ -35968,7 +35968,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1376",
+   "id": "E-1387",
    "nombre": "UNIDAD DE GESTIóN EDUCATIVA LOCAL HUANCARAMA",
    "ruc": "20490742639",
    "cod_oece": null,
@@ -35980,7 +35980,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1379",
+   "id": "E-1390",
    "nombre": "UNIDAD DE GESTION EDUCATIVA LOCAL GRAU",
    "ruc": "20490983245",
    "cod_oece": null,
@@ -35992,7 +35992,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1384",
+   "id": "E-1395",
    "nombre": "RED DE SALUD GRAU",
    "ruc": "20491240238",
    "cod_oece": null,
@@ -36004,7 +36004,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1407",
+   "id": "E-1418",
    "nombre": "UNIDAD EJECUTORA EDUCACION UGEL SUCRE",
    "ruc": "20495133304",
    "cod_oece": null,
@@ -36016,7 +36016,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1425",
+   "id": "E-1436",
    "nombre": "OFICINA PREVISIONAL DE LAS FUERZAS ARMADAS DEL MINISTERIO DE DEFENSA",
    "ruc": "20505752253",
    "cod_oece": null,
@@ -36028,7 +36028,19 @@
    "departamento": ""
   },
   {
-   "id": "E-1582",
+   "id": "E-1471",
+   "nombre": "UNIDAD DE GESTION EDUCATIVA LOCAL DE HUANCABAMBA",
+   "ruc": "20526012071",
+   "cod_oece": null,
+   "cod_pliego_mef": null,
+   "cod_ue_mef": null,
+   "sector": "",
+   "nivel": "Nacional",
+   "ubigeo": "",
+   "departamento": ""
+  },
+  {
+   "id": "E-1595",
    "nombre": "UNIDAD DE GESTION EDUCATIVA LOCAL DE RECUAY",
    "ruc": "20571181305",
    "cod_oece": null,
@@ -36040,7 +36052,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1586",
+   "id": "E-1599",
    "nombre": "UNIDAD DE GESTION EDUCATIVA LOCAL DE BOLOGNESI",
    "ruc": "20571443784",
    "cod_oece": null,
@@ -36052,7 +36064,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1596",
+   "id": "E-1609",
    "nombre": "TERRAPUERTO MUNICIPAL LIBERTADORES DE AMERICA",
    "ruc": "20574761680",
    "cod_oece": null,
@@ -36064,7 +36076,7 @@
    "departamento": "Ica"
   },
   {
-   "id": "E-1625",
+   "id": "E-1638",
    "nombre": "UNIDAD EJECUTORA EDUCACION CHUPACA",
    "ruc": "20600662806",
    "cod_oece": null,
@@ -36076,7 +36088,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1640",
+   "id": "E-1653",
    "nombre": "INSTITUTO MUNICIPAL DE PLANEAMIENTO  DE AREQUIPA - IMPLA",
    "ruc": "20601060214",
    "cod_oece": null,
@@ -36088,7 +36100,7 @@
    "departamento": "Arequipa"
   },
   {
-   "id": "E-1661",
+   "id": "E-1674",
    "nombre": "UGEL CASTILLA",
    "ruc": "20601769655",
    "cod_oece": null,
@@ -36100,7 +36112,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1665",
+   "id": "E-1678",
    "nombre": "UNIDAD DE GESTION EDUCATIVA LOCAL DE PICHARI-KIMBIRI-VILLA VIRGEN",
    "ruc": "20601926084",
    "cod_oece": null,
@@ -36112,7 +36124,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1696",
+   "id": "E-1709",
    "nombre": "GOBIERNO REGIONAL DE JUNÍN - EDUCACIÓN RÍO ENE MANTARO",
    "ruc": "20602901816",
    "cod_oece": null,
@@ -36124,7 +36136,7 @@
    "departamento": "Junin"
   },
   {
-   "id": "E-1697",
+   "id": "E-1710",
    "nombre": "SERVICIO DE ADMINISTRACION TRIBUTARIA DE JOSE LEONARDO ORTIZ",
    "ruc": "20603246510",
    "cod_oece": null,
@@ -36136,7 +36148,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1733",
+   "id": "E-1747",
    "nombre": "UNIVERSIDAD NACIONAL FRONTERIZA AUTONOMA DE YUNGUYO",
    "ruc": "20613346156",
    "cod_oece": null,
@@ -36148,7 +36160,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1734",
+   "id": "E-1748",
    "nombre": "UNIVERSIDAD NACIONAL DE SECHURA",
    "ruc": "20613370588",
    "cod_oece": null,
@@ -36160,7 +36172,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1736",
+   "id": "E-1750",
    "nombre": "UNIVERSIDAD NACIONAL DE CARABAYA",
    "ruc": "20613491661",
    "cod_oece": null,
@@ -36172,7 +36184,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1739",
+   "id": "E-1753",
    "nombre": "UNIVERSIDAD NACIONAL AUTÓNOMA DE CHUPACA",
    "ruc": "20613796909",
    "cod_oece": null,
@@ -36184,7 +36196,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1740",
+   "id": "E-1754",
    "nombre": "UNIVERSIDAD NACIONAL AUTONOMA DEL DISTRITO DE SAN MARCOS",
    "ruc": "20613980408",
    "cod_oece": null,
@@ -36196,7 +36208,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1741",
+   "id": "E-1755",
    "nombre": "UNIVERSIDAD NACIONAL TECNOLOGICA DE CHINCHA",
    "ruc": "20613991787",
    "cod_oece": null,
@@ -36208,7 +36220,7 @@
    "departamento": "Ica"
   },
   {
-   "id": "E-1742",
+   "id": "E-1756",
    "nombre": "MIDIS - OFIS - PROGRAMA PARA EL FORTALECIMIENTO DEL SISTEMA NACIONAL DE FOCALIZACIÓN",
    "ruc": "20614060809",
    "cod_oece": null,
@@ -36220,7 +36232,19 @@
    "departamento": ""
   },
   {
-   "id": "E-1743",
+   "id": "E-1757",
+   "nombre": "MINSA MOVIL",
+   "ruc": "20614219662",
+   "cod_oece": null,
+   "cod_pliego_mef": null,
+   "cod_ue_mef": null,
+   "sector": "",
+   "nivel": "Nacional",
+   "ubigeo": "",
+   "departamento": ""
+  },
+  {
+   "id": "E-1758",
    "nombre": "PODER JUDICIAL - AUTORIDAD NACIONAL DE CONTROL DEL PODER JUDICIAL",
    "ruc": "20614289059",
    "cod_oece": null,
@@ -36232,7 +36256,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1744",
+   "id": "E-1759",
    "nombre": "UNIVERSIDAD NACIONAL DE HUANCABAMBA",
    "ruc": "20614366096",
    "cod_oece": null,
@@ -36244,7 +36268,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1745",
+   "id": "E-1760",
    "nombre": "MINISTERIO DE CULTURA - UNIDAD EJECUTORA 012: CHAVÍN DE HUÁNTAR",
    "ruc": "20614398222",
    "cod_oece": null,
@@ -36256,7 +36280,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1746",
+   "id": "E-1761",
    "nombre": "UNIVERSIDAD NACIONAL INTERCULTURAL AIMARA DE ILAVE",
    "ruc": "20614426986",
    "cod_oece": null,
@@ -36268,7 +36292,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1747",
+   "id": "E-1762",
    "nombre": "AUTORIDAD NACIONAL AUTÓNOMA DEL TERMINAL PORTUARIO DE CHANCAY",
    "ruc": "20614445751",
    "cod_oece": null,
@@ -36280,7 +36304,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1748",
+   "id": "E-1763",
    "nombre": "MINISTERIO DE DESARROLLO E INCLUSIÓN SOCIAL - U.E. N° 011: PROGRAMA DE ALIMENTACIÓN ESCOLAR",
    "ruc": "20614761459",
    "cod_oece": null,
@@ -36292,7 +36316,7 @@
    "departamento": ""
   },
   {
-   "id": "E-1749",
+   "id": "E-1764",
    "nombre": "GOBIERNO REGIONAL DE UCAYALI - RED DE SALUD N° 02 FEDERICO BASADRE",
    "ruc": "20615314553",
    "cod_oece": null,
@@ -36304,9 +36328,21 @@
    "departamento": "Ucayali"
   },
   {
-   "id": "E-1750",
+   "id": "E-1765",
    "nombre": "PCM - PROGRAMA DE MEJOR ATENCION AL CIUDADANO - MAC",
    "ruc": "20615467252",
+   "cod_oece": null,
+   "cod_pliego_mef": null,
+   "cod_ue_mef": null,
+   "sector": "",
+   "nivel": "Nacional",
+   "ubigeo": "",
+   "departamento": ""
+  },
+  {
+   "id": "E-1766",
+   "nombre": "UNIVERSIDAD NACIONAL AUTONOMA DE OLMOS",
+   "ruc": "20615839516",
    "cod_oece": null,
    "cod_pliego_mef": null,
    "cod_ue_mef": null,
