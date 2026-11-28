@@ -1,44 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-PE">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Presupuesto Perú — Visor de Ejecución Presupuestal</title>
-<meta name="description" content="Visor ciudadano de ejecución presupuestal del Perú: PIA, PIM, devengado, girado y avance por entidad pública (2022–2026). Datos oficiales del MEF.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='33' height='100' fill='%23D91023'/><rect x='33' width='34' height='100' fill='white'/><rect x='67' width='33' height='100' fill='%23D91023'/></svg>">
-<link rel="stylesheet" href="css/styles.css?v=3">
-<link rel="stylesheet" href="css/ley32732.css?v=2">
-<link rel="stylesheet" href="css/ley32732_instituciones.css?v=2">
-<link rel="stylesheet" href="css/contrataciones.css?v=1">
+<title>Presupuesto Perú — Visor de Ejecución Presupuestal 2026</title>
+<meta name="description" content="Visor ciudadano de ejecución presupuestal del Perú: avance 2026 al día, leyes de crédito suplementario 32732 y 32744, Fenómeno El Niño, programas, ranking y contrataciones públicas. Datos oficiales del MEF.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='33' height='100' fill='%23C8102E'/><rect x='33' width='34' height='100' fill='white'/><rect x='67' width='33' height='100' fill='%23C8102E'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=4">
+<link rel="stylesheet" href="css/ley32732.css?v=3">
+<link rel="stylesheet" href="css/ley32732_instituciones.css?v=3">
+<link rel="stylesheet" href="css/contrataciones.css?v=2">
 </head>
 <body>
 
 <header class="topbar">
-  <div class="wrap topbar-in">
+  <div class="topbar-in">
     <div class="brand">
       <span class="flag" aria-hidden="true"></span>
       <div>
         <h1>Presupuesto Perú</h1>
-        <p class="tagline">Visor ciudadano de ejecución presupuestal · Fuente: MEF — Consulta Amigable</p>
+        <p class="tagline">Visor ciudadano de ejecución presupuestal · MEF, El Peruano, Congreso, OECE</p>
       </div>
     </div>
-    <nav class="topnav">
-      <button class="navbtn active" data-view="explorar">Explorar</button>
-      <button class="navbtn" data-view="ranking">Ranking de ejecución</button>
-      <button class="navbtn" data-view="fuentes">Fuentes y rendición</button>
-      <button class="navbtn help-btn" id="btnAyuda" title="¿Cómo leer estas cifras?">?</button>
-    </nav>
+    <p class="stamp"><i class="dot" aria-hidden="true"></i><span>Ejecución MEF al</span> <b id="stampFecha"></b></p>
   </div>
 </header>
 
+<div class="shell">
+  <aside class="rail" aria-label="Secciones">
+    <nav class="topnav">
+      <p class="rail-group">Panorama</p>
+      <button class="navbtn active" data-view="inicio" type="button">Avance 2026 <span class="nb-tag">hoy</span></button>
+      <button class="navbtn" data-view="explorar" type="button">Explorar entidades</button>
+      <button class="navbtn" data-view="ranking" type="button">Ranking de ejecución</button>
+      <p class="rail-group">Normas y prioridades</p>
+      <button class="navbtn" data-view="leyes" type="button">Leyes 2026–2027 <span class="nb-tag">4</span></button>
+      <button class="navbtn" data-view="nino" type="button">Fenómeno El Niño</button>
+      <button class="navbtn" data-view="programas" type="button">Programas e infancia</button>
+      <p class="rail-group" id="railCompras">Compras y control</p>
+      <button class="navbtn" data-view="fuentes" type="button">Fuentes y rendición</button>
+      <button class="navbtn help-btn" id="btnAyuda" type="button" title="¿Cómo leer estas cifras?">¿Cómo leer las cifras?</button>
+      <p class="rail-foot">Cifras en soles (S/). El avance es devengado ÷ PIM. Las fuentes prevalecen sobre este visor.</p>
+    </nav>
+  </aside>
+
 <main class="wrap">
 
-  <!-- ============ VISTA EXPLORAR ============ -->
-  <section id="view-explorar" class="view">
+  <!-- ============ AVANCE 2026 ============ -->
+  <section id="view-inicio" class="view">
+    <div class="vhead">
+      <div>
+        <p class="kicker">Año fiscal 2026 · corte <span class="fx"></span></p>
+        <h2>¿Cuánto ha gastado el Estado este año?</h2>
+        <p>Presupuesto vigente, ejecución por nivel de gobierno, ritmo mensual y las dos leyes que ampliaron el presupuesto 2026.</p>
+      </div>
+      <div class="ent-links"><a href="https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx" target="_blank" rel="noopener">Verificar en Consulta Amigable ↗</a></div>
+    </div>
+    <div id="inicioBody"></div>
+  </section>
 
+  <!-- ============ VISTA EXPLORAR ============ -->
+  <section id="view-explorar" class="view" hidden>
+    <div class="vhead">
+      <div>
+        <p class="kicker">Explorador por entidad · 2022–2026</p>
+        <h2>Explorar entidades</h2>
+        <p>Elige un sector, gobierno regional, municipalidad de Lima o departamento para ver en qué gasta, para qué y cuánto ha ejecutado.</p>
+      </div>
+    </div>
     <div class="controls card">
       <div class="ctrl">
-        <label for="selYear">Año fiscal <button class="qmark" data-help="anio" aria-label="Ayuda sobre año fiscal">?</button></label>
+        <label for="selYear">Año fiscal <button class="qmark" data-help="anio" aria-label="Ayuda sobre año fiscal" type="button">?</button></label>
         <div id="yearChips" class="chips" role="tablist"></div>
       </div>
       <div class="ctrl grow">
@@ -51,7 +86,7 @@
         </select>
       </div>
       <div class="ctrl grow">
-        <label for="selEntidad">Entidad <button class="qmark" data-help="entidad" aria-label="Ayuda sobre entidad">?</button></label>
+        <label for="selEntidad">Entidad <button class="qmark" data-help="entidad" aria-label="Ayuda sobre entidad" type="button">?</button></label>
         <select id="selEntidad"></select>
       </div>
       <div class="ctrl grow">
@@ -61,14 +96,13 @@
       </div>
     </div>
 
-    <!-- Resumen nacional -->
     <div id="panelNacional" class="card resumen">
-      <h2>Resumen general del Perú — <span class="yr"></span></h2>
-      <p class="fuente-sello">✔ Datos oficiales y verificables: MEF — Consulta Amigable de Ejecución del Gasto · extraídos el <span class="fx"></span> · <a href="https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx" target="_blank" rel="noopener">verificar en la fuente ↗</a></p>
+      <div class="phead"><h2>Resumen general del Perú — <span class="yr"></span></h2>
+      <p class="fuente-sello">✔ MEF — Consulta Amigable · extraído el <span class="fx"></span> · <a href="https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx" target="_blank" rel="noopener">verificar ↗</a></p></div>
       <div id="nacionalCards" class="kpi-grid"></div>
       <div class="split">
         <div>
-          <h3>Por nivel de gobierno <button class="qmark" data-help="nivel">?</button></h3>
+          <h3>Por nivel de gobierno <button class="qmark" data-help="nivel" type="button">?</button></h3>
           <div id="nivelesTabla"></div>
         </div>
         <div>
@@ -78,117 +112,138 @@
       </div>
     </div>
 
-    <!-- Detalle de entidad -->
     <div id="panelEntidad" hidden>
       <div class="card ent-head">
         <div>
           <p class="ent-tipo" id="entTipo"></p>
           <h2 id="entNombre"></h2>
           <p class="ent-sub">Año <span class="yr"></span> · Montos en soles (S/)</p>
-          <p class="fuente-sello">✔ Datos oficiales y verificables: MEF — Consulta Amigable de Ejecución del Gasto · extraídos el <span class="fx"></span></p>
+          <p class="fuente-sello">✔ MEF — Consulta Amigable · extraído el <span class="fx"></span></p>
         </div>
         <div class="ent-links" id="entLinks"></div>
       </div>
 
       <div id="entCards" class="kpi-grid"></div>
 
-      <div class="grid2">
-        <div class="card">
-          <h3>Comparativo entre años <button class="qmark" data-help="comparativo">?</button></h3>
+      <div class="grid">
+        <div class="card c8">
+          <h3>Comparativo entre años <button class="qmark" data-help="comparativo" type="button">?</button></h3>
           <div id="chartComparativo" class="chartbox"></div>
           <div id="tablaComparativa"></div>
         </div>
-        <div class="card">
-          <h3>Semáforo de ejecución <span class="yr"></span> <button class="qmark" data-help="avance">?</button></h3>
+        <div class="card c4">
+          <h3>Semáforo de ejecución <span class="yr"></span> <button class="qmark" data-help="avance" type="button">?</button></h3>
           <div id="gaugeBox"></div>
           <div id="diagnostico" class="diag"></div>
         </div>
-      </div>
-
-      <div class="card control-card" id="boxControl">
-        <h3>🔔 Alertas y control — Contraloría General de la República <button class="qmark" data-help="control">?</button></h3>
-        <div id="alertaEjec"></div>
-        <div id="informesContra"></div>
-        <div class="ent-links" id="controlLinks"></div>
-      </div>
-
-      <div class="card" id="boxGenericas">
-        <h3>¿En qué líneas gasta? — Genéricas de gasto <span class="yr"></span> <button class="qmark" data-help="generica">?</button></h3>
-        <div id="tablaGenericas"></div>
-      </div>
-
-      <div class="card" id="boxFunciones">
-        <h3>¿Para qué gasta? — Funciones <span class="yr"></span> <button class="qmark" data-help="funcion">?</button></h3>
-        <div id="tablaFunciones"></div>
-      </div>
-
-      <div class="card" id="boxPliegos">
-        <h3>Entidades (pliegos) que componen este sector <span class="yr"></span> <button class="qmark" data-help="pliego">?</button></h3>
-        <p class="note">Haz clic en cualquier pliego para abrir su detalle completo.</p>
-        <div id="tablaPliegos"></div>
+        <div class="card c6w" id="boxGenericas">
+          <h3>¿En qué gasta? — Genéricas de gasto <span class="yr"></span> <button class="qmark" data-help="generica" type="button">?</button></h3>
+          <div id="tablaGenericas"></div>
+        </div>
+        <div class="card c6w" id="boxFunciones">
+          <h3>¿Para qué gasta? — Funciones <span class="yr"></span> <button class="qmark" data-help="funcion" type="button">?</button></h3>
+          <div id="tablaFunciones"></div>
+        </div>
+        <div class="card c6w" id="boxPliegos">
+          <h3>Entidades (pliegos) que componen este sector <span class="yr"></span> <button class="qmark" data-help="pliego" type="button">?</button></h3>
+          <p class="note">Haz clic en cualquier pliego para abrir su detalle.</p>
+          <div id="tablaPliegos"></div>
+        </div>
+        <div class="card c6w" id="boxEjecutoras" hidden>
+          <h3>¿Quién ejecuta? — Unidades ejecutoras <span class="yr"></span></h3>
+          <div id="tablaEjecutoras"></div>
+        </div>
+        <div class="card control-card c12" id="boxControl">
+          <h3>Alertas y control — Contraloría General de la República <button class="qmark" data-help="control" type="button">?</button></h3>
+          <div id="alertaEjec"></div>
+          <div id="informesContra"></div>
+          <div class="ent-links" id="controlLinks"></div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ============ VISTA RANKING ============ -->
   <section id="view-ranking" class="view" hidden>
-    <div class="card">
-      <h2>Ranking de ejecución presupuestal — <span class="yr"></span></h2>
-      <p class="note">Ordenado por avance de ejecución (devengado ÷ PIM). Un avance bajo al cierre del año indica presupuesto que no llegó a ejecutarse. <button class="qmark" data-help="avance">?</button></p>
-      <div class="chips" id="rankYearChips" style="margin-bottom:8px"></div>
-      <div class="chips" id="rankTipoChips">
-        <button class="chip active" data-rt="sector">Gobierno Nacional</button>
-        <button class="chip" data-rt="regional">G. Regionales</button>
-        <button class="chip" data-rt="muni">Municipalidades de Lima</button>
+    <div class="vhead">
+      <div>
+        <p class="kicker">Ranking · <span class="yr"></span></p>
+        <h2>Ranking de ejecución presupuestal</h2>
+        <p>Avance = devengado ÷ PIM. Puedes medir el gasto total o solo la inversión (adquisición de activos no financieros, genérica 2.6) y ordenar de mayor a menor.</p>
       </div>
-      <div id="rankingLista"></div>
+    </div>
+    <div class="card">
+      <div class="rank-tools">
+        <div class="ctrl"><label>Año</label><div class="chips" id="rankYearChips"></div></div>
+        <div class="ctrl"><label>Nivel</label>
+          <div class="seg" id="rankTipoChips">
+            <button class="chip active" data-rt="regional" type="button">G. Regionales</button>
+            <button class="chip" data-rt="sector" type="button">Gobierno Nacional</button>
+            <button class="chip" data-rt="muni" type="button">Munis de Lima</button>
+            <button class="chip" data-rt="depto" type="button">Locales por dpto.</button>
+          </div></div>
+        <div class="ctrl"><label>Medir</label>
+          <div class="seg" id="rankMetric">
+            <button class="chip active" data-m="total" type="button">Gasto total</button>
+            <button class="chip" data-m="inv" type="button">Solo inversión</button>
+          </div></div>
+        <div class="ctrl"><label>Orden</label>
+          <div class="seg" id="rankOrder">
+            <button class="chip active" data-o="desc" type="button">Mejor → peor</button>
+            <button class="chip" data-o="asc" type="button">Peor → mejor</button>
+          </div></div>
+      </div>
+      <div id="rankResumen"></div>
+      <div id="rankingLista" class="mlist tall"></div>
+      <p class="src" id="rankSrc"></p>
     </div>
   </section>
 
+  <!-- ============ LEYES / NIÑO / PROGRAMAS ============ -->
+  <section id="view-leyes" class="view" hidden><div id="leyesBody"></div></section>
+  <section id="view-nino" class="view" hidden><div id="ninoBody"></div></section>
+  <section id="view-programas" class="view" hidden><div id="programasBody"></div></section>
+
   <!-- ============ VISTA FUENTES ============ -->
   <section id="view-fuentes" class="view" hidden>
-    <div class="card">
-      <h2>Fuentes oficiales y rendición de cuentas</h2>
-      <p class="note">Todos los datos de este visor provienen de la <strong>Consulta Amigable del MEF</strong>. Estos enlaces te llevan a las fuentes originales para verificar o profundizar.</p>
-      <div id="fuentesLista" class="fuentes-grid"></div>
-    </div>
-    <div class="card">
-      <h2>Rendición de cuentas de titulares (Contraloría)</h2>
-      <p class="note">Cada titular de entidad (ministro, gobernador, alcalde, presidente de corte, fiscal de la nación) debe rendir cuentas de su gestión ante la Contraloría General de la República. Busca aquí el informe firmado de cualquier entidad:</p>
-      <div class="fuentes-grid">
-        <a class="fuente" href="https://apps1.contraloria.gob.pe/RCTG/Areas/Ciudadano/Seguimiento/frm_CCProcesos.aspx" target="_blank" rel="noopener">
-          <strong>Consulta ciudadana de rendición de cuentas</strong>
-          <span>Sistema vigente: filtra por entidad, departamento, nivel de gobierno y tipo de informe.</span>
-        </a>
-        <a class="fuente" href="https://apps1.contraloria.gob.pe/RRCC/ConsultaIRC/Index" target="_blank" rel="noopener">
-          <strong>Consulta histórica de informes</strong>
-          <span>Informes anuales y finales antiguos, por sector, región y titular.</span>
-        </a>
+    <div class="vhead"><div><p class="kicker">Transparencia</p><h2>Fuentes oficiales y rendición de cuentas</h2>
+      <p>Todos los datos de ejecución provienen de la Consulta Amigable del MEF; las normas, de El Peruano y del Congreso. Usa estos enlaces para verificar.</p></div></div>
+    <div class="grid">
+      <div class="card c8"><h3>Fuentes de datos</h3><div id="fuentesLista" class="fuentes-grid"></div></div>
+      <div class="card c4">
+        <h3>Rendición de cuentas de titulares (Contraloría)</h3>
+        <p class="note">Ministros, gobernadores, alcaldes y titulares deben rendir cuentas ante la Contraloría.</p>
+        <div class="fuentes-grid">
+          <a class="fuente" href="https://apps1.contraloria.gob.pe/RCTG/Areas/Ciudadano/Seguimiento/frm_CCProcesos.aspx" target="_blank" rel="noopener"><strong>Consulta ciudadana de rendición de cuentas</strong><span>Filtra por entidad, departamento, nivel de gobierno y tipo de informe.</span></a>
+          <a class="fuente" href="https://apps1.contraloria.gob.pe/RRCC/ConsultaIRC/Index" target="_blank" rel="noopener"><strong>Consulta histórica de informes</strong><span>Informes anuales y finales antiguos, por sector, región y titular.</span></a>
+        </div>
       </div>
     </div>
   </section>
 
 </main>
+</div>
 
 <footer class="footer">
   <div class="wrap">
-    <p><strong>Presupuesto Perú</strong> — visor ciudadano sin fines de lucro. Datos: Ministerio de Economía y Finanzas (Consulta Amigable de Ejecución del Gasto), extraídos el <span id="fechaDatos"></span>. Las cifras son referenciales; la fuente oficial siempre prevalece.</p>
+    <p><strong>Presupuesto Perú</strong> — visor ciudadano sin fines de lucro. Ejecución: MEF (Consulta Amigable), extraída el <span id="fechaDatos"></span>. Normas: El Peruano, MEF y Congreso de la República. Las cifras son referenciales; la fuente oficial siempre prevalece.</p>
     <p class="mini">PIA = presupuesto inicial · PIM = presupuesto vigente tras modificaciones · Devengado = gasto ejecutado reconocido · Avance % = devengado ÷ PIM. El saldo no ejecutado (PIM − devengado) no acredita por sí solo una devolución al Tesoro Público.</p>
   </div>
 </footer>
 
-<!-- ============ MODAL DE AYUDA ============ -->
 <div id="modal" class="modal" hidden>
   <div class="modal-card" role="dialog" aria-modal="true">
-    <button class="modal-x" id="modalClose" aria-label="Cerrar">×</button>
+    <button class="modal-x" id="modalClose" aria-label="Cerrar" type="button">×</button>
     <div id="modalBody"></div>
   </div>
 </div>
 
-<script src="data/mef.js?v=3"></script>
+<script src="data/mef.js?v=4"></script>
+<script src="data/extra.js?v=1"></script>
+<script src="data/leyes2026.js?v=1"></script>
 <script src="data/contra.js?v=3"></script>
-<script src="data/sub.js?v=3"></script>
-<script src="data/ley32732.js?v=2"></script>
+<script src="data/sub.js?v=4"></script>
+<script src="data/ley32732.js?v=3"></script>
 <script src="data/ley32732_pack_1.js?v=1"></script>
 <script src="data/ley32732_pack_2.js?v=1"></script>
 <script src="data/ley32732_pack_3_01.js?v=1"></script>
@@ -203,9 +258,11 @@
 <script src="data/ley32732_pack_4.js?v=1"></script>
 <script src="data/ley32732_pack_5.js?v=1"></script>
 <script src="data/ley32732_instituciones.js?v=2"></script>
-<script src="js/app.js?v=3"></script>
-<script src="js/ley32732.js?v=4"></script>
-<script src="js/ley32732_instituciones.js?v=2"></script>
-<script src="js/contrataciones.js?v=4"></script>
+<script src="js/panorama.js?v=1"></script>
+<script src="js/app.js?v=4"></script>
+<script src="js/ley32732.js?v=5"></script>
+<script src="js/ley32732_instituciones.js?v=3"></script>
+<script src="js/contrataciones.js?v=5"></script>
+<script src="js/shell.js?v=1"></script>
 </body>
 </html>

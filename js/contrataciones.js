@@ -144,6 +144,9 @@
     return Promise.all([fetchJSON("agregados_" + y + ".json"), fetchJSON("procedimientos_" + y + ".json")])
       .then(function (r) {
         state.agg = r[0];
+        // Completa el presupuesto del año con la Consulta Amigable cargada en el portal (data/mef.js) si el JSON no lo trae.
+        var ind = state.agg && state.agg.indicadores, T = window.MEF && MEF.years && MEF.years[String(y)] && MEF.years[String(y)].total;
+        if (ind && T) ["pia", "pim", "dev", "gir"].forEach(function (k) { if (ind[k] == null && T[k] != null) ind[k] = T[k]; });
         state.rows = (r[1] && r[1].rows) || [];
         state.rowsTope = (r[1] && r[1].rows_tope) || 0;
         state.rowsTotal = (r[1] && r[1].rows_total) || state.rows.length;

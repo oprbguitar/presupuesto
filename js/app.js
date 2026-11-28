@@ -9,7 +9,7 @@
 
   var YEARS = Object.keys(MEF.years).sort();
   var CUR_YEAR = YEARS[YEARS.length - 1];
-  var state = { year: CUR_YEAR, tipo: "sector", ent: null, view: "explorar", rankTipo: "sector" };
+  var state = { year: CUR_YEAR, tipo: "sector", ent: null, view: "inicio", rankTipo: "regional", rankMetric: "total", rankOrder: "desc" };
 
   /* ---------------- utilidades ---------------- */
   function $(s, c) { return (c || document).querySelector(s); }
@@ -202,16 +202,16 @@
 
   function gauge(box, p, label) {
     if (p == null) { box.innerHTML = '<p class="note">Sin dato de avance.</p>'; return; }
-    var cl = p >= 85 ? "#1a7f37" : p >= 70 ? "#FFC400" : "#D91023";
+    var cl = p >= 85 ? "#1e7b3a" : p >= 70 ? "#f2b705" : "#b3121f";
     var ang = Math.min(100, Math.max(0, p)) / 100 * 180;
     var r = 80, cx = 100, cy = 95;
     function pt(a) { var rad = (180 - a) * Math.PI / 180; return (cx + r * Math.cos(rad)).toFixed(1) + " " + (cy - r * Math.sin(rad)).toFixed(1); }
     var large = ang > 180 ? 1 : 0;
     box.innerHTML =
       '<svg viewBox="0 0 200 120" style="max-width:260px">' +
-      '<path d="M ' + pt(0) + " A " + r + " " + r + " 0 0 1 " + pt(180) + '" fill="none" stroke="#ececec" stroke-width="16" stroke-linecap="round"/>' +
+      '<path d="M ' + pt(0) + " A " + r + " " + r + " 0 0 1 " + pt(180) + '" fill="none" stroke="#efece4" stroke-width="16" stroke-linecap="round"/>' +
       '<path d="M ' + pt(0) + " A " + r + " " + r + " 0 " + large + " 1 " + pt(ang) + '" fill="none" stroke="' + cl + '" stroke-width="16" stroke-linecap="round"/>' +
-      '<text x="100" y="88" text-anchor="middle" font-size="26" font-weight="800" fill="#141414">' + nf1.format(p) + '%</text>' +
+      '<text x="100" y="88" text-anchor="middle" font-size="26" font-weight="600" fill="#16161d" font-family="IBM Plex Mono,monospace">' + nf1.format(p) + '%</text>' +
       '<text x="100" y="107" text-anchor="middle" font-size="10" fill="#777">' + esc(label || "avance de ejecución") + "</text></svg>";
   }
 
@@ -261,8 +261,8 @@
       pims.push(tt.pim || null); devs.push(tt.dev || null);
     });
     barChart($("#chartNacional"), [
-      { name: "PIM", color: "#141414", values: pims },
-      { name: "Devengado", color: "#D91023", values: devs }
+      { name: "PIM", color: "#16161d", values: pims },
+      { name: "Devengado", color: "#c8102e", values: devs }
     ], YEARS);
   }
 
@@ -326,8 +326,8 @@
         '</td><td><span class="pct ' + pctClass(a) + '">' + pct(a) + "</span></td></tr>";
     });
     barChart($("#chartComparativo"), [
-      { name: "PIM", color: "#141414", values: pims },
-      { name: "Devengado", color: "#D91023", values: devs }
+      { name: "PIM", color: "#16161d", values: pims },
+      { name: "Devengado", color: "#c8102e", values: devs }
     ], YEARS);
     $("#tablaComparativa").innerHTML = '<div class="tbl-wrap"><table class="t"><tr><th>Año</th><th>PIA</th><th>PIM</th><th>Devengado</th><th>No ejecutado</th><th>Avance</th></tr>' + rowsC + "</table></div>";
 
@@ -392,6 +392,15 @@
         });
       });
     } else { pbox.hidden = true; }
+
+    // unidades ejecutoras (pliegos nacionales)
+    var ebox = $("#boxEjecutoras"), ej = null;
+    if (state.tipo === "pliego") {
+      var ph = findPliego(state.ent, state.year);
+      if (ph) ej = (yearData(state.year).ejecutoras || {})[ph.sector + ":" + ph.ent.code];
+    }
+    if (ej && ej.length) { ebox.hidden = false; $("#tablaEjecutoras").innerHTML = tablaEjec(ej, "Unidad ejecutora"); }
+    else ebox.hidden = true;
   }
 
   function tablaEjec(items, colName, clickPrefix) {
@@ -400,7 +409,7 @@
       var w = Math.min(100, Math.max(0, a || 0));
       var cls = a >= 85 ? "ok" : a >= 70 ? "mid" : "";
       return "<tr" + (clickPrefix ? ' class="clickable" data-code="' + esc(clickPrefix + "|" + g.code) + '" title="Ver detalle de este pliego"' : "") + "><td>" +
-        (clickPrefix ? "🔎 " : "") + esc(title(g.name)) + "</td><td>" + solesM(g.pia) + "</td><td>" + solesM(g.pim) + "</td><td>" + solesM(g.dev) +
+        esc(title(g.name)) + "</td><td>" + solesM(g.pia) + "</td><td>" + solesM(g.pim) + "</td><td>" + solesM(g.dev) +
         "</td><td>" + solesM(g.pim != null && g.dev != null ? g.pim - g.dev : null) +
         '</td><td><div class="bar"><i class="' + cls + '" style="width:' + w + '%"></i></div></td><td><span class="pct ' + pctClass(a) + '">' + pct(a) + "</span></td></tr>";
     }).join("");
@@ -551,33 +560,62 @@
   });
 
   /* ---------------- ranking ---------------- */
+  function invOf(tipo, code, y) {
+    var d = yearData(y), g = null;
+    if (tipo === "sector") g = (d.genericas || {})[code];
+    else if (tipo === "regional") g = (d.reg_gen || {})[code];
+    else if (tipo === "muni") g = (d.muni_gen || {})[code];
+    else if (tipo === "depto") g = (d.dep_gen || {})[code];
+    if (!g) return null;
+    for (var i = 0; i < g.length; i++) if (/ADQUISICION DE ACTIVOS NO FINANCIEROS/i.test(g[i].name)) return g[i];
+    return null;
+  }
   function renderRanking() {
-    // chips de año dentro del ranking
     var yc = $("#rankYearChips");
-    yc.innerHTML = YEARS.map(function (y) {
-      return '<button class="chip' + (y === state.year ? " active" : "") + '" data-y="' + y + '">' + y + (isPartial(y) ? " ⏳" : "") + "</button>";
+    yc.innerHTML = YEARS.slice(-3).map(function (y) {
+      return '<button class="chip' + (y === state.year ? " active" : "") + '" data-y="' + y + '" type="button">' + y + (isPartial(y) ? " · en curso" : "") + "</button>";
     }).join("");
     $$(".chip", yc).forEach(function (b) {
       b.addEventListener("click", function () { state.year = b.dataset.y; render(); });
     });
-    var list = listFor(state.rankTipo, state.year).slice()
-      .filter(function (e) { return (e.pim || 0) > 5e6; })
-      .sort(function (a, b) { return (avanceOf(a) || 0) - (avanceOf(b) || 0); });
+    var inv = state.rankMetric === "inv";
+    var list = listFor(state.rankTipo, state.year).map(function (e) {
+      var m = inv ? invOf(state.rankTipo, e.code, state.year) : e;
+      return m ? { code: e.code, name: e.name, pim: m.pim, dev: m.dev, av: avanceOf(m) } : null;
+    }).filter(function (e) { return e && (e.pim || 0) > 5e6; });
+    list.sort(function (a, b) { return state.rankOrder === "desc" ? (b.av || 0) - (a.av || 0) : (a.av || 0) - (b.av || 0); });
+    var hi = 0, mid = 0, lo = 0, sp = 0, sd = 0;
+    list.forEach(function (e) { if (e.av >= 85) hi++; else if (e.av >= 70) mid++; else lo++; sp += e.pim || 0; sd += e.dev || 0; });
+    var n = list.length || 1, prom = sp ? sd / sp * 100 : null;
+    var best = list.slice().sort(function (a, b) { return (b.av || 0) - (a.av || 0); })[0];
+    var worst = list.slice().sort(function (a, b) { return (a.av || 0) - (b.av || 0); })[0];
+    $("#rankResumen").innerHTML = list.length ?
+      '<div class="stat-list" style="margin-bottom:var(--sp-4)">' +
+      '<div class="stat"><div class="s-lbl">Entidades</div><div class="s-val">' + list.length + '</div><div class="s-sub">con PIM mayor a S/ 5 mill.</div></div>' +
+      '<div class="stat"><div class="s-lbl">Avance agregado</div><div class="s-val"><span class="pct ' + pctClass(prom) + '">' + pct(prom) + '</span></div><div class="s-sub">' + solesM(sd) + " de " + solesM(sp) + "</div></div>" +
+      '<div class="stat"><div class="s-lbl">Lidera</div><div class="s-val">' + pct(best.av) + '</div><div class="s-sub">' + esc(title(best.name)) + "</div></div>" +
+      '<div class="stat"><div class="s-lbl">Más rezagada</div><div class="s-val">' + pct(worst.av) + '</div><div class="s-sub">' + esc(title(worst.name)) + "</div></div>" +
+      '<div class="stat"><div class="s-lbl">Sin ejecutar</div><div class="s-val">' + solesM(sp - sd) + '</div><div class="s-sub">PIM − devengado</div></div></div>' +
+      '<div class="dist" role="img" aria-label="Distribución por tramo de avance"><i style="width:' + (hi / n * 100) + '%;background:var(--ok)"></i><i style="width:' + (mid / n * 100) + '%;background:var(--support)"></i><i style="width:' + (lo / n * 100) + '%;background:var(--danger)"></i></div>' +
+      '<div class="legend" style="margin-bottom:var(--sp-4)"><span style="--c:var(--ok)">85 % o más: ' + hi + '</span><span style="--c:var(--support)">70–85 %: ' + mid + '</span><span style="--c:var(--danger)">menos de 70 %: ' + lo + "</span></div>" : "";
     var html = list.map(function (e, i) {
-      var a = avanceOf(e), w = Math.min(100, a || 0);
+      var a = e.av, w = Math.min(100, a || 0);
       var cls = a >= 85 ? "ok" : a >= 70 ? "mid" : "";
-      return '<div class="rank-row" data-code="' + esc(e.code) + '"><div class="rank-pos">' + (i + 1) + "</div>" +
-        '<div class="rank-name">' + esc(title(e.name)) + "<small>PIM " + solesM(e.pim) + " · sin ejecutar " + solesM((e.pim || 0) - (e.dev || 0)) + "</small></div>" +
+      return '<div class="rank-row" tabindex="0" role="button" data-code="' + esc(e.code) + '"><div class="rank-pos">' + (i + 1) + "</div>" +
+        '<div class="rank-name">' + esc(title(e.name)) + "<small>PIM " + solesM(e.pim) + " · devengado " + solesM(e.dev) + " · sin ejecutar " + solesM((e.pim || 0) - (e.dev || 0)) + "</small></div>" +
         '<div class="rank-barwrap"><div class="bar"><i class="' + cls + '" style="width:' + w + '%"></i></div>' +
         '<div class="rank-val"><span class="pct ' + pctClass(a) + '">' + pct(a) + "</span></div></div></div>";
     }).join("");
-    $("#rankingLista").innerHTML = html || '<p class="note">Sin datos.</p>';
+    $("#rankingLista").innerHTML = html || '<p class="note" style="padding:var(--sp-4)">' + (inv ? "Sin desglose de inversión para este nivel y año." : "Sin datos.") + "</p>";
+    $("#rankSrc").textContent = "Fuente: MEF — Consulta Amigable, extraído el " + (MEF.updated || "") + (inv ? ". Inversión = genérica 2.6 Adquisición de activos no financieros." : ".") + (isPartial(state.year) ? " Año en curso: el avance seguirá subiendo hasta el cierre del 31 de diciembre." : "");
     $$(".rank-row").forEach(function (r) {
-      r.addEventListener("click", function () {
+      function go() {
         state.tipo = state.rankTipo; state.ent = r.dataset.code; state.view = "explorar";
         $("#selTipo").value = state.tipo;
         render();
-      });
+      }
+      r.addEventListener("click", go);
+      r.addEventListener("keydown", function (ev) { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); go(); } });
     });
   }
 
@@ -588,6 +626,10 @@
     ["Datos Abiertos del MEF", "https://datosabiertos.mef.gob.pe/dataset/presupuesto-y-ejecucion-de-gasto", "CSV completos por año con el detalle de todas las entidades."],
     ["Comparativo oficial 2022–2026 (CSV)", "https://datosabiertos.mef.gob.pe/dataset/comparacion-de-presupuesto-ejecucion-gasto/resource/510bae6d-3d37-4fb2-af35-a40ce01715f4", "Archivo del MEF para comparar presupuesto y ejecución entre años."],
     ["Ley de Presupuesto 2026 (Ley N.º 32513)", "https://www.mef.gob.pe/contenidos/presu_publ/anexos/ppto2026/Ley_N_32513-LeydePpto2026.pdf", "Norma que aprueba el presupuesto inicial (PIA) del año 2026."],
+    ["Ley N.º 32732 — 1.er crédito suplementario 2026", "https://www.gob.pe/institucion/mef/normas-legales/8403069-32732", "S/ 4 160,3 millones incorporados el 19 de julio de 2026 (texto y anexos)."],
+    ["Ley N.º 32744 — 2.º crédito suplementario 2026", "https://busquedas.elperuano.pe/dispositivo/EX/2571013-1", "S/ 8 228,4 millones incorporados el 2 de noviembre de 2026: El Niño, infraestructura, seguridad."],
+    ["Leyes del MEF por año", "https://www.mef.gob.pe/es/normatividad-sp-9867/por-instrumento/leyes", "Leyes presupuestales publicadas y sus anexos."],
+    ["Congreso — Comisión Bicameral de Presupuesto", "https://comunicaciones.congreso.gob.pe/", "Dictámenes y votaciones del presupuesto 2027 y leyes fiscales en trámite."],
     ["Anexos del presupuesto aprobado", "https://www.mef.gob.pe/es/presupuesto-del-sector-publico/aprobacion-presupuestal/nacional-regional-y-local", "Asignación inicial por pliego, fuente de financiamiento, función y proyecto."],
     ["Seguimiento de proyectos de inversión", "https://apps5.mineco.gob.pe/bingos/seguimiento_pi/Navegador/default.aspx", "Obras e inversiones: presupuesto, devengado, avance físico y entidad responsable."],
     ["Cuenta General de la República", "https://www.mef.gob.pe/es/?option=com_content&view=article&id=3801", "Cierre contable y presupuestario oficial de cada ejercicio."],
@@ -609,18 +651,22 @@
     if (state.tipo === "pliego") state.tipo = $("#selTipo").value;
     state.ent = this.value || null; render();
   });
-  $$("#rankTipoChips .chip").forEach(function (b) {
-    b.addEventListener("click", function () {
-      state.rankTipo = b.dataset.rt;
-      $$("#rankTipoChips .chip").forEach(function (x) { x.classList.toggle("active", x === b); });
-      renderRanking();
+  function seg(sel, key, attr) {
+    $$(sel + " .chip").forEach(function (b) {
+      b.addEventListener("click", function () {
+        state[key] = b.dataset[attr];
+        $$(sel + " .chip").forEach(function (x) { x.classList.toggle("active", x === b); });
+        renderRanking();
+      });
     });
-  });
+  }
+  seg("#rankTipoChips", "rankTipo", "rt"); seg("#rankMetric", "rankMetric", "m"); seg("#rankOrder", "rankOrder", "o");
 
   /* ---------------- render maestro ---------------- */
   function render() {
     $$(".navbtn[data-view]").forEach(function (b) { b.classList.toggle("active", b.dataset.view === state.view); });
-    ["explorar", "ranking", "fuentes"].forEach(function (v) { $("#view-" + v).hidden = v !== state.view; });
+    $$("main .view").forEach(function (v) { v.hidden = v.id !== "view-" + state.view; });
+    if (location.hash.slice(1) !== state.view) history.replaceState(null, "", "#" + state.view);
     $$(".yr").forEach(function (s) { s.textContent = state.year; });
     renderYearChips();
     renderEntSelect();
@@ -628,12 +674,20 @@
       if (state.ent) renderEntidad();
       else { $("#panelEntidad").hidden = true; $("#panelNacional").hidden = false; renderNacional(); }
     } else if (state.view === "ranking") renderRanking();
-    else renderFuentes();
+    else if (state.view === "fuentes") renderFuentes();
+    else if (window.PANORAMA) PANORAMA.render(state.view);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   $("#fechaDatos").textContent = MEF.updated || "";
   $$(".fx").forEach(function (s) { s.textContent = MEF.updated || ""; });
   renderFuentes();
-  render();
+  window.APP = {
+    go: function (v) { state.view = v; render(); },
+    open: function (tipo, code) { state.tipo = tipo; state.ent = code; state.view = "explorar"; if (tipo !== "pliego") $("#selTipo").value = tipo; render(); },
+    year: function () { return state.year; }
+  };
+  var h0 = location.hash.slice(1);
+  if (h0 && document.getElementById("view-" + h0) && $('.navbtn[data-view="' + h0 + '"]')) state.view = h0;
+  if (h0 !== "ley32732" && h0 !== "contrataciones") render();
 })();

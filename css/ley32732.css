@@ -14,3 +14,21 @@
 .ley-gen{margin:13px 0}.ley-gen>div:first-child{display:flex;justify-content:space-between;gap:8px;font-size:.79rem}.ley-gen span{color:#555;white-space:nowrap}.ley-criteria p{font-size:.82rem;margin:8px 0;color:#444}.ley-criteria code{font-size:.74rem;background:#f1f5f9;padding:2px 4px;border-radius:4px}
 @media(max-width:980px){.ley-kpis{grid-template-columns:repeat(2,1fr)}.ley-grid2{grid-template-columns:1fr}.ley-hero{align-items:flex-start;flex-direction:column}.ley-actions{justify-content:flex-start}}
 @media(max-width:640px){.ley-kpis{grid-template-columns:1fr}.ley-hero h2{font-size:1.2rem}.ley-actions{width:100%}.ley-btn{flex:1;text-align:center}.ley-filters{width:100%}.ley-filters input,.ley-filters select{width:100%}.ley-table td:first-child{min-width:230px}}
+
+/* ===== v4: armonización con el sistema visual del portal ===== */
+.ley32732-view{--ley-blue:var(--info);--ley-blue-bg:var(--info-tint);--ley-green:var(--ok);--ley-green-bg:var(--ok-tint);--ley-amber:var(--warn);--ley-amber-bg:var(--warn-tint);--ley-red:var(--danger);--ley-red-bg:var(--danger-tint);--ley-gray:var(--ink-mute);--ley-gray-bg:var(--surface-3)}
+.ley-nav{border-color:transparent!important}.ley-nav.active{background:var(--accent-tint)!important;border-color:var(--accent)!important;color:var(--accent-deep)!important}
+.ley-hero{background:var(--surface-2);border-top:3px solid var(--accent)}
+.ley-hero h2{font-size:var(--fs-display);letter-spacing:-.02em}
+.ley-btn{border:var(--border) solid var(--line-strong);border-radius:var(--radius);font:inherit;font-size:var(--fs-ui);font-weight:500}
+.ley-btn:hover{background:var(--surface);color:var(--ink);border-color:var(--ink)}
+.ley-alert{border:0;border-left:3px solid var(--support);border-radius:0 var(--radius) var(--radius) 0;background:var(--support-tint)}
+.ley-kpis{grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:0;border:var(--border) solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface-2)}
+.ley-kpi{border:0;border-right:var(--border) solid var(--line);border-radius:0;box-shadow:none;border-top:3px solid var(--ink)}
+.ley-kpi strong{font-family:var(--font-mono);font-weight:600}
+.ley-grid2{grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));gap:var(--sp-5)}
+.ley-chip,.ley-status,.ley-badge{border-radius:var(--radius-sm)}
+.ley-track{height:6px;border-radius:3px}.ley-track i{border-radius:3px}
+.ley-filters input,.ley-filters select,.ley-num{font:inherit;font-size:var(--fs-ui);border-radius:var(--radius);border:var(--border) solid var(--line-strong)}
+@media(max-width:980px){.ley-kpis{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.ley-kpis{grid-template-columns:1fr}}

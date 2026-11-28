@@ -3,7 +3,7 @@
    null = dato aún no incorporado/verificado. */
 window.LEY32732 = {
   version: 1,
-  updated: "2026-07-21",
+  updated: "2026-11-27",
   publicationDate: "2026-07-19",
   effectiveDate: "2026-07-20",
   fiscalYearEnd: "2026-12-31",

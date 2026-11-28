@@ -121,3 +121,11 @@
   .ley-measure-search{max-width:none}
 }
 @media(max-width:430px){.ley-typebar{grid-template-columns:1fr}}
+
+/* ===== v4: armonización con el sistema visual del portal ===== */
+.ley-dist-card,.ley-measures-card,.ley-ent{border-radius:var(--radius)!important;box-shadow:none!important}
+.ley-dist-list{max-height:var(--mlist-h);overflow:auto;overscroll-behavior:contain}
+.ley-dist-kpis{gap:0;border:var(--border) solid var(--line);border-radius:var(--radius);overflow:hidden}
+.ley-dist-kpi{border-radius:0!important;box-shadow:none!important}
+.ley-ent-bar,.ley-typebar{border-radius:3px}
+.ley-ent-bar i,.ley-typebar i{background:var(--ink)!important}

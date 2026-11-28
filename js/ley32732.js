@@ -23,7 +23,7 @@
     function money(v) { return v == null || isNaN(v) ? "—" : "S/ " + nf.format(Math.round(v)); }
     function moneyM(v) { return v == null || isNaN(v) ? "—" : (Math.abs(v) >= 1000000 ? "S/ " + nf1.format(v / 1000000) + " M" : money(v)); }
     function pct(v) { return v == null || isNaN(v) ? "—" : nf1.format(v) + " %"; }
-    function num(v) { var n = Number(v); return isFinite(n) && n >= 0 ? n : null; }
+    function num(v) { if (v == null || v === "") return null; var n = Number(v); return isFinite(n) && n >= 0 ? n : null; }
     function isoDate(v) { if (!v) return "—"; var p = String(v).split("-"); return p.length === 3 ? p[2] + "/" + p[1] + "/" + p[0] : v; }
 
     function loadOverrides() {

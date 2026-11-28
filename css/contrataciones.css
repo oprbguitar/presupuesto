@@ -129,3 +129,48 @@ table.cx-t tr:hover td{background:#fff8f8}
   /* En móvil: primero indicadores, luego lo demás (los bloques ya vienen en ese orden) */
   .cx-hero h2{font-size:1.05rem}
 }
+
+/* ===== v4: armonización con el sistema visual del portal (tokens de css/styles.css) ===== */
+.cx-hero{border-top:3px solid var(--accent)}
+.cx-kicker{font-weight:600;letter-spacing:.08em}
+.cx-hero h2{font-size:var(--fs-display);letter-spacing:-.02em}
+.cx-hero p{font-size:var(--fs-ui);color:var(--ink-soft);max-width:90ch}
+.cx-beta{border-radius:var(--radius-sm);font-weight:600}
+.cx-aviso{border:0;border-left:3px solid var(--support);border-radius:0 var(--radius) var(--radius) 0;background:var(--support-tint);color:var(--support-ink);font-size:var(--fs-ui)}
+.cx-tabs{gap:0;border-bottom:var(--border) solid var(--line);flex-wrap:nowrap;overflow-x:auto;margin-bottom:var(--sp-5)}
+.cx-tab{border:0;border-bottom:3px solid transparent;border-radius:0;background:none;padding:var(--sp-2) var(--sp-4);font:inherit;font-size:var(--fs-ui);font-weight:500;white-space:nowrap;color:var(--ink-soft);transition:color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease)}
+.cx-tab:hover{color:var(--ink);border-bottom-color:var(--line-strong)}
+.cx-tab.active{background:none;color:var(--accent-deep);border-bottom-color:var(--accent);font-weight:600}
+.cx-filtros{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr));gap:var(--sp-3) var(--sp-4)}
+.cx-f{min-width:0}
+.cx-f label{font-weight:600;color:var(--ink-soft)}
+.cx-f select,.cx-f input,.cx-tbl-tools input{font:inherit;font-size:var(--fs-ui);border:var(--border) solid var(--line-strong);border-radius:var(--radius);min-height:38px}
+.cx-btn{border:var(--border) solid var(--line-strong);border-radius:var(--radius);font:inherit;font-size:var(--fs-ui);font-weight:500;padding:6px var(--sp-3)}
+.cx-btn:hover{background:var(--surface);color:var(--ink);border-color:var(--ink)}
+.cx-btn.primary{background:var(--accent);border-color:var(--accent)}
+.cx-kpis{grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:0;border:var(--border) solid var(--line);border-radius:var(--radius);overflow:hidden}
+.cx-kpi{border:0;border-right:var(--border) solid var(--line);border-bottom:var(--border) solid var(--line);border-radius:0;margin:0 -1px -1px 0;padding:var(--sp-3) var(--sp-4)}
+.cx-kpi::before{content:"";position:absolute;left:0;top:var(--sp-3);bottom:var(--sp-3);width:3px;background:var(--accent);border-radius:0 2px 2px 0}
+.cx-kpi.amar::before{background:var(--support)}.cx-kpi.neg::before{background:var(--ink)}.cx-kpi.verde::before{background:var(--ok)}.cx-kpi.azul::before{background:var(--info)}
+.cx-kpi .cx-k-lbl{font-weight:600}
+.cx-kpi .cx-k-val{font-family:var(--font-mono);font-weight:600;letter-spacing:-.02em}
+.cx-grid2{grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));gap:var(--sp-5)}
+.cx-grid2>.card{margin-bottom:0}
+.cx-grid2+.cx-grid2,.cx-grid2+.card{margin-top:var(--sp-5)}
+.cx-hbar{border-bottom-color:var(--line);font-size:var(--fs-ui)}
+.cx-hbar .cx-hb-name{font-weight:500}
+.cx-hbar .cx-hb-track{height:6px;border-radius:3px;background:var(--surface-3)}
+.cx-hbar .cx-hb-val{font-family:var(--font-mono);font-weight:500;width:110px}
+#cxContenido .card>div:has(>.cx-hbar){max-height:var(--mlist-h);overflow:auto;overscroll-behavior:contain}
+table.cx-t th{background:var(--surface-3);color:var(--ink-soft);font-size:var(--fs-label);text-transform:uppercase;letter-spacing:.03em;border-bottom:var(--border) solid var(--line-strong)}
+table.cx-t td{font-family:var(--font-mono);font-size:.78rem;border-bottom-color:var(--line)}
+table.cx-t td.l{font-family:var(--font-body);font-size:var(--fs-ui)}
+table.cx-t tr:hover td{background:var(--surface)}
+.cx-pill{border-radius:var(--radius-sm);font-weight:600}
+.cx-pag button{border-radius:var(--radius);border:var(--border) solid var(--line-strong);font:inherit;font-size:var(--fs-ui)}
+.cx-alert{border:0;border-left:3px solid;border-radius:0 var(--radius) var(--radius) 0}
+.cx-ficha{border:0;border-left:3px solid var(--ok);border-radius:0 var(--radius) var(--radius) 0;background:var(--ok-tint)}
+.cx-meta{border:var(--border) solid var(--line);border-left:3px solid var(--accent);border-radius:var(--radius)}
+.cx-funnel-row .cx-fn-bar{height:20px;border-radius:var(--radius-sm);background:var(--surface-3)}
+.cx-funnel-row .cx-fn-bar>i{background:var(--ink)}
+.cx-funnel-row .cx-fn-val{font-family:var(--font-mono);font-weight:500}
