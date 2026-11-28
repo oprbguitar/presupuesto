@@ -111,8 +111,7 @@
     var a = av(t), elapsed = DOY / DIY * 100, saldo = (t.pim || 0) - (t.dev || 0);
     var perDay = LEFT > 0 ? saldo / LEFT : 0;
     var niveles = (D.niveles || []);
-    var html = '<div class="grid">' +
-      '<div class="card c8"><div class="hero-fig"><div>' +
+    var html = '<div class="card hero-card"><div class="hero-fig"><div>' +
         '<p class="kicker" style="font-size:var(--fs-label);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)">Avance de ejecución nacional</p>' +
         '<div class="big">' + nf1.format(a) + "<small>%</small></div>" +
         '<p class="lede">Al <b>' + fdate(CORTE) + "</b> el Estado devengó <b>" + M(t.dev) + "</b> de un presupuesto vigente de <b>" + M(t.pim) + "</b>. Quedan <b>" + M(saldo) + "</b> por ejecutar en " + LEFT + " días: unos <b>" + M(perDay) + " por día</b>.</p>" +
@@ -123,17 +122,18 @@
         '<div class="stat-list two" style="margin-top:var(--sp-4)">' +
           stat("PIA", M(t.pia), "presupuesto inicial") + stat("PIM", M(t.pim), "+" + M((t.pim || 0) - (t.pia || 0)) + " incorporado") +
           stat("Certificado", M(t.cert), P(t.cert / t.pim * 100) + " del PIM") + stat("Girado", M(t.gir), "pagado") +
-        "</div></div></div>" + src("MEF — Consulta Amigable (actividades y proyectos)", MEFURL) + "</div>" +
-      '<div class="card c4"><div class="phead"><h3>Por nivel de gobierno</h3><button class="btn" type="button" data-go="ranking">Ver ranking →</button></div>' +
+        "</div></div></div>" + '<p class="explain" style="margin-top:var(--sp-4)"><b>Cómo leerlo:</b> el <b>PIA</b> es el presupuesto que aprobó el Congreso para el año; el <b>PIM</b> es ese mismo presupuesto con los aumentos y recortes del año; el <b>devengado</b> es el gasto ya realizado (bienes recibidos, servicios prestados, sueldos pagables). El avance compara lo gastado con el PIM; la línea roja de la barra marca qué parte del año ya pasó.</p>' + src("MEF — Consulta Amigable (actividades y proyectos)", MEFURL) + "</div>" +
+      '<div class="flow">' +
+      '<div class="card tone-ink"><div class="phead"><h3>Por nivel de gobierno</h3><button class="btn" type="button" data-go="ranking">Ver ranking →</button></div>' +
         niveles.map(function (n) { var x = av(n); return hrow(title(n.name), M(n.dev) + " de " + M(n.pim), '<span class="pct ' + pc(x) + '">' + P(x) + "</span>", x); }).join("") +
         '<p class="note" style="margin-top:var(--sp-4)">Los gobiernos locales son el nivel más rezagado: su gasto depende de obras municipales y del canon.</p></div>' +
-      '<div class="card c8"><div class="phead"><h3>Ritmo mensual del gasto ' + CUR + '</h3><span class="src">Noviembre parcial (gris)</span></div><div class="chartbox">' + monthChart(EX.meses, t.pim) + "</div></div>" +
-      '<div class="card c4"><h3>Por fuente de financiamiento</h3><p class="note">Las leyes 32732 y 32744 se financian en parte con endeudamiento (operaciones oficiales de crédito).</p>' + execRows(EX.fuentes || [], { clean: true }) + "</div>" +
-      '<div class="card c12"><div class="phead"><h3>¿Por qué el PIM es mayor que el PIA? Dos leyes de crédito suplementario ampliaron el presupuesto 2026</h3><button class="btn primary" type="button" data-go="leyes">Ver las leyes y su avance →</button></div>' + bridge(t.pia, t.pim) + "</div>" +
-      '<div class="card c6"><h3>¿En qué gasta? Genéricas de gasto</h3>' + mlist(execRows(EX.genericas || []), "short") + "</div>" +
-      '<div class="card c6"><h3>¿Para qué gasta? Funciones</h3>' + mlist(execRows(EX.funciones || []), "short", (EX.funciones || []).length) + "</div>" +
-      '<div class="card c6"><h3>¿Dónde gasta? Departamentos</h3><p class="note">Gasto de los tres niveles de gobierno ubicado por departamento.</p>' + mlist(execRows(EX.departamentos || []), "", (EX.departamentos || []).length) + "</div>" +
-      '<div class="card c6"><h3>Sectores con más presupuesto sin ejecutar</h3><p class="note">Saldo = PIM − devengado. Clic para abrir el sector.</p>' + mlist(saldoRows(), "", (D.sectores || []).length) + "</div>" +
+      '<div class="card"><div class="phead"><h3>Ritmo mensual del gasto ' + CUR + '</h3><span class="src">Noviembre parcial (gris)</span></div><p class="explain">Cada barra es lo que se gastó en el mes. La línea roja suma mes a mes y muestra qué porcentaje del presupuesto ya se usó; la línea punteada es el ritmo parejo (mismo gasto cada mes).</p><div class="chartbox">' + monthChart(EX.meses, t.pim) + "</div></div>" +
+      '<div class="card tone-info"><h3>¿De dónde sale el dinero?</h3><p class="explain"><b>Recursos ordinarios</b>: impuestos. <b>Determinados</b>: canon, regalías y fondos asignados por ley. <b>Operaciones de crédito</b>: préstamos y bonos (con estos se financian en parte las leyes 32732 y 32744). <b>Directamente recaudados</b>: tasas y servicios que cobra cada entidad.</p>' + execRows(EX.fuentes || [], { clean: true }) + "</div>" +
+      '<div class="card tone-red"><h3>¿Por qué hoy hay más presupuesto que al inicio?</h3><p class="explain">Durante el año el Congreso aprobó dos leyes de <b>crédito suplementario</b> (dinero adicional al presupuesto inicial). El resto del aumento viene de saldos de años anteriores, donaciones y transferencias.</p>' + bridge(t.pia, t.pim) + '<button class="btn primary" type="button" data-go="leyes" style="margin-top:var(--sp-4)">Ver las leyes y su avance →</button></div>' +
+      '<div class="card"><h3>¿En qué gasta? Tipo de gasto</h3><p class="explain"><b>Personal</b>: sueldos. <b>Bienes y servicios</b>: compras y contratos. <b>Activos no financieros</b>: obras, equipos y vehículos (la inversión). <b>Deuda</b>: pago de préstamos.</p>' + mlist(execRows(EX.genericas || []), "short") + "</div>" +
+      '<div class="card"><h3>¿Para qué gasta? Finalidad</h3><p class="explain">El mismo gasto ordenado por el servicio al que sirve: educación, salud, transporte, orden público…</p>' + mlist(execRows(EX.funciones || []), "short", (EX.funciones || []).length) + "</div>" +
+      '<div class="card tone-ok"><h3>¿Dónde gasta? Departamentos</h3><p class="explain">Gasto del Gobierno Nacional, regional y municipal ubicado en cada departamento.</p>' + mlist(execRows(EX.departamentos || []), "", (EX.departamentos || []).length) + "</div>" +
+      '<div class="card tone-amber"><h3>Sectores con más dinero aún sin gastar</h3><p class="explain">Presupuesto vigente menos lo ya gastado. Un saldo alto a fin de año suele indicar obras o compras atrasadas. Haz clic para ver el sector.</p>' + mlist(saldoRows(), "", (D.sectores || []).length) + "</div>" +
       "</div>";
     $("#inicioBody").innerHTML = html;
     $$("#inicioBody [data-sec]").forEach(function (r) { r.addEventListener("click", function () { window.APP && APP.open("sector", r.dataset.sec); }); });
@@ -221,6 +221,7 @@
       "<p>Dos créditos suplementarios vigentes suman <b>" + M(4160277816 + 8228414502) + "</b>. El presupuesto 2027 y sus leyes fiscales ya pasaron por el Congreso y esperan promulgación.</p></div>" +
       '<div class="chips">' + LY.normas.map(function (n) { return '<a class="chip" href="#law-' + n.id + '" data-jump="law-' + n.id + '">' + esc(n.numero.replace("Ley de Presupuesto del Sector Público", "Presupuesto").replace("Leyes de Endeudamiento y de Equilibrio Financiero", "Endeudamiento")) + "</a>"; }).join("") + "</div></div>" +
       '<div class="card"><h3>Línea de tiempo</h3><div class="timeline">' + tl.map(function (x) { return '<div class="tl ' + x[3] + '"><time>' + (x[0].length === 10 ? fdate(x[0]) : "dic 2025") + "</time><b>" + esc(x[1]) + "</b><span>" + esc(x[2]) + "</span></div>"; }).join("") + "</div></div>" +
+      '<div class="callout warn"><b>¿Qué es un crédito suplementario?</b> Es una ley que agrega dinero al presupuesto del año, después de aprobado. Indica cuánto se suma, de dónde sale (impuestos, préstamos o bonos), a qué entidades va y para qué. Cada entidad tiene pocos días para distribuirlo internamente y debe gastarlo antes del 31 de diciembre.</div>' +
       '<div class="callout"><b>Cómo leer el avance de una ley.</b> La Consulta Amigable del MEF no separa el devengado por norma. Por eso mostramos (1) los montos y destinos que fija cada ley, (2) la ejecución a la fecha de los sectores y unidades que reciben los recursos, y (3) los plazos legales. El avance del sector es contexto, no prueba de cuánto se gastó de la ley.</div>' +
       LY.normas.map(lawCard).join("");
     $("#leyesBody").innerHTML = html;
@@ -245,14 +246,15 @@
         stat("PP 0068 — avance", '<span class="pct ' + pc(a) + '">' + P(a) + "</span>", "vs " + P(av(EX.total)) + " nacional") +
       "</div>" + src("MEF — Consulta Amigable, categoría presupuestal 0068, corte " + fdate(CORTE), MEFURL) + "</div>" +
       (a != null && a < 70 ? '<div class="callout warn"><b>Alerta de ejecución.</b> El programa de emergencias por desastres va en ' + P(a) + ", muy por debajo del promedio nacional (" + P(av(EX.total)) + "). Su PIM creció de " + M(cat.pia) + " a " + M(cat.pim) + " con las transferencias por El Niño, pero gran parte aún no se devenga.</div>" : "") +
-      '<div class="grid">' +
-      '<div class="card c7"><h3>Normas y transferencias frente a El Niño</h3>' + mlist(disp.map(function (d) {
+      '<div class="callout"><b>¿Qué es el programa 0068?</b> Es el programa presupuestal donde el Estado registra la prevención y la respuesta ante desastres: limpieza de ríos y quebradas, defensas ribereñas, puentes y carreteras de emergencia, albergues y ayuda humanitaria. Por eso es el mejor indicador del gasto frente a El Niño.</div>' +
+      '<div class="flow">' +
+      '<div class="card tone-info"><h3>Normas y transferencias frente a El Niño</h3><p class="explain">Decretos y leyes que asignaron dinero a entidades concretas. Las garantías para MYPE no son gasto: son respaldo del Estado a préstamos.</p>' + mlist(disp.map(function (d) {
         return hrow(d.norma + " — " + d.entidad, esc(d.detalle) + ' · <a href="' + d.url + '" target="_blank" rel="noopener">fuente ↗</a>', d.monto ? M(d.monto) : '<span class="tag">medida</span>', d.garantia ? 0 : (d.monto || 0) / maxd * 100, "info");
       }).join(""), "", disp.length) + '<p class="src">Montos según El Peruano y notas del MEF recogidas por la prensa. Verificar el decreto en El Peruano antes de citar.</p></div>' +
-      '<div class="card c5"><h3>PP 0068 por nivel de gobierno</h3>' + execRows(pp.niveles || [], { clean: true }) +
+      '<div class="card tone-ink"><h3>PP 0068 por nivel de gobierno</h3>' + execRows(pp.niveles || [], { clean: true }) +
         '<h3 style="margin-top:var(--sp-5)">¿En qué se gasta?</h3>' + mlist(execRows(pp.genericas || []), "short") + "</div>" +
-      '<div class="card c7"><h3>¿Quién ejecuta? Pliegos con mayor presupuesto en el PP 0068</h3><p class="note">Ministerios, gobiernos regionales y municipalidades (estas últimas agregadas).</p>' + mlist(execRows(pp.pliegos || [], { clean: true }), "tall", (pp.pliegos || []).length) + "</div>" +
-      '<div class="card c5"><h3>¿Dónde? PP 0068 por departamento</h3>' + mlist(execRows(pp.departamentos || []), "tall", (pp.departamentos || []).length) + "</div>" +
+      '<div class="card tone-red"><h3>¿Quién ejecuta? Entidades con más presupuesto en el PP 0068</h3><p class="explain">Ministerios y gobiernos regionales con su avance. Las municipalidades aparecen sumadas en una sola fila.</p>' + mlist(execRows(pp.pliegos || [], { clean: true }), "tall", (pp.pliegos || []).length) + "</div>" +
+      '<div class="card tone-ok"><h3>¿Dónde? PP 0068 por departamento</h3>' + mlist(execRows(pp.departamentos || []), "tall", (pp.departamentos || []).length) + "</div>" +
       "</div>";
     $("#ninoBody").innerHTML = html;
   }
@@ -266,13 +268,14 @@
     var tinf = inf.reduce(function (s, x) { s.pim += x.pim || 0; s.dev += x.dev || 0; return s; }, { pim: 0, dev: 0 });
     var html = '<div class="vhead"><div><p class="kicker">Programas presupuestales · ' + cats.length + ' categorías · ' + CUR + '</p><h2>¿Qué hace el Estado con el presupuesto?</h2>' +
       "<p>Los programas presupuestales agrupan el gasto por resultado: desarrollo infantil, aprendizajes, salud materna, seguridad ciudadana, saneamiento. Aquí ves cuánto tiene cada uno y cuánto ha ejecutado.</p></div></div>" +
-      '<div class="grid">' +
-      '<div class="card c12"><div class="phead"><h3>Niñez y adolescencia</h3><span class="src">' + M(tinf.dev) + " devengado de " + M(tinf.pim) + " (" + P(tinf.dev / tinf.pim * 100) + ")</span></div>" +
+      '<div class="card tone-amber"><div class="phead"><h3>Niñez y adolescencia</h3><span class="src">' + M(tinf.dev) + " devengado de " + M(tinf.pim) + " (" + P(tinf.dev / tinf.pim * 100) + ")</span></div>" +
+        '<p class="explain">Programas dirigidos a niñas, niños y jóvenes: desarrollo infantil temprano (nutrición, anemia, controles), salud materna y del recién nacido, aprendizajes en el colegio, alimentación escolar, educación inclusiva, protección y becas. Haz clic en uno para ver quién lo ejecuta.</p>' +
         '<div class="split">' + '<div>' + inf.slice(0, 4).map(progRow).join("") + "</div><div>" + inf.slice(4).map(progRow).join("") + "</div></div></div>" +
-      '<div class="card c7"><div class="phead"><h3>Todos los programas</h3><div class="seg" id="progSort"><button class="chip active" data-s="pim" type="button">Mayor PIM</button><button class="chip" data-s="low" type="button">Menor avance</button><button class="chip" data-s="saldo" type="button">Mayor saldo</button></div></div>' +
+      '<div class="pair">' +
+      '<div class="card"><div class="phead"><h3>Todos los programas</h3><div class="seg" id="progSort"><button class="chip active" data-s="pim" type="button">Mayor PIM</button><button class="chip" data-s="low" type="button">Menor avance</button><button class="chip" data-s="saldo" type="button">Mayor saldo</button></div></div>' +
         '<input type="search" id="progQ" placeholder="Filtrar: salud, agua, policía, niñas…" autocomplete="off" style="margin-bottom:var(--sp-3)">' +
         '<div id="progList"></div></div>' +
-      '<div class="card c5" id="progDet"></div>' +
+      '<div class="card tone-info" id="progDet"></div>' +
       "</div>";
     $("#programasBody").innerHTML = html;
     $("#progQ").addEventListener("input", function () { progState.q = this.value; progList(); });

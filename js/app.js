@@ -239,12 +239,12 @@
     if (!t) { $("#panelNacional").innerHTML = "<p>Sin datos para este año.</p>"; return; }
     var saldo = (t.pim != null && t.dev != null) ? t.pim - t.dev : null;
     $("#nacionalCards").innerHTML =
-      kpiCard("PIA (inicial)", solesM(t.pia), "aprobado por ley", "neg", "pia") +
-      kpiCard("PIM (vigente)", solesM(t.pim), "tras modificaciones", "", "pim") +
-      kpiCard("Devengado (ejecutado)", solesM(t.dev), "gasto reconocido", "verde", "dev") +
-      kpiCard("Girado (pagado)", solesM(t.gir), "", "verde", "gir") +
-      kpiCard("Avance", pct(avanceOf(t)), isPartial(state.year) ? "año en ejecución" : "al cierre del año", "amar", "avance") +
-      kpiCard("No ejecutado", solesM(saldo), "PIM − devengado", "", "saldo");
+      kpiCard("PIA (inicial)", solesM(t.pia), "lo que aprobó el Congreso al inicio del año", "neg", "pia") +
+      kpiCard("PIM (vigente)", solesM(t.pim), "presupuesto actual, con aumentos y recortes", "info", "pim") +
+      kpiCard("Devengado (gastado)", solesM(t.dev), "bienes, obras y servicios ya recibidos", "verde", "dev") +
+      kpiCard("Girado (pagado)", solesM(t.gir), "dinero ya transferido a quien se le debe", "verde", "gir") +
+      kpiCard("Avance", pct(avanceOf(t)), (isPartial(state.year) ? "año en curso" : "al cierre") + ": gastado ÷ presupuesto actual", "amar", "avance") +
+      kpiCard("Por gastar", solesM(saldo), "presupuesto actual que aún no se usa", "", "saldo");
 
     // tabla niveles
     var rows = (d.niveles || []).map(function (n) {
@@ -306,14 +306,14 @@
     var porGirar = (ent.dev != null && ent.gir != null) ? ent.dev - ent.gir : null;
     var modif = (ent.pim != null && ent.pia != null) ? ent.pim - ent.pia : null;
     $("#entCards").innerHTML =
-      kpiCard("PIA (inicial)", solesM(ent.pia), "asignación de apertura", "neg", "pia") +
-      kpiCard("PIM (vigente)", solesM(ent.pim), modif != null ? ((modif >= 0 ? "+" : "−") + solesM(Math.abs(modif)).replace("S/ ", "S/ ") + " en modificaciones") : "", "", "pim") +
-      kpiCard("Certificado", solesM(ent.cert), "", "", "cert") +
-      kpiCard("Comprometido", solesM(ent.comp), "", "", "comp") +
-      kpiCard("Devengado (ejecutado)", solesM(ent.dev), "", "verde", "dev") +
+      kpiCard("PIA (inicial)", solesM(ent.pia), "lo que recibió al inicio del año", "neg", "pia") +
+      kpiCard("PIM (vigente)", solesM(ent.pim), modif != null ? ((modif >= 0 ? "+" : "−") + solesM(Math.abs(modif)).replace("S/ ", "S/ ") + " en el año") : "", "info", "pim") +
+      kpiCard("Certificado", solesM(ent.cert), "dinero reservado para un gasto", "info", "cert") +
+      kpiCard("Comprometido", solesM(ent.comp), "contratos u órdenes ya firmados", "info", "comp") +
+      kpiCard("Devengado (gastado)", solesM(ent.dev), "bienes, obras y servicios ya recibidos", "verde", "dev") +
       kpiCard("Girado (pagado)", solesM(ent.gir), porGirar != null ? "pendiente de giro: " + solesM(porGirar) : "", "verde", "gir") +
-      kpiCard("Avance", pct(avanceOf(ent)), isPartial(state.year) ? "año en ejecución" : "al cierre", "amar", "avance") +
-      kpiCard("No ejecutado", solesM(saldo), "PIM − devengado", "", "saldo");
+      kpiCard("Avance", pct(avanceOf(ent)), (isPartial(state.year) ? "año en curso" : "al cierre") + ": gastado ÷ presupuesto actual", "amar", "avance") +
+      kpiCard("Por gastar", solesM(saldo), "presupuesto actual que aún no se usa", "", "saldo");
 
     // comparativo multi-año
     var pims = [], devs = [], avs = [], rowsC = "";

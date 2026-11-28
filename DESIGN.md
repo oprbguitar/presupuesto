@@ -1,4 +1,4 @@
-# DESIGN.md — Presupuesto Perú (v4, noviembre 2026)
+# DESIGN.md — Presupuesto Perú (v4.1, noviembre 2026)
 
 ## 1. Intención
 - **Modo de superficie:** explore (con zonas de lectura en «Leyes»).
@@ -8,13 +8,14 @@
 - **Densidad objetivo:** media-alta. Lienzo ancho (hasta 1 760 px + riel), listas largas encapsuladas en microlistados con scroll interno.
 
 ## 2. Dirección visual
-- **Arquetipo:** riel de navegación persistente + lienzo amplio en rejilla de 12 columnas (selector: «buscador con facetas», adaptado: las facetas son las secciones del riel y los filtros de cada vista).
+- **Arquetipo:** navegación en el encabezado (como la v3, preferida por el usuario) + lienzo amplio hasta 1 760 px. Los paneles se acomodan solos en mosaico por columnas (`.flow`), en pares de igual altura (`.pair`) o en pilas de tablas (`.stack`), para no dejar huecos en blanco. v4.0 usó un riel lateral; el usuario pidió volver al encabezado.
 - **Tipografía:** IBM Plex Sans (display y cuerpo) / IBM Plex Mono (todas las cifras, tabulares).
 - **Paleta:** identidad existente blanco · rojo · negro · amarillo (pedido del usuario) sobre superficie arena `#f6f4ef`; índigo `#3b5bdb` solo para enlaces, foco e información. Desviación del selector (arena + índigo): se conserva la identidad que el usuario fijó.
 - **Geometría:** suave, radio 5 px; sin sombras salvo capas flotantes (modal, buscador).
 - **Motion:** 220 ms de entrada de vista y anchos de barra; desactivado con `prefers-reduced-motion`.
 - **Por qué encaja:** cifras públicas que deben compararse; la mono tabular alinea montos y la paleta patria identifica el tema sin decorar.
-- **Cambios a propósito vs. v3:** se quitó el contenedor de 1 180 px que dejaba márgenes vacíos; tarjetas KPI convertidas en tiras de cifras; pills redondeadas reemplazadas por segmentos y pestañas subrayadas; Segoe UI/system-ui sustituidas por Plex.
+- **Cambios a propósito vs. v3:** se quitó el contenedor de 1 180 px que dejaba márgenes vacíos; tarjetas de cifras con color por concepto (presupuesto en tinta, vigente en índigo, gastado en verde, avance en amarillo, saldo en rojo) y una frase en lenguaje sencillo; paneles con tono por tema; Segoe UI/system-ui sustituidas por Plex.
+- **Lenguaje:** cada panel lleva una línea `.explain` que dice qué significa la cifra sin jerga (PIA, PIM, devengado, crédito suplementario, programa 0068, PAC, adjudicado).
 
 ## 3. Tokens
 Definidos en `css/styles.css` (`:root`): color (`--ink`, `--surface*`, `--line*`, `--accent*`, `--support*`, `--info*`, `--ok/warn/danger*`), tipografía (`--font-*`, `--fs-*`, `--lh-*`), espacio `--sp-1…8` (4–64 px), forma (`--radius` 5 px), motion (`--dur`, `--ease`), layout (`--rail-w`, `--canvas-max`, `--mlist-h`). Los módulos antiguos usan alias (`--rojo`, `--negro`…) que apuntan a los tokens nuevos.
@@ -22,9 +23,11 @@ Definidos en `css/styles.css` (`:root`): color (`--ink`, `--surface*`, `--line*`
 ## 4. Componentes
 | Componente | Variantes | Estados |
 |---|---|---|
-| `.navbtn` (riel) | vertical ≥1100 px, pestañas horizontales <1100 px | hover, active, focus-visible, seleccionado |
+| `.navbtn` (encabezado) | botones sobre fondo tinta; fila con scroll horizontal <1100 px | hover, active, focus-visible, seleccionado |
+| `.flow` / `.pair` / `.stack` | mosaico, par de igual altura, pila de tablas | — |
+| `.card.tone-*` | red, amber, ok, info, ink | — |
 | `.chip` / `.seg` | suelto, segmentado | hover, active, selected, disabled, focus-visible |
-| `.kpi-grid`, `.stat-list` | tira de cifras con acento por color | — |
+| `.kpi-grid`, `.stat-list` | tarjetas de color con explicación; cifras con salto de línea seguro | — |
 | `.hrow` | fila nombre + barra + valor; clicable | hover, focus-visible (Enter/Espacio) |
 | `.mlist` | normal, `.short`, `.tall`; pie «Ver todo / Contraer» | scroll interno, abierto |
 | `.law` | ficha de norma: cabecera, destinos, plazos, fuentes | vigente / en trámite |
@@ -39,9 +42,9 @@ Definidos en `css/styles.css` (`:root`): color (`--ink`, `--surface*`, `--line*`
 ## 6. Responsive
 | Breakpoint | Cambio estructural |
 |---|---|
-| 360 | una columna; riel como pestañas con scroll; filas `.hrow` en dos líneas; cifras a 1 rem |
+| 360 | una columna; menú con scroll horizontal; filas `.hrow` en dos líneas; cifras a 1 rem |
 | 768 | una columna en paneles, rejillas `auto-fit` de 2 columnas en filtros y cifras |
-| 1280 | rejilla de 12 columnas con paneles 8/4 y 6/6; riel lateral fijo |
+| 1280 | mosaico de 2–3 columnas; menú en una sola fila |
 | 1600 | lienzo hasta 1 760 px, microlistados más altos (30 rem) |
 
 ## 7. Accesibilidad
@@ -53,5 +56,5 @@ Definidos en `css/styles.css` (`:root`): color (`--ink`, `--surface*`, `--line*`
 Degradados decorativos, sombras en tarjetas, cards anidadas, pills redondas, métricas sin fuente, paleta presentada como norma.
 
 ## 9. Auditoría
-- `design-lint`: 7 / 20 — APROBADO (27-11-2026).
+- `design-lint`: APROBADO (27-11-2026, v4.1).
 - Verificado en 375, 768, 1280 y 1600 px sin desbordamiento horizontal.

@@ -476,7 +476,11 @@
       kpi("Contrataciones directas", numf(comp.cd_num), moneyM(comp.cd_monto), "amar") +
       kpi("Procedimientos desiertos", numf(comp.desiertos), null, "amar") +
       kpi("Procedimientos anulados", numf(comp.anulados), null, "amar") +
-      '</div>';
+      '</div>' +
+      '<p class="cx-glosa"><b>Cómo leerlo:</b> el <b>PIM</b> es el presupuesto vigente del año y el <b>devengado</b> lo ya gastado. ' +
+      'En compras públicas, el <b>PAC</b> es el plan de compras de cada entidad; <b>convocado</b> es lo que se sacó a concurso; ' +
+      '<b>adjudicado</b> es lo que se otorgó a un proveedor; <b>contratado</b> es lo firmado (contrato u orden). ' +
+      'Una <b>contratación directa</b> se hace sin concurso por causales de ley; un proceso <b>desierto</b> no tuvo ofertas válidas.</p>';
   }
 
   /* ---------------- render por pestaña ---------------- */

@@ -1,4 +1,4 @@
-/* Presupuesto Perú — acomoda en el riel los botones que inyectan los módulos (Ley 32732, Contrataciones). */
+/* Presupuesto Perú — fecha de corte y orden de los botones que inyectan los módulos (Ley 32732, Contrataciones). */
 (function () {
   "use strict";
   function $(s) { return document.querySelector(s); }
@@ -8,19 +8,11 @@
     var p = f.split("-"), mm = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "set", "oct", "nov", "dic"];
     stamp.textContent = p.length === 3 ? (+p[2]) + " " + mm[+p[1] - 1] + " " + p[0] : f;
   }
+  function after(ref, el) { if (ref && el && ref.nextElementSibling !== el) ref.parentNode.insertBefore(el, ref.nextSibling); }
   function place() {
-    var ley = $("#navLey32732"), cx = $("#navContrat"), prog = $('.navbtn[data-view="programas"]'), compras = $("#railCompras");
-    if (ley && prog && ley.previousElementSibling !== prog) {
-      ley.textContent = "Ley 32732 · Ministerio Público";
-      ley.style.paddingLeft = "var(--sp-5)";
-      ley.style.fontSize = "var(--fs-caption)";
-      var leyes = $('.navbtn[data-view="leyes"]');
-      leyes.parentNode.insertBefore(ley, leyes.nextSibling);
-    }
-    if (cx && compras && compras.nextElementSibling !== cx) {
-      cx.textContent = "Contrataciones públicas";
-      compras.parentNode.insertBefore(cx, compras.nextSibling);
-    }
+    var ley = $("#navLey32732"), cx = $("#navContrat");
+    if (ley) { ley.textContent = "Ley 32732 · M. Público"; after($('.navbtn[data-view="leyes"]'), ley); }
+    if (cx) { cx.textContent = "Contrataciones"; after($('.navbtn[data-view="programas"]'), cx); }
   }
   place();
   document.addEventListener("DOMContentLoaded", place);

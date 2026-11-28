@@ -9,10 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=4">
-<link rel="stylesheet" href="css/ley32732.css?v=3">
-<link rel="stylesheet" href="css/ley32732_instituciones.css?v=3">
-<link rel="stylesheet" href="css/contrataciones.css?v=2">
+<link rel="stylesheet" href="css/styles.css?v=5">
+<link rel="stylesheet" href="css/ley32732.css?v=4">
+<link rel="stylesheet" href="css/ley32732_instituciones.css?v=4">
+<link rel="stylesheet" href="css/contrataciones.css?v=3">
 </head>
 <body>
 
@@ -25,27 +25,19 @@
         <p class="tagline">Visor ciudadano de ejecución presupuestal · MEF, El Peruano, Congreso, OECE</p>
       </div>
     </div>
-    <p class="stamp"><i class="dot" aria-hidden="true"></i><span>Ejecución MEF al</span> <b id="stampFecha"></b></p>
+    <p class="stamp"><i class="dot" aria-hidden="true"></i><span>Datos del MEF al</span> <b id="stampFecha"></b></p>
   </div>
+  <nav class="topnav" aria-label="Secciones">
+    <button class="navbtn active" data-view="inicio" type="button">Avance 2026</button>
+    <button class="navbtn" data-view="explorar" type="button">Explorar entidades</button>
+    <button class="navbtn" data-view="ranking" type="button">Ranking</button>
+    <button class="navbtn" data-view="leyes" type="button">Leyes 2026–2027</button>
+    <button class="navbtn" data-view="nino" type="button">El Niño</button>
+    <button class="navbtn" data-view="programas" type="button">Programas e infancia</button>
+    <button class="navbtn" data-view="fuentes" type="button">Fuentes</button>
+    <button class="navbtn help-btn" id="btnAyuda" type="button" title="¿Cómo leer estas cifras?" aria-label="¿Cómo leer estas cifras?">?</button>
+  </nav>
 </header>
-
-<div class="shell">
-  <aside class="rail" aria-label="Secciones">
-    <nav class="topnav">
-      <p class="rail-group">Panorama</p>
-      <button class="navbtn active" data-view="inicio" type="button">Avance 2026 <span class="nb-tag">hoy</span></button>
-      <button class="navbtn" data-view="explorar" type="button">Explorar entidades</button>
-      <button class="navbtn" data-view="ranking" type="button">Ranking de ejecución</button>
-      <p class="rail-group">Normas y prioridades</p>
-      <button class="navbtn" data-view="leyes" type="button">Leyes 2026–2027 <span class="nb-tag">4</span></button>
-      <button class="navbtn" data-view="nino" type="button">Fenómeno El Niño</button>
-      <button class="navbtn" data-view="programas" type="button">Programas e infancia</button>
-      <p class="rail-group" id="railCompras">Compras y control</p>
-      <button class="navbtn" data-view="fuentes" type="button">Fuentes y rendición</button>
-      <button class="navbtn help-btn" id="btnAyuda" type="button" title="¿Cómo leer estas cifras?">¿Cómo leer las cifras?</button>
-      <p class="rail-foot">Cifras en soles (S/). El avance es devengado ÷ PIM. Las fuentes prevalecen sobre este visor.</p>
-    </nav>
-  </aside>
 
 <main class="wrap">
 
@@ -125,35 +117,42 @@
 
       <div id="entCards" class="kpi-grid"></div>
 
-      <div class="grid">
-        <div class="card c8">
+      <div class="pair">
+        <div class="card">
           <h3>Comparativo entre años <button class="qmark" data-help="comparativo" type="button">?</button></h3>
+          <p class="explain">Barra oscura: presupuesto vigente (PIM). Barra roja: lo que realmente se gastó (devengado). Cuanto más se parecen, mejor se usó el dinero.</p>
           <div id="chartComparativo" class="chartbox"></div>
           <div id="tablaComparativa"></div>
         </div>
-        <div class="card c4">
+        <div class="card">
           <h3>Semáforo de ejecución <span class="yr"></span> <button class="qmark" data-help="avance" type="button">?</button></h3>
+          <p class="explain">Verde: gastó 85 % o más de su presupuesto. Amarillo: entre 70 % y 85 %. Rojo: menos de 70 %.</p>
           <div id="gaugeBox"></div>
           <div id="diagnostico" class="diag"></div>
         </div>
-        <div class="card c6w" id="boxGenericas">
+      </div>
+      <div class="stack">
+        <div class="card" id="boxGenericas">
           <h3>¿En qué gasta? — Genéricas de gasto <span class="yr"></span> <button class="qmark" data-help="generica" type="button">?</button></h3>
+          <p class="explain">El <b>tipo</b> de gasto: sueldos (personal), compras de bienes y servicios, obras y equipos (activos no financieros), pensiones o deuda. Haz clic en una fila con ▸ para ver el detalle.</p>
           <div id="tablaGenericas"></div>
         </div>
-        <div class="card c6w" id="boxFunciones">
+        <div class="card" id="boxFunciones">
           <h3>¿Para qué gasta? — Funciones <span class="yr"></span> <button class="qmark" data-help="funcion" type="button">?</button></h3>
+          <p class="explain">La <b>finalidad</b> del gasto: educación, salud, transporte, orden público, saneamiento, etc.</p>
           <div id="tablaFunciones"></div>
         </div>
-        <div class="card c6w" id="boxPliegos">
+        <div class="card" id="boxPliegos">
           <h3>Entidades (pliegos) que componen este sector <span class="yr"></span> <button class="qmark" data-help="pliego" type="button">?</button></h3>
-          <p class="note">Haz clic en cualquier pliego para abrir su detalle.</p>
+          <p class="explain">Cada pliego es una entidad con presupuesto propio (un ministerio, un organismo, una universidad). Haz clic para abrir su detalle.</p>
           <div id="tablaPliegos"></div>
         </div>
-        <div class="card c6w" id="boxEjecutoras" hidden>
+        <div class="card" id="boxEjecutoras" hidden>
           <h3>¿Quién ejecuta? — Unidades ejecutoras <span class="yr"></span></h3>
+          <p class="explain">Las oficinas que contratan y pagan dentro de la entidad: sedes regionales, hospitales, distritos fiscales, proyectos especiales.</p>
           <div id="tablaEjecutoras"></div>
         </div>
-        <div class="card control-card c12" id="boxControl">
+        <div class="card control-card" id="boxControl">
           <h3>Alertas y control — Contraloría General de la República <button class="qmark" data-help="control" type="button">?</button></h3>
           <div id="alertaEjec"></div>
           <div id="informesContra"></div>
@@ -222,7 +221,6 @@
   </section>
 
 </main>
-</div>
 
 <footer class="footer">
   <div class="wrap">
@@ -238,11 +236,11 @@
   </div>
 </div>
 
-<script src="data/mef.js?v=4"></script>
-<script src="data/extra.js?v=1"></script>
+<script src="data/mef.js?v=5"></script>
+<script src="data/extra.js?v=2"></script>
 <script src="data/leyes2026.js?v=1"></script>
 <script src="data/contra.js?v=3"></script>
-<script src="data/sub.js?v=4"></script>
+<script src="data/sub.js?v=5"></script>
 <script src="data/ley32732.js?v=3"></script>
 <script src="data/ley32732_pack_1.js?v=1"></script>
 <script src="data/ley32732_pack_2.js?v=1"></script>
@@ -258,11 +256,11 @@
 <script src="data/ley32732_pack_4.js?v=1"></script>
 <script src="data/ley32732_pack_5.js?v=1"></script>
 <script src="data/ley32732_instituciones.js?v=2"></script>
-<script src="js/panorama.js?v=1"></script>
-<script src="js/app.js?v=4"></script>
-<script src="js/ley32732.js?v=5"></script>
+<script src="js/panorama.js?v=2"></script>
+<script src="js/app.js?v=5"></script>
+<script src="js/ley32732.js?v=6"></script>
 <script src="js/ley32732_instituciones.js?v=3"></script>
-<script src="js/contrataciones.js?v=5"></script>
-<script src="js/shell.js?v=1"></script>
+<script src="js/contrataciones.js?v=6"></script>
+<script src="js/shell.js?v=2"></script>
 </body>
 </html>
